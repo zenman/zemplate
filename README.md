@@ -1,9 +1,7 @@
 Zemplate
 ========
 
-- - - - - - - - - - - - - - - - - - - - - - -
-
-Zemplate is a bare-bones WordPress theme that utilizes Foundation to act as a starting point for theme devleopers.
+Zemplate is a bare-bones WordPress theme that utilizes Foundation and an (astronomical)variation of the Atomic Design System  to act as a starting point for theme devleopers.
 
 Free of all presentational elements and non-semantic markup, Zemplate is the perfect 'blank slate' for your WordPress projects.
 
@@ -13,4 +11,4 @@ For more information on the company that maintains Zemplate, see the Zenman webs
 
 Enjoy!
 
-- Dominic Magnifico and Tomas Mulder
+♥ Dominic Magnifico and Tomas Mulder
