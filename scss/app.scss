@@ -1,0 +1,32 @@
+// /*------------------------------------*\
+//     $SASS Controller
+// \*------------------------------------*/
+
+
+// /*------------------------------------*\
+//     //Framework Customizations
+// \*------------------------------------*/
+$row-width: 1140px;                             //Sets the width of the rows for foundation (must be above all).
+
+// /*------------------------------------*\
+//     //Partial Imports // Pulls in partial files. Remove what you don't need.
+// \*------------------------------------*/
+
+@import
+    //wordpress
+    "settings/template",                        //wordpress's template stylesheet header (must come first)
+
+    //frameworks
+    "compass/css3",                              //load the Compass CSS3 framework
+    "foundation",                                  //load the foundation5 framework
+    "partials/settings",                           //load Foundation settings
+
+    //settings
+    "settings/variables",                       //zemplate's variables
+    "settings/mixins",                          //zemplate's mixins
+    "settings/fonts",                           //@font-face RULES!
+
+    //styles
+    "partials/base",                              //normalize, all your globals are belong to us
+    "partials/anatomy",                        //header, footer, sidebar, and guts of the site
+    "partials/shame";                           //shame on you if you put anything in here
