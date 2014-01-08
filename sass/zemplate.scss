@@ -31,23 +31,17 @@ $row-width: 1140px;                             //Sets the width of the rows for
 //     "partials/anatomy",                        //header, footer, sidebar, and guts of the site
 //     "partials/shame";                           //shame on you if you put anything in here
 
-@import "compass";
 @import "planets/wp/theme";
 
-// @import "stars";
-
-    // @import "stars/zemplate/variables";
-    // @import "stars/zemplate/extends";
-    // @import "stars/zemplate/mixins";
-
-    @import "stars/zemplate/*";
-
-    // @import "stars/zemplate/mixins";
-// @import "planets";
-// @import "moons";
-// @import "comets";
-// @import "debris";
 
 
-
-body{ opacity: .8; }
+// @import "stars/zemplate/variables";
+// @import "stars/zemplate/extends";
+// @import "stars/zemplate/mixins";
+// @import "stars/zemplate/compass/*";
+// @import "stars/zemplate/foundation/foundation.scss";
+// @import "planets/layouts/*";
+// @import "moons/base/*";
+// @import "moons/components/*";
+// @import "comets/*";
+// @import "debris/*";
