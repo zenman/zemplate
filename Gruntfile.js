@@ -4,23 +4,21 @@ module.exports = function(grunt) {
 
     sass: {
       options: {
-        includePaths: ['bower_components/foundation/scss']
+        includePaths: ['sass/stars/foundation/scss']
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'expanded'
         },
         files: {
-          'css/app.css': 'scss/app.scss'
+          'style.css': 'sass/zemplate.scss'
         }
       }
     },
 
     watch: {
-      grunt: { files: ['Gruntfile.js'] },
-
       sass: {
-        files: 'scss/**/*.scss',
+        files: 'sass/**/*.scss',
         tasks: ['sass']
       }
     }

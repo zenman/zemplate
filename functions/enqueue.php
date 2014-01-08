@@ -10,7 +10,7 @@
     //CSS
 \*------------------------------------*/
 	function theme_styles(){
-		wp_register_style( 'style', get_template_directory_uri() . '/css/app.css', array(), '1.0','screen, projection' );
+		wp_register_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0','screen, projection' );
 
 		// enqueing:
 		wp_enqueue_style( 'style' );
