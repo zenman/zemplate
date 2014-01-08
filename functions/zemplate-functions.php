@@ -2,7 +2,7 @@
 /*
  * @package WordPress
  * @subpackage Zemplate
- * @since Zemplate 2.0
+ * @since Zemplate 3.0
  */
 
 /*------------------------------------*\
