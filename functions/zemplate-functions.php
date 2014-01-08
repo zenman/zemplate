@@ -186,5 +186,3 @@ function custom_search($form) {
     return $form;
 }
 add_filter('get_search_form', 'custom_search');
-
-}
