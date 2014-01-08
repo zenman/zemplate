@@ -41,6 +41,11 @@ function load_js_files() {
 		// if ( is_page() ) {
 
 		// }
+
+		// Enable ajax support for comments
+		if(is_singular() && comments_open() && get_option('thread_comments')){
+		    wp_enqueue_script('comment-reply');
+		}
 	}
 }
 add_action( 'wp_enqueue_scripts', 'load_js_files' );
