@@ -1,9 +1,14 @@
 /*------------------------------------*\
-    //Variables
+    ::Variables
+    ----------------------------------*
+    ::Colors
+    ::Breakpoints
+    ::Layout
+    ::Text Styling
 \*------------------------------------*/
 
 /*------------------------------------*\
-    //Colors
+    ::Colors
 \*------------------------------------*/
 
 //primary colors / page anchor tags
@@ -22,11 +27,24 @@ $color-3-light:     lighten($color-3,20%);
 $color-3-dark:      darken($color-3,20%);
 
 //alert colors
-$color-good:  #00801c;
-$color-bad:   #ff0000;
+$color-good:        #00801c;
+$color-bad:         #ff0000;
 
 /*------------------------------------*\
-    //Text Styling
+    ::Breakpoints
+\*------------------------------------*/
+$galaxy:        1140px;
+$solarsystem:   1024px;
+$planetary:     480px;
+
+/*------------------------------------*\
+    ::Layout
+\*------------------------------------*/
+$pad:       .9em;
+$pad-px:    15px;
+
+/*------------------------------------*\
+    ::Text Styling
 \*------------------------------------*/
 
 //font colors
@@ -68,10 +86,3 @@ $l-2-color-link:    $g-color-link;
 $l-2-color-visited: $l-2-color-link;
 $l-2-color-hover:   lighten($l-2-color-link,20%);
 $l-2-color-active:  lighten($l-2-color-link,10%);
-
-/*------------------------------------*\
-    //Breakpoints
-\*------------------------------------*/
-$galaxy:      1140px;
-$solarsystem:   1024px;
-$planetary:     480px;

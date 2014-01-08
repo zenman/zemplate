@@ -1,11 +1,5 @@
 /*------------------------------------*\
-    //Index of Foot
-    ----------------------------------*
-    //Footer
-\*------------------------------------*/
-
-/*------------------------------------*\
-    //Footer
+    ::Footer
 \*------------------------------------*/
 @include nested-nav($nav-container: '.main-foot--nav'); //add basic nested footer navigation styling
 @include sticky-footer(

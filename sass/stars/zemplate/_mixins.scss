@@ -1,9 +1,18 @@
 /*------------------------------------*\
-    //Mixins
+    ::Mixins
+    ----------------------------------*
+    ::Nav Foot
+    ::Placeholder Color
+    ::@Font Face Shortener
+    ::Media Queries
+    ::Changing grid-column to col
+    ::Sticky Footer
+    ::Dropdown Nav
+    ::Nested Nav
 \*------------------------------------*/
 
 /*------------------------------------*\
-    //Placeholder Color
+    ::Placeholder Color
 \*------------------------------------*/
 @mixin input-placeholder {
     &.placeholder { @content; }
@@ -14,7 +23,7 @@
 }
 
 /*------------------------------------*\
-    //@Font Face Shortener
+    ::@Font Face Shortener
 \*------------------------------------*/
 //Usage:
 //Descript:
@@ -42,7 +51,7 @@
 }
 
 /*------------------------------------*\
-    //Media Queries
+    ::Media Queries
 \*------------------------------------*/
 //Usage:
 // @include bp($max: 600px){ body { background:#000 } }
@@ -67,7 +76,7 @@
 }
 
 /*------------------------------------*\
-    //Changing grid-column to col
+    ::Changing grid-column to col
 \*------------------------------------*/
 
 //Just @include col(x);
@@ -76,7 +85,7 @@
 }
 
 /*------------------------------------*\
-    //Sticky Footer
+    ::Sticky Footer
 \*------------------------------------*/
 
 // Use this mixin to make the footer sticky.
@@ -133,7 +142,7 @@
 }
 
 /*------------------------------------*\
-    //Dropdown Nav
+    ::Dropdown Nav
 \*------------------------------------*/
 
 // Use this mixin to add basic dropdown nav styling.
@@ -253,7 +262,7 @@
 }//@mixin dripdown-nav
 
 /*------------------------------------*\
-    //Nested Nav
+    ::Nested Nav
 \*------------------------------------*/
 
 // Use this mixin to add basic nested nav styling.

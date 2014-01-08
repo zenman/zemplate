@@ -1,14 +1,14 @@
 /*------------------------------------*\
-    //Normalize.css v2.1.1  | git.io/normalize
+    ::Normalize.css v2.1.1  | git.io/normalize
     ------------------------------------*
-    //Base
-    //Links
-    //Typography
-    //Embedded
-    //Figures
-    //Forms
-    //Tables
-    //Wrappers
+    ::Base
+    ::Links
+    ::Typography
+    ::Embedded
+    ::Figures
+    ::Forms
+    ::Tables
+    ::Wrappers
 \*------------------------------------*/
 article,
 aside,
@@ -39,7 +39,7 @@ template {
 }
 
 /*------------------------------------*\
-    //Base
+    ::Base
 \*------------------------------------*/
 html {
     font-family: sans-serif;
@@ -56,7 +56,7 @@ body {
 }
 
 /*------------------------------------*\
-    //Links
+    ::Links
 \*------------------------------------*/
 a {
     background: transparent;
@@ -70,7 +70,7 @@ a:hover {
 }
 
 /*------------------------------------*\
-    //Typography
+    ::Typography
 \*------------------------------------*/
 h1 {
     font-size: 2em;
@@ -119,7 +119,7 @@ sub {
 }
 
 /*------------------------------------*\
-    //Embedded Content
+    ::Embedded Content
 \*------------------------------------*/
 img {
     border: 0;
@@ -129,14 +129,14 @@ svg:not(:root) {
 }
 
 /*------------------------------------*\
-    //Figures
+    ::Figures
 \*------------------------------------*/
 figure {
     margin: 0;
 }
 
 /*------------------------------------*\
-    //Forms
+    ::Forms
 \*------------------------------------*/
 fieldset {
     border: 1px solid #c0c0c0;
@@ -144,16 +144,16 @@ fieldset {
     padding: 0.35em 0.625em 0.75em;
 }
 legend {
-    border: 0; 
-    padding: 0; 
+    border: 0;
+    padding: 0;
 }
 button,
 input,
 select,
 textarea {
-    font-family: inherit; 
-    font-size: 100%; 
-    margin: 0; 
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
 }
 button,
 input {
@@ -164,11 +164,11 @@ select {
     text-transform: none;
 }
 button,
-html input[type="button"], 
+html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-    -webkit-appearance: button; 
-    cursor: pointer; 
+    -webkit-appearance: button;
+    cursor: pointer;
 }
 button[disabled],
 html input[disabled] {
@@ -176,13 +176,13 @@ html input[disabled] {
 }
 input[type="checkbox"],
 input[type="radio"] {
-    box-sizing: border-box; 
-    padding: 0; 
+    box-sizing: border-box;
+    padding: 0;
 }
 input[type="search"] {
-    -webkit-appearance: textfield; 
+    -webkit-appearance: textfield;
     -moz-box-sizing: content-box;
-    -webkit-box-sizing: content-box; 
+    -webkit-box-sizing: content-box;
     box-sizing: content-box;
 }
 input[type="search"]::-webkit-search-cancel-button,
@@ -195,12 +195,12 @@ input::-moz-focus-inner {
     padding: 0;
 }
 textarea {
-    overflow: auto; 
-    vertical-align: top; 
+    overflow: auto;
+    vertical-align: top;
 }
 
 /*------------------------------------*\
-    //Tables
+    ::Tables
 \*------------------------------------*/
 table {
     border-collapse: collapse;
@@ -208,7 +208,7 @@ table {
 }
 
 /*------------------------------------*\
-    //Wrappers
+    ::Wrappers
 \*------------------------------------*/
 [class*="__inner"] {
     @include grid-row;
