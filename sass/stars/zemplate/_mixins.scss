@@ -1,0 +1,335 @@
+/*------------------------------------*\
+    ::Mixins
+    ----------------------------------*
+    ::Nav Foot
+    ::Placeholder Color
+    ::@Font Face Shortener
+    ::Media Queries
+    ::Changing grid-column to col
+    ::Sticky Footer
+    ::Dropdown Nav
+    ::Nested Nav
+\*------------------------------------*/
+
+/*------------------------------------*\
+    ::Placeholder Color
+\*------------------------------------*/
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+/*------------------------------------*\
+    ::@Font Face Shortener
+\*------------------------------------*/
+//Usage:
+//Descript:
+
+@mixin font-face($fam, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
+  @font-face {
+    font-family: $fam;
+    font-weight: $weight;
+    font-style: $style;
+
+    @if $asset-pipeline == true {
+      src: font-url('fonts/#{$file-path}.eot');
+      src: font-url('fonts/#{$file-path}.eot?#iefix')          format('embedded-opentype'),
+           font-url('fonts/#{$file-path}.woff')                format('woff'),
+           font-url('fonts/#{$file-path}.ttf')                 format('truetype'),
+           font-url('fonts/#{$file-path}.svg##{$fam}') format('svg');
+    } @else {
+      src: url('fonts/#{$file-path}.eot');
+      src: url('fonts/#{$file-path}.eot?#iefix')               format('embedded-opentype'),
+           url('fonts/#{$file-path}.woff')                     format('woff'),
+           url('fonts/#{$file-path}.ttf')                      format('truetype'),
+           url('fonts/#{$file-path}.svg##{$fam}')      format('svg');
+    }
+  }
+}
+
+/*------------------------------------*\
+    ::Media Queries
+\*------------------------------------*/
+//Usage:
+// @include bp($max: 600px){ body { background:#000 } }
+// @include bp($min: 600px){ body { background:#fff } }
+// @include bp($min: 600px, $max: 600px){ body { background:#000 } }
+// @include bp($planetary){ body { background:#fff } }
+
+@mixin bp($media: false, $min: false, $max: false) {
+    @if $media {
+        @media only screen and (max-width: $media) { @content; }
+    }
+    @else if $min and $max {
+        @media only screen and (min-width: $min) and (max-width: $max) { @content; }
+    }
+    @else if $min {
+        @media only screen and (min-width: $min) { @content; }
+    }
+    @else if $max {
+        @media only screen and (max-width: $max) { @content; }
+    }
+
+}
+
+/*------------------------------------*\
+    ::Changing grid-column to col
+\*------------------------------------*/
+
+//Just @include col(x);
+@mixin col($columns, $last-column:false, $center:false, $offset:false, $push:false, $pull:false, $collapse:false, $float:left) {
+    @include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);
+}
+
+/*------------------------------------*\
+    ::Sticky Footer
+\*------------------------------------*/
+
+// Use this mixin to make the footer sticky.
+// Just add the following line somewhere in your stylesheet:
+//
+//      @include sticky-footer($footer-height:200px);
+//
+// See the following site for more info on the CSS:
+// http://css-tricks.com/snippets/css/sticky-footer/
+
+@mixin sticky-footer(
+    $footer-height: 200px,
+    $wrap-element: '.wrap',
+    $container-element: '.wrap',
+    $footer-element: '.footer',
+    $footer-inner-element: '.footer .inner'
+    ) {
+
+    html, body, #{$wrap-element} {
+        height: 100%;
+    }
+    #{$wrap-element} {
+        height: auto; min-height: 100%;
+    }
+    #{$container-element} {
+        padding-bottom: $footer-height;
+        display: inline-block;
+    }
+    #{$footer-element} {
+        position: relative;
+        height: $footer-height;
+        margin-top: -1 * $footer-height; //negative value of footer height
+        clear:both;
+    }
+    @if ($footer-inner-element != '') {
+        #{$footer-inner-element} {
+            height: 100%;
+        }
+    }
+    //clear fix
+    #{$container-element}:after {content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    //hides from IE-mac
+    * html #{$container-element} {
+        height: 1%;
+    }
+    #{$container-element} {
+        display: block;
+    }//end hide from IE-mac
+}
+
+/*------------------------------------*\
+    ::Dropdown Nav
+\*------------------------------------*/
+
+// Use this mixin to add basic dropdown nav styling.
+// Just add the following line within your styles,
+// changing the $nav-container appropriatly.
+//
+//  @include dropdown-nav($nav-container: '#nav');
+//
+// If $nav-container is not set, the mixin will nest
+// within it's parent. For example:
+//
+//      #nav { @include dropdown-nav }
+
+@mixin dropdown-nav($nav-container: '.nav') {
+
+    #{$nav-container} {
+        position: relative;
+        font-family: $fam-nav;
+        z-index: 10;
+
+        .inner {
+            overflow: visible;
+            margin: 0 auto;
+            float: none;
+        }
+        .inner ul {
+            float:left;
+        }
+        ul li {
+            position: relative;
+            list-style: none;
+            z-index: 2;
+        }
+        .menu {
+            margin-left:0;
+            padding-left:0;
+            >li {
+                padding:20px;
+                &:first-child {
+                    padding-left:0;
+                }
+            }
+        }
+        .sub-menu {
+            padding:0;
+        }
+        ul li a:link {
+            display: block;
+            text-decoration: none;
+            color: $g-color-link;
+        }
+        ul li a:visited {
+            color: $g-color-visited;
+        }
+        ul li a:hover {
+            color: $g-color-hover;
+        }
+        ul li a:active {
+            color: $g-color-active;
+        }
+        li {
+            float: left;
+            list-style: none;
+        }
+        li ul {
+            display: block;
+            position: absolute;
+            opacity: 0;
+        }
+        li:hover ul {
+            display: block;
+            opacity: 0;
+        }
+        li:hover ul li a:link {
+            color: $l-color-link;
+        }
+        li:hover ul li a:visited {
+            color: $l-color-visited;
+        }
+        li:hover ul li a:hover {
+            color: $l-color-hover;
+        }
+        li:hover ul li a:active {
+            color: $l-color-active;
+        }
+        li:hover li {
+            float: none;
+        }
+        ul li:hover ul {
+          opacity: 1;
+          visibility: visible;
+          -webkit-transition-delay: 0s, 0s;
+          -moz-transition-delay: 0s, 0s;
+          -o-transition-delay: 0s, 0s;
+          transition-delay: 0s, 0s;
+        }
+        ul ul {
+            visibility: hidden;
+            padding: 0;
+            background-color: $color-1;
+            -webkit-transition-property: opacity, visibility, background-color;
+            -moz-transition-property: opacity, visibility, background-color;
+            -o-transition-property: opacity, visibility, background-color;
+            transition-property: opacity, visibility, background-color;
+
+            -webkit-transition-duration: .2s, 0s;
+            -moz-transition-duration: .2s, 0s;
+            -o-transition-duration: .2s, 0s;
+            transition-duration: .2s, 0s;
+
+            -webkit-transition-delay: 0s, .2s;
+            -moz-transition-delay: 0s, .2s;
+            -o-transition-delay: 0s, .2s;
+            transition-delay: 0s, .2s;
+        }
+    }//(nav container)
+}//@mixin dripdown-nav
+
+/*------------------------------------*\
+    ::Nested Nav
+\*------------------------------------*/
+
+// Use this mixin to add basic nested nav styling.
+// Just add the following line within your styles,
+// changing the $nav-container appropriatly.
+//
+//      @include nested-nav($nav-container: '#nav');
+//
+// If $nav-container is not set, the mixin will nest
+// within it's parent. For example:
+//
+//      #nav { @include nested-nav }
+
+@mixin nested-nav($nav-container: '.nav') {
+
+    #{$nav-container} {
+        font-family: $fam-nav;
+        li {
+            float: left;
+            list-style: none;
+        }
+        li a:link,  li a:visited {
+            display: block;
+            text-decoration: none;
+        }
+        //global nav
+        ul.menu > li > a:link {
+            color: $g-2-color-link;
+        }
+        ul.menu > li > a:visited {
+            color: $g-2-color-visited;
+        }
+        ul.menu > li > a:hover {
+            color: $g-2-color-hover;
+        }
+        ul.menu > li > a:active {
+            color: $g-2-color-active;
+        }
+        ul.menu {
+            margin-left:0;
+            padding-left:0;
+            >li {
+                padding:20px;
+                &:first-child {
+                    padding-left:0;
+                }
+            }
+        }
+        //local nav
+        .sub-menu {
+            padding:0;
+            li {
+                float: left;
+                clear: both;
+            }
+            li a:link {
+                color: $l-2-color-link;
+            }
+            li a:visited {
+                color: $l-2-color-visited;
+            }
+            li a:hover {
+                color: $l-2-color-hover;
+            }
+            li a:active {
+                color: $l-2-color-active;
+            }
+        }//.sub-menu
+    }//(nav container)
+}//@mixin nested-nav

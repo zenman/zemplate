@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    ::Index SASS Controller
+    ----------------------------------*
+    ::Framework Customizations
+    ::Partial Imports
+        ::Frameworks
+        ::Stars
+\*------------------------------------*/
+
+/*------------------------------------*\
+    ::Framework Customizations
+\*------------------------------------*/
+$row-width: 1140px; //Sets the width of the rows for foundation (must be above all).
+
+/*------------------------------------*\
+    ::Partial Imports
+\*------------------------------------*/
+
+//this must go at the top (it adds the WordPress theme comment)
+@import "planets/wp/theme";
+
+/*------------------------------------*\
+    ::Frameworks
+\*------------------------------------*/
+@import "stars/foundation/scss/foundation.scss";
+
+
+@import "stars/zemplate/variables";
+@import "stars/zemplate/extends";
+@import "stars/zemplate/mixins";
+
+@import "stars/compass/css3";
+
+// @import "planets/layouts/*";
+
+// @import "moons/base/*";
+
+@import "moons/components/head";
+@import "moons/components/foot";
+@import "moons/components/nav_head";
+@import "moons/components/nav_foot";
+@import "moons/components/sidebar";
+
+// @import "comets/*";
+
+@import "debris/shame";
