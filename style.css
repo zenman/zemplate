@@ -4648,7 +4648,6 @@ th.hide-for-touch {
 /*------------------------------------*\
     ::Mixins
     ----------------------------------*
-    ::Nav Foot
     ::Placeholder Color
     ::@Font Face Shortener
     ::Media Queries
@@ -4672,7 +4671,7 @@ th.hide-for-touch {
     ::Sticky Footer
 \*------------------------------------*/
 /*------------------------------------*\
-    //Navigation
+    ::Navigation
 \*------------------------------------*/
 /*------------------------------------*\
     ::Header
@@ -4716,9 +4715,71 @@ html, body, .wrap {
 /*------------------------------------*\
     ::Nav in the Header
 \*------------------------------------*/
+.main-head--nav {
+  position: relative;
+  z-index: 10; }
+  .main-head--nav ul li {
+    display: block;
+    float: left;
+    list-style: none; }
+  .main-head--nav ul ul {
+    visibility: hidden;
+    padding: 0;
+    -webkit-transition-property: opacity, visibility, background-color;
+    -moz-transition-property: opacity, visibility, background-color;
+    -o-transition-property: opacity, visibility, background-color;
+    transition-property: opacity, visibility, background-color;
+    -webkit-transition-duration: 0.3s, 0s;
+    -moz-transition-duration: 0.3s, 0s;
+    -ms-transition-duration: 0.3s, 0s;
+    -o-transition-duration: 0.3s, 0s;
+    transition-duration: 0.3s, 0s;
+    -webkit-transition-delay: 0s, 0.3s;
+    -moz-transition-delay: 0s, 0.3s;
+    -ms-transition-delay: 0s, 0.3s;
+    -o-transition-delay: 0s, 0.3s;
+    transition-delay: 0s, 0.3s; }
+    .main-head--nav ul ul:after {
+      content: "";
+      position: absolute;
+      top: -1.2em;
+      bottom: -50px;
+      left: -50px;
+      right: -50px;
+      background-color: black;
+      opacity: 0;
+      z-index: -1; }
+  .main-head--nav li ul {
+    display: block;
+    position: absolute;
+    opacity: 0; }
+  .main-head--nav li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition-delay: 0s, 0s;
+    -moz-transition-delay: 0s, 0s;
+    -o-transition-delay: 0s, 0s;
+    transition-delay: 0s, 0s; }
+
 /*------------------------------------*\
     ::Nav in the Footer
 \*------------------------------------*/
+.main-foot--nav li {
+  float: left;
+  list-style: none; }
+  .main-foot--nav li ul {
+    padding: 0; }
+  .main-foot--nav li li {
+    clear: both; }
+  .main-foot--nav li a {
+    display: block;
+    text-decoration: none; }
+.main-foot--nav ul ul {
+  padding: 0; }
+  .main-foot--nav ul ul li {
+    float: left;
+    clear: both; }
+
 /*------------------------------------*\
     ::Sidebar
 \*------------------------------------*/

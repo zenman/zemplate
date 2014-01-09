@@ -1,7 +1,6 @@
 /*------------------------------------*\
     ::Mixins
     ----------------------------------*
-    ::Nav Foot
     ::Placeholder Color
     ::@Font Face Shortener
     ::Media Queries
@@ -141,7 +140,7 @@
 }
 
 /*------------------------------------*\
-    //Navigation
+    ::Navigation
 \*------------------------------------*/
 
 // Use this mixin to add basic nav styling.
@@ -224,8 +223,8 @@
                 }
                 &:hover {
                     ul {
-                        // opacity: 1;
-                        // visibility: visible;
+                        opacity: 1;
+                        visibility: visible;
                         @if $fade {
                             -webkit-transition-delay: 0s, 0s;
                             -moz-transition-delay: 0s, 0s;

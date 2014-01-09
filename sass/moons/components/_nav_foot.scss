@@ -1,7 +1,7 @@
 /*------------------------------------*\
     ::Nav in the Footer
 \*------------------------------------*/
-// @include nav(
-// 	$type: 'nested',          		//nav type: dropdown or nested
-// 	$nav-container: '.main-foot--nav'  //.nav by default
-// );
+@include nav(
+    $type: 'nested',            	  //nav type: dropdown or nested
+    $nav-container: '.main-foot--nav' //.nav by default
+);
