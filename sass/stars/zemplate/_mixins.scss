@@ -7,8 +7,7 @@
     ::Media Queries
     ::Changing grid-column to col
     ::Sticky Footer
-    ::Dropdown Nav
-    ::Nested Nav
+    ::Nav
 \*------------------------------------*/
 
 /*------------------------------------*\
@@ -142,194 +141,129 @@
 }
 
 /*------------------------------------*\
-    ::Dropdown Nav
+    //Navigation
 \*------------------------------------*/
 
-// Use this mixin to add basic dropdown nav styling.
-// Just add the following line within your styles,
-// changing the $nav-container appropriatly.
+// Use this mixin to add basic nav styling.
+// Just add the following code within your styles.
 //
-//  @include dropdown-nav($nav-container: '#nav');
 //
-// If $nav-container is not set, the mixin will nest
-// within it's parent. For example:
-//
-//      #nav { @include dropdown-nav }
+//      @include nav(
+//          $type: 'dropdown',          //nav type: dropdown or nested
+//          $nav-container: '.nav',     //.nav by default
+//          $fade: .3s,                 //fade speed (take out for no animation)
+//          $easy-hover: 50px,          //amount of invisible overflow for sub menu (take out to not use)
+//          $easy-hover-top: 0          //set top easy-hover value (you can also set $easy-hover-right, -bottom, and -left separately)
+//      );
 
-@mixin dropdown-nav($nav-container: '.nav') {
-
-    #{$nav-container} {
-        position: relative;
-        font-family: $fam-nav;
-        z-index: 10;
-
-        .inner {
-            overflow: visible;
-            margin: 0 auto;
-            float: none;
-        }
-        .inner ul {
-            float:left;
-        }
-        ul li {
+@mixin nav(
+    $type: 'dropdown',
+    $nav-container: '.nav',
+    $fade: false,
+    $easy-hover: false,
+    $easy-hover-top: false,
+    $easy-hover-right: false,
+    $easy-hover-bottom: false,
+    $easy-hover-left: false
+){
+    @if $type == dropdown {
+        #{$nav-container} {
             position: relative;
-            list-style: none;
-            z-index: 2;
-        }
-        .menu {
-            margin-left:0;
-            padding-left:0;
-            >li {
-                padding:20px;
-                &:first-child {
-                    padding-left:0;
+            z-index: 10;
+            ul {
+                li {
+                    display: block;
+                    float: left;
+                    list-style: none;
+                }
+                ul {
+                    visibility: hidden;
+                    padding: 0;
+                    @if $fade {
+                        @include transition-property(#{opacity, visibility, background-color});
+                        @include transition-duration(#{$fade, 0s});
+                        @include transition-delay(#{0s, $fade});
+                    }
+                    @if $easy-hover {
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            @if $easy-hover-top {
+                                top: -1 * $easy-hover-top;
+                            } @else {
+                                top: -1 * $easy-hover;
+                            }
+                            @if $easy-hover-bottom {
+                                bottom:  -1 * $easy-hover-bottom;
+                            } @else {
+                                bottom:  -1 * $easy-hover;
+                            }
+                            @if $easy-hover-left {
+                                left:  -1 * $easy-hover-left;
+                            } @else {
+                                left:  -1 * $easy-hover;
+                            }
+                            @if $easy-hover-right {
+                                right:  -1 * $easy-hover-right;
+                            } @else {
+                                right:  -1 * $easy-hover;
+                            }
+                            background-color: #000;
+                            opacity: 0;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+            //local nav
+            li {
+                ul {
+                    display: block;
+                    position: absolute;
+                    opacity: 0;
+                }
+                &:hover {
+                    ul {
+                        // opacity: 1;
+                        // visibility: visible;
+                        @if $fade {
+                            -webkit-transition-delay: 0s, 0s;
+                            -moz-transition-delay: 0s, 0s;
+                            -o-transition-delay: 0s, 0s;
+                            transition-delay: 0s, 0s;
+                        }
+                    }
                 }
             }
         }
-        .sub-menu {
-            padding:0;
-        }
-        ul li a:link {
-            display: block;
-            text-decoration: none;
-            color: $g-color-link;
-        }
-        ul li a:visited {
-            color: $g-color-visited;
-        }
-        ul li a:hover {
-            color: $g-color-hover;
-        }
-        ul li a:active {
-            color: $g-color-active;
-        }
-        li {
-            float: left;
-            list-style: none;
-        }
-        li ul {
-            display: block;
-            position: absolute;
-            opacity: 0;
-        }
-        li:hover ul {
-            display: block;
-            opacity: 0;
-        }
-        li:hover ul li a:link {
-            color: $l-color-link;
-        }
-        li:hover ul li a:visited {
-            color: $l-color-visited;
-        }
-        li:hover ul li a:hover {
-            color: $l-color-hover;
-        }
-        li:hover ul li a:active {
-            color: $l-color-active;
-        }
-        li:hover li {
-            float: none;
-        }
-        ul li:hover ul {
-          opacity: 1;
-          visibility: visible;
-          -webkit-transition-delay: 0s, 0s;
-          -moz-transition-delay: 0s, 0s;
-          -o-transition-delay: 0s, 0s;
-          transition-delay: 0s, 0s;
-        }
-        ul ul {
-            visibility: hidden;
-            padding: 0;
-            background-color: $color-1;
-            -webkit-transition-property: opacity, visibility, background-color;
-            -moz-transition-property: opacity, visibility, background-color;
-            -o-transition-property: opacity, visibility, background-color;
-            transition-property: opacity, visibility, background-color;
-
-            -webkit-transition-duration: .2s, 0s;
-            -moz-transition-duration: .2s, 0s;
-            -o-transition-duration: .2s, 0s;
-            transition-duration: .2s, 0s;
-
-            -webkit-transition-delay: 0s, .2s;
-            -moz-transition-delay: 0s, .2s;
-            -o-transition-delay: 0s, .2s;
-            transition-delay: 0s, .2s;
-        }
-    }//(nav container)
-}//@mixin dripdown-nav
-
-/*------------------------------------*\
-    ::Nested Nav
-\*------------------------------------*/
-
-// Use this mixin to add basic nested nav styling.
-// Just add the following line within your styles,
-// changing the $nav-container appropriatly.
-//
-//      @include nested-nav($nav-container: '#nav');
-//
-// If $nav-container is not set, the mixin will nest
-// within it's parent. For example:
-//
-//      #nav { @include nested-nav }
-
-@mixin nested-nav($nav-container: '.nav') {
-
-    #{$nav-container} {
-        font-family: $fam-nav;
-        li {
-            float: left;
-            list-style: none;
-        }
-        li a:link,  li a:visited {
-            display: block;
-            text-decoration: none;
-        }
-        //global nav
-        ul.menu > li > a:link {
-            color: $g-2-color-link;
-        }
-        ul.menu > li > a:visited {
-            color: $g-2-color-visited;
-        }
-        ul.menu > li > a:hover {
-            color: $g-2-color-hover;
-        }
-        ul.menu > li > a:active {
-            color: $g-2-color-active;
-        }
-        ul.menu {
-            margin-left:0;
-            padding-left:0;
-            >li {
-                padding:20px;
-                &:first-child {
-                    padding-left:0;
-                }
-            }
-        }
-        //local nav
-        .sub-menu {
-            padding:0;
+    }
+    @if $type == 'nested' {
+        #{$nav-container} {
             li {
                 float: left;
-                clear: both;
+                list-style: none;
+                ul {
+                    padding: 0;
+                }
+                li {
+                    clear: both;
+                }
+                a {
+                    display: block;
+                    text-decoration: none;
+                }
             }
-            li a:link {
-                color: $l-2-color-link;
+            //global nav
+            ul {
+                //local nav
+                ul {
+                    padding:0;
+                    li {
+                        float: left;
+                        clear: both;
+                    }
+                }
             }
-            li a:visited {
-                color: $l-2-color-visited;
-            }
-            li a:hover {
-                color: $l-2-color-hover;
-            }
-            li a:active {
-                color: $l-2-color-active;
-            }
-        }//.sub-menu
-    }//(nav container)
-}//@mixin nested-nav
+        }
+    }
+}

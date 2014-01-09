@@ -1,4 +1,10 @@
 /*------------------------------------*\
     ::Nav in the Header
 \*------------------------------------*/
-@include dropdown-nav($nav-container: '.main-head--nav'); //add basic dropdown navigation styling
+// @include nav(
+// 	$type: 'dropdown',          		//nav type: dropdown or nested
+// 	$nav-container: '.main-head--nav',  //.nav by default
+// 	$fade: .3s,                 		//fade speed (take out for no animation)
+// 	$easy-hover: 50px,          		//amount of invisible overflow for sub menu (take out to not use)
+// 	$easy-hover-top: 0          		//set top easy-hover value (you can also set $easy-hover-right, -bottom, and -left separately)
+// );

@@ -1,4 +1,7 @@
 /*------------------------------------*\
     ::Nav in the Footer
 \*------------------------------------*/
-@include nested-nav($nav-container: '.main-foot--nav'); //add basic nested footer navigation styling
+// @include nav(
+// 	$type: 'nested',          		//nav type: dropdown or nested
+// 	$nav-container: '.main-foot--nav'  //.nav by default
+// );

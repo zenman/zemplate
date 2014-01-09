@@ -4654,8 +4654,7 @@ th.hide-for-touch {
     ::Media Queries
     ::Changing grid-column to col
     ::Sticky Footer
-    ::Dropdown Nav
-    ::Nested Nav
+    ::Nav
 \*------------------------------------*/
 /*------------------------------------*\
     ::Placeholder Color
@@ -4673,10 +4672,7 @@ th.hide-for-touch {
     ::Sticky Footer
 \*------------------------------------*/
 /*------------------------------------*\
-    ::Dropdown Nav
-\*------------------------------------*/
-/*------------------------------------*\
-    ::Nested Nav
+    //Navigation
 \*------------------------------------*/
 /*------------------------------------*\
     ::Header
@@ -4684,43 +4680,6 @@ th.hide-for-touch {
 /*------------------------------------*\
     ::Footer
 \*------------------------------------*/
-.main-foot--nav {
-  font-family: palatino, serif; }
-  .main-foot--nav li {
-    float: left;
-    list-style: none; }
-  .main-foot--nav li a:link, .main-foot--nav li a:visited {
-    display: block;
-    text-decoration: none; }
-  .main-foot--nav ul.menu > li > a:link {
-    color: #007dab; }
-  .main-foot--nav ul.menu > li > a:visited {
-    color: #007dab; }
-  .main-foot--nav ul.menu > li > a:hover {
-    color: #12c0ff; }
-  .main-foot--nav ul.menu > li > a:active {
-    color: #12c0ff; }
-  .main-foot--nav ul.menu {
-    margin-left: 0;
-    padding-left: 0; }
-    .main-foot--nav ul.menu > li {
-      padding: 20px; }
-      .main-foot--nav ul.menu > li:first-child {
-        padding-left: 0; }
-  .main-foot--nav .sub-menu {
-    padding: 0; }
-    .main-foot--nav .sub-menu li {
-      float: left;
-      clear: both; }
-    .main-foot--nav .sub-menu li a:link {
-      color: #f79021; }
-    .main-foot--nav .sub-menu li a:visited {
-      color: #f79021; }
-    .main-foot--nav .sub-menu li a:hover {
-      color: #fbc183; }
-    .main-foot--nav .sub-menu li a:active {
-      color: #f9a852; }
-
 html, body, .wrap {
   height: 100%; }
 
@@ -4757,123 +4716,9 @@ html, body, .wrap {
 /*------------------------------------*\
     ::Nav in the Header
 \*------------------------------------*/
-.main-head--nav {
-  position: relative;
-  font-family: palatino, serif;
-  z-index: 10; }
-  .main-head--nav .inner {
-    overflow: visible;
-    margin: 0 auto;
-    float: none; }
-  .main-head--nav .inner ul {
-    float: left; }
-  .main-head--nav ul li {
-    position: relative;
-    list-style: none;
-    z-index: 2; }
-  .main-head--nav .menu {
-    margin-left: 0;
-    padding-left: 0; }
-    .main-head--nav .menu > li {
-      padding: 20px; }
-      .main-head--nav .menu > li:first-child {
-        padding-left: 0; }
-  .main-head--nav .sub-menu {
-    padding: 0; }
-  .main-head--nav ul li a:link {
-    display: block;
-    text-decoration: none;
-    color: #f79021; }
-  .main-head--nav ul li a:visited {
-    color: #f79021; }
-  .main-head--nav ul li a:hover {
-    color: #fbc183; }
-  .main-head--nav ul li a:active {
-    color: #fcdab5; }
-  .main-head--nav li {
-    float: left;
-    list-style: none; }
-  .main-head--nav li ul {
-    display: block;
-    position: absolute;
-    opacity: 0; }
-  .main-head--nav li:hover ul {
-    display: block;
-    opacity: 0; }
-  .main-head--nav li:hover ul li a:link {
-    color: #f79021; }
-  .main-head--nav li:hover ul li a:visited {
-    color: #f79021; }
-  .main-head--nav li:hover ul li a:hover {
-    color: #fbc183; }
-  .main-head--nav li:hover ul li a:active {
-    color: #fcdab5; }
-  .main-head--nav li:hover li {
-    float: none; }
-  .main-head--nav ul li:hover ul {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition-delay: 0s, 0s;
-    -moz-transition-delay: 0s, 0s;
-    -o-transition-delay: 0s, 0s;
-    transition-delay: 0s, 0s; }
-  .main-head--nav ul ul {
-    visibility: hidden;
-    padding: 0;
-    background-color: #2b2b2b;
-    -webkit-transition-property: opacity, visibility, background-color;
-    -moz-transition-property: opacity, visibility, background-color;
-    -o-transition-property: opacity, visibility, background-color;
-    transition-property: opacity, visibility, background-color;
-    -webkit-transition-duration: 0.2s, 0s;
-    -moz-transition-duration: 0.2s, 0s;
-    -o-transition-duration: 0.2s, 0s;
-    transition-duration: 0.2s, 0s;
-    -webkit-transition-delay: 0s, 0.2s;
-    -moz-transition-delay: 0s, 0.2s;
-    -o-transition-delay: 0s, 0.2s;
-    transition-delay: 0s, 0.2s; }
-
 /*------------------------------------*\
     ::Nav in the Footer
 \*------------------------------------*/
-.main-foot--nav {
-  font-family: palatino, serif; }
-  .main-foot--nav li {
-    float: left;
-    list-style: none; }
-  .main-foot--nav li a:link, .main-foot--nav li a:visited {
-    display: block;
-    text-decoration: none; }
-  .main-foot--nav ul.menu > li > a:link {
-    color: #007dab; }
-  .main-foot--nav ul.menu > li > a:visited {
-    color: #007dab; }
-  .main-foot--nav ul.menu > li > a:hover {
-    color: #12c0ff; }
-  .main-foot--nav ul.menu > li > a:active {
-    color: #12c0ff; }
-  .main-foot--nav ul.menu {
-    margin-left: 0;
-    padding-left: 0; }
-    .main-foot--nav ul.menu > li {
-      padding: 20px; }
-      .main-foot--nav ul.menu > li:first-child {
-        padding-left: 0; }
-  .main-foot--nav .sub-menu {
-    padding: 0; }
-    .main-foot--nav .sub-menu li {
-      float: left;
-      clear: both; }
-    .main-foot--nav .sub-menu li a:link {
-      color: #f79021; }
-    .main-foot--nav .sub-menu li a:visited {
-      color: #f79021; }
-    .main-foot--nav .sub-menu li a:hover {
-      color: #fbc183; }
-    .main-foot--nav .sub-menu li a:active {
-      color: #f9a852; }
-
 /*------------------------------------*\
     ::Sidebar
 \*------------------------------------*/
