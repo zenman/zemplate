@@ -91,52 +91,27 @@
 //
 //      @include sticky-footer($footer-height:200px);
 //
-// See the following site for more info on the CSS:
-// http://css-tricks.com/snippets/css/sticky-footer/
 
 @mixin sticky-footer(
-    $footer-height: 200px,
-    $wrap-element: '.wrap',
-    $container-element: '.wrap',
-    $footer-element: '.footer',
-    $footer-inner-element: '.footer .inner'
-    ) {
+    $wrap: '.sticky-footer',
+    $row:  '.sticky-footer__row',
+    $flex: '.sticky-footer__row--flex'){
 
-    html, body, #{$wrap-element} {
+    html, body {
         height: 100%;
     }
-    #{$wrap-element} {
-        height: auto; min-height: 100%;
+    #{$wrap} {
+        display: table;
+        height: 100%;
+        width: 100%;
     }
-    #{$container-element} {
-        padding-bottom: $footer-height;
-        display: inline-block;
+    #{$row} {
+        display: table-row;
+        height: 1px;
     }
-    #{$footer-element} {
-        position: relative;
-        height: $footer-height;
-        margin-top: -1 * $footer-height; //negative value of footer height
-        clear:both;
+    #{$flex} {
+        height: auto;
     }
-    @if ($footer-inner-element != '') {
-        #{$footer-inner-element} {
-            height: 100%;
-        }
-    }
-    //clear fix
-    #{$container-element}:after {content: ".";
-        display: block;
-        height: 0;
-        clear: both;
-        visibility: hidden;
-    }
-    //hides from IE-mac
-    * html #{$container-element} {
-        height: 1%;
-    }
-    #{$container-element} {
-        display: block;
-    }//end hide from IE-mac
 }
 
 /*------------------------------------*\

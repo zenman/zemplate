@@ -4679,50 +4679,32 @@ th.hide-for-touch {
 /*------------------------------------*\
     ::Footer
 \*------------------------------------*/
-html, body, .wrap {
+html, body {
   height: 100%; }
 
-.wrap {
-  height: auto;
-  min-height: 100%; }
+.wrap-all-the-things {
+  display: table;
+  height: 100%;
+  width: 100%; }
 
-[class~="main"] {
-  padding-bottom: 200px;
-  display: inline-block; }
+.main-head, .torso, .main-foot {
+  display: table-row;
+  height: 1px; }
 
-.main-foot {
-  position: relative;
-  height: 200px;
-  margin-top: -200px;
-  clear: both; }
-
-.main-foot--nav {
-  height: 100%; }
-
-[class~="main"]:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden; }
-
-* html [class~="main"] {
-  height: 1%; }
-
-[class~="main"] {
-  display: block; }
+.torso {
+  height: auto; }
 
 /*------------------------------------*\
     ::Nav in the Header
 \*------------------------------------*/
-.main-head--nav {
+.torso-head--nav {
   position: relative;
   z-index: 10; }
-  .main-head--nav ul li {
+  .torso-head--nav ul li {
     display: block;
     float: left;
     list-style: none; }
-  .main-head--nav ul ul {
+  .torso-head--nav ul ul {
     visibility: hidden;
     padding: 0;
     -webkit-transition-property: opacity, visibility, background-color;
@@ -4739,7 +4721,7 @@ html, body, .wrap {
     -ms-transition-delay: 0s, 0.3s;
     -o-transition-delay: 0s, 0.3s;
     transition-delay: 0s, 0.3s; }
-    .main-head--nav ul ul:after {
+    .torso-head--nav ul ul:after {
       content: "";
       position: absolute;
       top: -1.2em;
@@ -4749,11 +4731,11 @@ html, body, .wrap {
       background-color: black;
       opacity: 0;
       z-index: -1; }
-  .main-head--nav li ul {
+  .torso-head--nav li ul {
     display: block;
     position: absolute;
     opacity: 0; }
-  .main-head--nav li:hover ul {
+  .torso-head--nav li:hover ul {
     opacity: 1;
     visibility: visible;
     -webkit-transition-delay: 0s, 0s;
@@ -4764,19 +4746,19 @@ html, body, .wrap {
 /*------------------------------------*\
     ::Nav in the Footer
 \*------------------------------------*/
-.main-foot--nav li {
+.torso-foot--nav li {
   float: left;
   list-style: none; }
-  .main-foot--nav li ul {
+  .torso-foot--nav li ul {
     padding: 0; }
-  .main-foot--nav li li {
+  .torso-foot--nav li li {
     clear: both; }
-  .main-foot--nav li a {
+  .torso-foot--nav li a {
     display: block;
     text-decoration: none; }
-.main-foot--nav ul ul {
+.torso-foot--nav ul ul {
   padding: 0; }
-  .main-foot--nav ul ul li {
+  .torso-foot--nav ul ul li {
     float: left;
     clear: both; }
 

@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-<section class="main fourofour-main">
+<section class="torso fourofour-torso">
 	<div class="fourofour__inner">
 	    <h1>These aren't the pages you're looking for</h1>
 	    <p>Use the navigation to steer you back in the direction of a real page!</p>

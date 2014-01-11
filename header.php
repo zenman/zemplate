@@ -28,8 +28,7 @@
 </head>
 
 <body <?php body_class('page-'.$post->post_name); ?>>
-
-<div class="wrap">
+<div class="wrap-all-the-things">
     <header class="main-head">
         <div class="main-head__inner">
             <div class="main-head--nav">

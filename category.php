@@ -9,9 +9,9 @@
 
 get_header(); ?>
 
-<section class="main cat-main--sidebar">
-    <div class="cat-main__inner">
-        <div class="cat-main__posts">
+<section class="torso cat-torso--sidebar">
+    <div class="cat-torso__inner">
+        <div class="cat-torso__posts">
             <h1><?php echo single_cat_title('', false); ?></h1>
             <?php
                 while (have_posts()) : the_post();
@@ -19,10 +19,10 @@ get_header(); ?>
                 endwhile;
             ?>
         </div>
-        <aside class="cat-main__sidebar">
+        <aside class="cat-torso__sidebar">
             <?php get_sidebar(); ?>
         </aside><!-- //sidebar -->
     </div> <!-- //__inner -->
-</section><!-- //cat-main -->
+</section><!-- //cat-torso -->
 
 <?php get_footer(); ?>

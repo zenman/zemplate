@@ -376,3 +376,27 @@ function add_cat_to_archives(){
         }
     }
 }
+
+/*------------------------------------*\
+    //Show Templates
+\*------------------------------------*/
+
+// /*
+//  * Add a bar at the bottom of the page that shows the template being used.
+//  */
+// function show_template() {
+//     global $template;
+//     $style = '
+//         background-color:rgba(0,0,0,1);
+//         position:fixed;
+//         bottom:0;
+//         right:0;
+//         left:0;
+//         color:#fff;
+//         opacity:.2;
+//         padding:.5em;
+//         font-size:.6em;
+//     ';
+//     echo '<div style="'.$style.'">'.$template.'</div>';
+// }
+// add_action('wp_footer', 'show_template');

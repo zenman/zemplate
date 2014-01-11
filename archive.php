@@ -14,9 +14,9 @@
 
 get_header(); ?>
 
-<section class="main arch-main--sidebar">
-    <div class="arch-main__inner">
-        <div class="arch-main__posts">
+<section class="torso arch-torso--sidebar">
+    <div class="arch-torso__inner">
+        <div class="arch-torso__posts">
             <?php if (have_posts()): ?>
                 <h1><?php
                     if (is_day()) :
@@ -37,7 +37,7 @@ get_header(); ?>
             ?>
         <?php endif; ?>
     </div> <!-- //posts -->
-    <aside class="arch-main__sidebar">
+    <aside class="main-torso__sidebar">
         <?php get_sidebar(); ?>
     </aside><!-- //sidebar -->
 </div>

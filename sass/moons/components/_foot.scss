@@ -2,9 +2,7 @@
     ::Footer
 \*------------------------------------*/
 @include sticky-footer(
-    $footer-height:         200px,              //height of the footer
-    $wrap-element:          '.wrap',            //wrapper of all but the footer
-    $container-element:     '[class~="main"]',   //element the footer will bump into
-    $footer-element:        '.main-foot',       //the footer element
-    $footer-inner-element:  '.main-foot--nav'   //optional: inner footer element
+    $wrap: '.wrap-all-the-things',
+    $row:  '.main-head, .torso, .main-foot',
+    $flex: '.torso'
 );

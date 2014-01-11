@@ -16,14 +16,14 @@
 
 get_header(); ?>
 
-    <section class="main page-main">
+    <section class="torso page-torso">
 
-        <article class="page-main--content">
+        <article class="page-torso--content">
 
 			<?php the_content(); ?>
 
         </article><!-- //content -->
 
-    </section><!-- //page-main -->
+    </section><!-- //page-torso -->
 
 <?php get_footer(); ?>

@@ -9,9 +9,9 @@
 
 get_header(); ?>
 
-<section class="main tag-main--sidebar">
-    <div class="tag-main__inner">
-        <div class="tag-main__posts">
+<section class="torso tag-torso--sidebar">
+    <div class="tag-torso__inner">
+        <div class="tag-torso__posts">
 		    <h1><?php echo 'Tag Archives: ' . single_tag_title('', false); ?></h1>
 		    <?php
                 while (have_posts()) : the_post();
@@ -19,7 +19,7 @@ get_header(); ?>
                 endwhile;
 		    ?>
 		</div> <!-- //__posts -->
-		<aside class="tag-main__sidebar">
+		<aside class="tag-torso__sidebar">
 		    <?php get_sidebar(); ?>
 		</aside>
 	</div> <!-- //__inner -->

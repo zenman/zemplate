@@ -10,9 +10,9 @@
 get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-    <section class="main single-main--sidebar">
-        <div class="single-main__inner">
-            <article class="single-main__content--post">
+    <section class="torso single-torso--sidebar">
+        <div class="single-torso__inner">
+            <article class="single-torso__content--post">
                 <h1><?php the_title(); ?></h1>
 
                 <div class="post__posted">
@@ -34,12 +34,12 @@ get_header(); ?>
                 </div>  <!-- //comments -->
             </article> <!-- //post -->
 
-            <aside class="single-main__sidebar">
+            <aside class="single-torso__sidebar">
                 <?php get_sidebar(); ?>
             </aside><!-- //sidebar -->
 
         </div> <!-- //__inner -->
-    </section><!-- // main -->
+    </section><!-- // torso -->
 <?php endwhile; // end of the loop. ?>
 
 <?php get_footer(); ?>

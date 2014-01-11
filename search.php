@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-<section class="main search-main">
-    <div class="search-main__inner">
+<section class="torso search-torso">
+    <div class="search-torso__inner">
         <?php if (have_posts()) : ?>
             <h3>Not what you're looking for? Search again</h3>
             <?php get_search_form(); ?>
