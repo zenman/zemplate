@@ -11,8 +11,8 @@
  */
 ?>
 
-    <footer class="main-foot">
-        <div class="main-foot--nav">
+    <footer class="page-foot">
+        <div class="page-foot__nav">
             <div class="nav__inner">
                 <?php wp_nav_menu(); ?>
             </div>
