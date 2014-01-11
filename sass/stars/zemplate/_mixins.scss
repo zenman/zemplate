@@ -25,27 +25,20 @@
 \*------------------------------------*/
 //Usage:
 //Descript:
+@mixin font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+    @font-face {
+        font-family: '#{$font-family}';
 
-@mixin font-face($fam, $file-path, $weight: normal, $style: normal, $asset-pipeline: false ) {
-  @font-face {
-    font-family: $fam;
-    font-weight: $weight;
-    font-style: $style;
+        src: font-url('#{$font-filename}.eot');
+        src: font-url('#{$font-filename}.eot?#iefix') format('embedded-opentype'),
+            font-url('#{$font-filename}.woff') format('woff'),
+              font-url('#{$font-filename}.ttf') format('truetype'),
+              font-url('#{$font-filename}.svg##{$font-family}') format('svg');
 
-    @if $asset-pipeline == true {
-      src: font-url('fonts/#{$file-path}.eot');
-      src: font-url('fonts/#{$file-path}.eot?#iefix')          format('embedded-opentype'),
-           font-url('fonts/#{$file-path}.woff')                format('woff'),
-           font-url('fonts/#{$file-path}.ttf')                 format('truetype'),
-           font-url('fonts/#{$file-path}.svg##{$fam}') format('svg');
-    } @else {
-      src: url('fonts/#{$file-path}.eot');
-      src: url('fonts/#{$file-path}.eot?#iefix')               format('embedded-opentype'),
-           url('fonts/#{$file-path}.woff')                     format('woff'),
-           url('fonts/#{$file-path}.ttf')                      format('truetype'),
-           url('fonts/#{$file-path}.svg##{$fam}')      format('svg');
+        font-weight: $font-weight;
+        font-style: $font-style;
+        font-stretch: $font-stretch;
     }
-  }
 }
 
 /*------------------------------------*\
