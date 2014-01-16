@@ -106,18 +106,6 @@ function replace_excerpt($content) {
 add_filter('the_excerpt', 'replace_excerpt');
 
 /*------------------------------------*\
-    //Blank Search Fix
-\*------------------------------------*/
-if(!is_admin()){
-    add_action('init', 'search_query_fix');
-    function search_query_fix(){
-        if(isset($_GET['s']) && $_GET['s']==''){
-            $_GET['s']=' ';
-        }
-    }
-}
-
-/*------------------------------------*\
     //More Control over Comments
 \*------------------------------------*/
 //Usage: <?php wp_list_comments('type=comment&callback=mytheme_comment'); ? >

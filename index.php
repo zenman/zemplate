@@ -22,6 +22,14 @@ get_header(); ?>
 
 			<?php the_content(); ?>
 
+			<?php if(isset($_GET['s']) && $_GET['s']==''): ?>
+
+				<h1>Search:</h1>
+				
+				<?php get_search_form(); ?>
+
+			<?php endif; ?>
+
         </article><!-- //content -->
 
     </section><!-- //page-torso -->
