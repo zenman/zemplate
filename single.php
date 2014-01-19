@@ -12,7 +12,7 @@ get_header(); ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
     <section class="torso single-torso--sidebar">
         <div class="single-torso__inner">
-            <article class="single-torso__content--post">
+            <article class="single-torso__post">
                 <h1><?php the_title(); ?></h1>
 
                 <div class="post__posted">

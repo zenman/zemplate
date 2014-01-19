@@ -21,7 +21,7 @@ get_header(); ?>
             <article class="page-torso__content">
                 <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
-            </article><!-- //content -->
+            </article><!-- //__content -->
         </div> <!-- //__inner -->
     </section><!-- //page-torso -->
 

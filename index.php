@@ -18,7 +18,7 @@ get_header(); ?>
 
     <section class="torso page-torso">
 
-        <article class="page-torso--content">
+        <article class="page-torso__content">
 
 			<?php the_content(); ?>
 
