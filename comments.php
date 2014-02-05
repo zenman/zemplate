@@ -52,7 +52,7 @@ if (post_password_required())
 
     <?php $args = array(
             comment_notes_after => '',
-            comment_field => '<textarea placeholder="Comment" cols="45" rows="8" name="comment" aria-required="true"></textarea>'
+            comment_field => '<textarea placeholder="Comment" cols="45" rows="8" name="comment aria-required="true"></textarea>'
        );
         comment_form($args);
     ?>

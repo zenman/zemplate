@@ -16,15 +16,14 @@ get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-    <section class="torso page-torso">
+    <section class="main page-main">
         <div class="content__inner">
-            <article class="page-torso__content">
+            <article class="page-main__content">
                 <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
             </article><!-- //content -->
         </div> <!-- //__inner -->
-    </section><!-- //page-torso -->
-
+    </section><!-- //page-main -->
 <?php endwhile; ?>
 
 <?php get_footer(); ?>

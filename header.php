@@ -19,16 +19,19 @@
     <link rel="profile" href="http://gmpg.org/xfn/11" />
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
+    <script src="<?php bloginfo( 'template_url' ); ?>/js/css3-mediaqueries.js" type="text/javascript"></script>
+
     <!--[if lt IE 9]>
         <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <?php wp_head(); //mandatory ?>
-    <?php //get_template_part('template/parts/header', 'analytics'); ?>
+    <?php //ga_switch('000000000000000000000'); ?>
 </head>
 
 <body <?php body_class('page-'.$post->post_name); ?>>
-<div class="wrap-all-the-things">
+
+<div class="wrap">
     <header class="main-head">
         <div class="main-head__inner">
             <div class="main-head--nav">

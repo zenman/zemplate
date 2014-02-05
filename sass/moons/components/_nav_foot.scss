@@ -1,7 +1,0 @@
-/*------------------------------------*\
-    ::Nav in the Footer
-\*------------------------------------*/
-@include nav(
-    $type: 'nested',            	  //nav type: dropdown or nested
-    $nav-container: '.torso-foot--nav' //.nav by default
-);

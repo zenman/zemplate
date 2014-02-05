@@ -1,46 +1,38 @@
-/*------------------------------------*\
-    ::Index SASS Controller
-    ----------------------------------*
-    ::Framework Customizations
-    ::Partial Imports
-        ::Frameworks
-        ::Stars
-\*------------------------------------*/
-
-/*------------------------------------*\
-    ::Framework Customizations
-\*------------------------------------*/
-$row-width: 1140px; //Sets the width of the rows for foundation (must be above all).
-
-/*------------------------------------*\
-    ::Partial Imports
-\*------------------------------------*/
-
-//this must go at the top (it adds the WordPress theme comment)
-@import "planets/wp/theme";
-
-/*------------------------------------*\
-    ::Frameworks
-\*------------------------------------*/
-@import "stars/foundation/scss/foundation.scss";
+// /*------------------------------------*\
+//     $SASS Controller
+// \*------------------------------------*/
 
 
-@import "stars/zemplate/variables";
-@import "stars/zemplate/extends";
-@import "stars/zemplate/mixins";
+// /*------------------------------------*\
+//     //Framework Customizations
+// \*------------------------------------*/
+$row-width: 1140px;                             //Sets the width of the rows for foundation (must be above all).
 
-@import "stars/compass/css3";
+// /*------------------------------------*\
+//     //Partial Imports // Pulls in partial files. Remove what you don't need.
+// \*------------------------------------*/
 
-// @import "planets/layouts/*";
+@import
+    //wordpress
+    "settings/template",                        //wordpress's template stylesheet header (must come first)
 
-// @import "moons/base/*";
+    //frameworks
+    "compass",                                  //load the sass framework
 
-@import "moons/components/head";
-@import "moons/components/foot";
-@import "moons/components/nav_head";
-@import "moons/components/nav_foot";
-@import "moons/components/sidebar";
+    "framework/foundation/variables",           //Required Framework Partials
+    "framework/foundation/components/global",
 
-// @import "comets/*";
+    "framework/foundation/components/grid",     //Optional Framework Partials
 
-@import "debris/shame";
+    //settings
+    "settings/variables",                       //zemplate's variables
+    "settings/mixins",                          //zemplate's mixins
+    "settings/fonts",                           //@font-face RULES!
+
+    //styles
+    "partials/base",                            //normalize, all your globals are belong to us
+    "partials/anatomy",                         //header, footer, sidebar, and guts of the site
+    "partials/page",                            //styling specific to pages on the site
+    "partials/blog",                            //category, tag, archive, author, comment, search, etc.
+    //"partials/store",                         //uncomment to add ecommerce styling
+    "partials/shame";                           //shame on you if you put anything in here

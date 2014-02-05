@@ -9,8 +9,8 @@
 
 get_header(); ?>
 
-<section class="torso author-torso--sidebar">
-    <div class="author-torso__inner">
+<section class="main author-main--sidebar">
+    <div class="author-main__inner">
        <?php if ( have_posts() ) : ?>
 
             <?php //Queue the first post, that way we know what author we're dealing with (if that is the case). We reset this later so we can run the loop properly with a call to rewind_posts().
@@ -38,16 +38,16 @@ get_header(); ?>
             </div><!-- author__info -->
             <?php endif; ?>
 
-        <div class="author-torso__posts">
+        <div class="author-main__posts">
             <?php /* Start the Loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>
                 <?php get_template_part( 'template/parts/blog', 'excerpt' ); ?>
             <?php endwhile; ?>
         </div>
         <?php endif; ?>
-    <aside class="author-torso__sidebar">
+    <aside class="author-main__sidebar">
         <?php get_sidebar(); ?>
-    </aside> <!-- //torso__sidebar -->
-    </div> <!-- //torso__inner -->
-</section> <!-- //author-torso -->
+    </aside> <!-- //main__sidebar -->
+    </div> <!-- //main__inner -->
+</section> <!-- //author-main -->
 <?php get_footer(); ?>
