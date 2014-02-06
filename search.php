@@ -18,7 +18,7 @@ get_header(); ?>
 
             <?php while (have_posts()) : the_post(); ?>
 
-                <?php get_template_part('template/parts/search', 'results'); ?>
+                <?php get_template_part('templates/parts/search', 'results'); ?>
 
             <?php endwhile; ?>
 

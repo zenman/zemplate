@@ -15,7 +15,7 @@ get_header(); ?>
 		    <h1><?php echo 'Tag Archives: ' . single_tag_title('', false); ?></h1>
 		    <?php
                 while (have_posts()) : the_post();
-                    get_template_part('template/parts/blog', 'excerpt');
+                    get_template_part('templates/parts/blog', 'excerpt');
                 endwhile;
 		    ?>
 		</div> <!-- //__posts -->

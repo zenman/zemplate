@@ -24,7 +24,7 @@
     <![endif]-->
 
     <?php wp_head(); //mandatory ?>
-    <?php //get_template_part('template/parts/header', 'analytics'); ?>
+    <?php //get_template_part('templates/parts/header', 'analytics'); ?>
 </head>
 
 <body <?php body_class('page-'.$post->post_name); ?>>

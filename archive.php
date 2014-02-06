@@ -32,7 +32,7 @@ get_header(); ?>
 
             <?php
                 while (have_posts()) : the_post();
-                    get_template_part('template/parts/blog', 'excerpt');
+                    get_template_part('templates/parts/blog', 'excerpt');
                 endwhile;
             ?>
         <?php endif; ?>

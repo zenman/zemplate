@@ -41,7 +41,7 @@ get_header(); ?>
         <div class="author-torso__posts">
             <?php /* Start the Loop */ ?>
             <?php while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( 'template/parts/blog', 'excerpt' ); ?>
+                <?php get_template_part( 'templates/parts/blog', 'excerpt' ); ?>
             <?php endwhile; ?>
         </div>
         <?php endif; ?>

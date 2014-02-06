@@ -1,5 +1,5 @@
 <?php 
-//Usage: get_template_part('template/parts/header', 'analytics');
+//Usage: get_template_part('templates/parts/header', 'analytics');
 //Descript: Hostname based google code, only run if on live site. Place right BEFORE </head>
 $hostname = $_SERVER['HTTP_HOST']; //dev.zenman.com | localhost | Live server | etc..
 $remote_addr = $_SERVER['REMOTE_ADDR']; //remote browser ip
