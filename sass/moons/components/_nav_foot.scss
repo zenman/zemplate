@@ -3,5 +3,5 @@
 \*------------------------------------*/
 @include nav(
     $type: 'nested',            	  //nav type: dropdown or nested
-    $nav-container: '.torso-foot--nav' //.nav by default
+    $nav-container: '.page-foot__nav' //.nav by default
 );

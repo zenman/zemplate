@@ -1,3 +1,12 @@
+/*!
+Theme Name: Zemplate + Foundation
+Theme URI: http://zenman.com
+Description: An empty framework built on Foundation. Love that blue yeti.
+Version: 3.0
+Author: Dominic Magnifico and Tomas Mulder
+Tags: zemplate, naked, clean, basic, fondation, semantic
+*/
+
 /*------------------------------------*\
     ::Index SASS Controller
     ----------------------------------*
@@ -15,34 +24,15 @@ $row-width: 1140px; //Sets the width of the rows for foundation (must be above a
 /*------------------------------------*\
     ::Partial Imports
 \*------------------------------------*/
-
-//this must go at the top (it adds the WordPress theme comment)
-@import "planets/wp/theme";
+@import "compass/css3";
 
 /*------------------------------------*\
     ::Frameworks
 \*------------------------------------*/
+@import "stars/compass/**/*";
 @import "stars/foundation/scss/foundation.scss";
-
-
-@import "stars/zemplate/variables";
-@import "stars/zemplate/extends";
-@import "stars/zemplate/mixins";
-
-@import "stars/compass/css3";
-
-// @import "planets/layouts/*";
-
-// @import "moons/base/*";
-
-@import "moons/components/head";
-@import "moons/components/foot";
-@import "moons/components/nav_head";
-@import "moons/components/nav_foot";
-@import "moons/components/sidebar";
-@import "moons/base/fonts";
-@import "moons/base/cf7"; //Default contact form 7 styling
-
-// @import "comets/*";
-
-@import "debris/shame";
+@import "stars/zemplate/*";
+@import "planets/**/*";
+@import "moons/**/*";
+@import "comets/**/*";
+@import "debris/**/*";

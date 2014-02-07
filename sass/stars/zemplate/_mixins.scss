@@ -125,7 +125,7 @@
 
 @mixin nav(
     $type: 'dropdown',
-    $nav-container: '.nav',
+    $nav-container: '[class*="__nav"]',
     $fade: false,
     $easy-hover: false,
     $easy-hover-top: false,
