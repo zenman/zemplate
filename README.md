@@ -17,7 +17,8 @@ For more information on the company that maintains Zemplate, see the Zenman webs
 
 ## Changelog
 
-Version 3.0 for WP3.8, updated 01.07.2014
+Version 3.0 for WP3.8,      updated 01.07.2014
+Version 2.1 for WP3.4.1     updated 12.8.2012
 
 -----
 
