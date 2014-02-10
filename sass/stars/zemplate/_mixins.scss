@@ -112,7 +112,7 @@
 \*------------------------------------*/
 
 // Use this mixin to add basic nav styling.
-// Just add the following code within your styles.
+// Just add the following code within your styles:
 //
 //
 //      @include nav(
@@ -122,6 +122,12 @@
 //          $easy-hover: 50px,          //amount of invisible overflow for dropdown (take out to not use)
 //          $easy-hover-top: 0          //set top easy-hover value (you can also set $easy-hover-right, -bottom, and -left separately)
 //      );
+//
+// or to just use the defaults inside any parent element, simply
+//
+//      .nav {
+//          @include nav();
+//      }
 
 @mixin nav(
     $type: 'nested',
