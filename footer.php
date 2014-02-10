@@ -14,7 +14,7 @@
     <footer class="page-foot">
         <div class="page-foot__nav">
             <div class="nav__inner">
-                <?php wp_nav_menu(); ?>
+                <?php wp_nav_menu(array('theme_location' => 'foot-menu' )); ?>
             </div>
         </div>
     </footer><!-- // main-foot -->

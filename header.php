@@ -32,7 +32,7 @@
     <header class="page-head">
         <div class="page-head__inner">
             <div class="page-head__nav">
-                <?php wp_nav_menu(); ?>
+                <?php wp_nav_menu(array('theme_location' => 'head-menu' )); ?>
             </div>
         </div> <!-- //__inner -->
     </header> <!-- //main-head -->
