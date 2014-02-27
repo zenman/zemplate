@@ -25,37 +25,37 @@ Tags: zemplate, naked, clean, basic, fondation, semantic
     ::Frameworks
 \*------------------------------------*/
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003287}}
+/* line 287, sass/stars/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-small {
   font-family: "/only screen and (max-width: 40em)/";
   width: 0em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003292}}
+/* line 292, sass/stars/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-medium {
   font-family: "/only screen and (min-width:40.063em) and (max-width:64em)/";
   width: 40.063em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003297}}
+/* line 297, sass/stars/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-large {
   font-family: "/only screen and (min-width:64.063em)/";
   width: 64.063em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003302}}
+/* line 302, sass/stars/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:90.063em)/";
   width: 90.063em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003307}}
+/* line 307, sass/stars/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-xxlarge {
   font-family: "/only screen and (min-width:120.063em)/";
   width: 120.063em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003317}}
+/* line 317, sass/stars/foundation/scss/foundation/components/_global.scss */
 *,
 *:before,
 *:after {
@@ -64,13 +64,13 @@ meta.foundation-mq-xxlarge {
   box-sizing: border-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003322}}
+/* line 322, sass/stars/foundation/scss/foundation/components/_global.scss */
 html,
 body {
   font-size: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003325}}
+/* line 325, sass/stars/foundation/scss/foundation/components/_global.scss */
 body {
   background: white;
   color: #222222;
@@ -84,12 +84,12 @@ body {
   cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003338}}
+/* line 338, sass/stars/foundation/scss/foundation/components/_global.scss */
 a:hover {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003343}}
+/* line 343, sass/stars/foundation/scss/foundation/components/_global.scss */
 img,
 object,
 embed {
@@ -97,18 +97,18 @@ embed {
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003346}}
+/* line 346, sass/stars/foundation/scss/foundation/components/_global.scss */
 object,
 embed {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003347}}
+/* line 347, sass/stars/foundation/scss/foundation/components/_global.scss */
 img {
   -ms-interpolation-mode: bicubic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003353}}
+/* line 353, sass/stars/foundation/scss/foundation/components/_global.scss */
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
@@ -118,78 +118,78 @@ img {
   max-width: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003358}}
+/* line 358, sass/stars/foundation/scss/foundation/components/_global.scss */
 .left {
   float: left !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003359}}
+/* line 359, sass/stars/foundation/scss/foundation/components/_global.scss */
 .right {
   float: right !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003360}}
+/* line 360, sass/stars/foundation/scss/foundation/components/_global.scss */
 .clearfix {
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003165}}
+/* line 165, sass/stars/foundation/scss/foundation/components/_global.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003166}}
+/* line 166, sass/stars/foundation/scss/foundation/components/_global.scss */
 .clearfix:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003361}}
+/* line 361, sass/stars/foundation/scss/foundation/components/_global.scss */
 .text-left {
   text-align: left !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003362}}
+/* line 362, sass/stars/foundation/scss/foundation/components/_global.scss */
 .text-right {
   text-align: right !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003363}}
+/* line 363, sass/stars/foundation/scss/foundation/components/_global.scss */
 .text-center {
   text-align: center !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003364}}
+/* line 364, sass/stars/foundation/scss/foundation/components/_global.scss */
 .text-justify {
   text-align: justify !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003365}}
+/* line 365, sass/stars/foundation/scss/foundation/components/_global.scss */
 .hide {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003371}}
+/* line 371, sass/stars/foundation/scss/foundation/components/_global.scss */
 .antialiased {
   -webkit-font-smoothing: antialiased;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003374}}
+/* line 374, sass/stars/foundation/scss/foundation/components/_global.scss */
 img {
   display: inline-block;
   vertical-align: middle;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003384}}
+/* line 384, sass/stars/foundation/scss/foundation/components/_global.scss */
 textarea {
   height: auto;
   min-height: 50px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003387}}
+/* line 387, sass/stars/foundation/scss/foundation/components/_global.scss */
 select {
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003190}}
+/* line 190, sass/stars/foundation/scss/foundation/components/_grid.scss */
 .row {
   width: 100%;
   margin-left: auto;
@@ -199,16 +199,16 @@ select {
   max-width: 1140px;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003165}}
+/* line 165, sass/stars/foundation/scss/foundation/components/_global.scss */
 .row:before, .row:after {
   content: " ";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003166}}
+/* line 166, sass/stars/foundation/scss/foundation/components/_global.scss */
 .row:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003195}}
+/* line 195, sass/stars/foundation/scss/foundation/components/_grid.scss */
 .row.collapse > .column,
 .row.collapse > .columns {
   position: relative;
@@ -216,12 +216,12 @@ select {
   padding-right: 0;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003197}}
+/* line 197, sass/stars/foundation/scss/foundation/components/_grid.scss */
 .row.collapse .row {
   margin-left: 0;
   margin-right: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003200}}
+/* line 200, sass/stars/foundation/scss/foundation/components/_grid.scss */
 .row .row {
   width: auto;
   margin-left: -0.9375rem;
@@ -231,33 +231,33 @@ select {
   max-width: none;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003165}}
+/* line 165, sass/stars/foundation/scss/foundation/components/_global.scss */
 .row .row:before, .row .row:after {
   content: " ";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003166}}
+/* line 166, sass/stars/foundation/scss/foundation/components/_global.scss */
 .row .row:after {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003201}}
+/* line 201, sass/stars/foundation/scss/foundation/components/_grid.scss */
 .row .row.collapse {
   width: auto;
   margin: 0;
   max-width: none;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003165}}
+/* line 165, sass/stars/foundation/scss/foundation/components/_global.scss */
 .row .row.collapse:before, .row .row.collapse:after {
   content: " ";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003166}}
+/* line 166, sass/stars/foundation/scss/foundation/components/_global.scss */
 .row .row.collapse:after {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003206}}
+/* line 206, sass/stars/foundation/scss/foundation/components/_grid.scss */
 .column,
 .columns {
   position: relative;
@@ -268,161 +268,161 @@ select {
 }
 
 @media only screen {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-1 {
     position: relative;
     left: 8.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-2 {
     position: relative;
     left: 16.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-3 {
     position: relative;
     left: 25%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-3 {
     position: relative;
     right: 25%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-4 {
     position: relative;
     left: 33.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-5 {
     position: relative;
     left: 41.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-6 {
     position: relative;
     left: 50%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-6 {
     position: relative;
     right: 50%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-7 {
     position: relative;
     left: 58.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-8 {
     position: relative;
     left: 66.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-9 {
     position: relative;
     left: 75%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-9 {
     position: relative;
     right: 75%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-10 {
     position: relative;
     left: 83.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-push-11 {
     position: relative;
     left: 91.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003157}}
+  /* line 157, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column,
   .columns {
     position: relative;
@@ -431,155 +431,155 @@ select {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-1 {
     position: relative;
     width: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-2 {
     position: relative;
     width: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-3 {
     position: relative;
     width: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-4 {
     position: relative;
     width: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-5 {
     position: relative;
     width: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-6 {
     position: relative;
     width: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-7 {
     position: relative;
     width: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-8 {
     position: relative;
     width: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-9 {
     position: relative;
     width: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-10 {
     position: relative;
     width: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-11 {
     position: relative;
     width: 91.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-12 {
     position: relative;
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-0 {
     position: relative;
     margin-left: 0%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-1 {
     position: relative;
     margin-left: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-2 {
     position: relative;
     margin-left: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-3 {
     position: relative;
     margin-left: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-4 {
     position: relative;
     margin-left: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-5 {
     position: relative;
     margin-left: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-6 {
     position: relative;
     margin-left: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-7 {
     position: relative;
     margin-left: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-8 {
     position: relative;
     margin-left: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-9 {
     position: relative;
     margin-left: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .small-offset-10 {
     position: relative;
     margin-left: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003168}}
+  /* line 168, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"]:last-child {
     float: right;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003169}}
+  /* line 169, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"].end {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003172}}
+  /* line 172, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.small-centered,
   .columns.small-centered {
     position: relative;
@@ -588,7 +588,7 @@ select {
     float: none !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003175}}
+  /* line 175, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.small-uncentered,
   .columns.small-uncentered {
     margin-left: 0;
@@ -596,168 +596,168 @@ select {
     float: left !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003182}}
+  /* line 182, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.small-uncentered.opposite,
   .columns.small-uncentered.opposite {
     float: right !important;
   }
 }
 @media only screen and (min-width: 40.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-1 {
     position: relative;
     left: 8.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-2 {
     position: relative;
     left: 16.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-3 {
     position: relative;
     left: 25%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-3 {
     position: relative;
     right: 25%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-4 {
     position: relative;
     left: 33.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-5 {
     position: relative;
     left: 41.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-6 {
     position: relative;
     left: 50%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-6 {
     position: relative;
     right: 50%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-7 {
     position: relative;
     left: 58.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-8 {
     position: relative;
     left: 66.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-9 {
     position: relative;
     left: 75%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-9 {
     position: relative;
     right: 75%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-10 {
     position: relative;
     left: 83.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-push-11 {
     position: relative;
     left: 91.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003157}}
+  /* line 157, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column,
   .columns {
     position: relative;
@@ -766,155 +766,155 @@ select {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-1 {
     position: relative;
     width: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-2 {
     position: relative;
     width: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-3 {
     position: relative;
     width: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-4 {
     position: relative;
     width: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-5 {
     position: relative;
     width: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-6 {
     position: relative;
     width: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-7 {
     position: relative;
     width: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-8 {
     position: relative;
     width: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-9 {
     position: relative;
     width: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-10 {
     position: relative;
     width: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-11 {
     position: relative;
     width: 91.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-12 {
     position: relative;
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-0 {
     position: relative;
     margin-left: 0%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-1 {
     position: relative;
     margin-left: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-2 {
     position: relative;
     margin-left: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-3 {
     position: relative;
     margin-left: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-4 {
     position: relative;
     margin-left: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-5 {
     position: relative;
     margin-left: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-6 {
     position: relative;
     margin-left: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-7 {
     position: relative;
     margin-left: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-8 {
     position: relative;
     margin-left: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-9 {
     position: relative;
     margin-left: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .medium-offset-10 {
     position: relative;
     margin-left: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003168}}
+  /* line 168, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"]:last-child {
     float: right;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003169}}
+  /* line 169, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"].end {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003172}}
+  /* line 172, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.medium-centered,
   .columns.medium-centered {
     position: relative;
@@ -923,7 +923,7 @@ select {
     float: none !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003175}}
+  /* line 175, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.medium-uncentered,
   .columns.medium-uncentered {
     margin-left: 0;
@@ -931,160 +931,160 @@ select {
     float: left !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003182}}
+  /* line 182, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.medium-uncentered.opposite,
   .columns.medium-uncentered.opposite {
     float: right !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-1 {
     position: relative;
     left: 8.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-2 {
     position: relative;
     left: 16.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-3 {
     position: relative;
     left: 25%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-3 {
     position: relative;
     right: 25%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-4 {
     position: relative;
     left: 33.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-5 {
     position: relative;
     left: 41.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-6 {
     position: relative;
     left: 50%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-6 {
     position: relative;
     right: 50%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-7 {
     position: relative;
     left: 58.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-8 {
     position: relative;
     left: 66.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-9 {
     position: relative;
     left: 75%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-9 {
     position: relative;
     right: 75%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-10 {
     position: relative;
     left: 83.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003216}}
+  /* line 216, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .push-11 {
     position: relative;
     left: 91.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003219}}
+  /* line 219, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .pull-11 {
     position: relative;
     right: 91.66667%;
@@ -1092,161 +1092,161 @@ select {
   }
 }
 @media only screen and (min-width: 64.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-1 {
     position: relative;
     left: 8.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-2 {
     position: relative;
     left: 16.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-3 {
     position: relative;
     left: 25%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-3 {
     position: relative;
     right: 25%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-4 {
     position: relative;
     left: 33.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-5 {
     position: relative;
     left: 41.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-6 {
     position: relative;
     left: 50%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-6 {
     position: relative;
     right: 50%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-7 {
     position: relative;
     left: 58.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-8 {
     position: relative;
     left: 66.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-9 {
     position: relative;
     left: 75%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-9 {
     position: relative;
     right: 75%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-10 {
     position: relative;
     left: 83.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-push-11 {
     position: relative;
     left: 91.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003157}}
+  /* line 157, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column,
   .columns {
     position: relative;
@@ -1255,155 +1255,155 @@ select {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-1 {
     position: relative;
     width: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-2 {
     position: relative;
     width: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-3 {
     position: relative;
     width: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-4 {
     position: relative;
     width: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-5 {
     position: relative;
     width: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-6 {
     position: relative;
     width: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-7 {
     position: relative;
     width: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-8 {
     position: relative;
     width: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-9 {
     position: relative;
     width: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-10 {
     position: relative;
     width: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-11 {
     position: relative;
     width: 91.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-12 {
     position: relative;
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-0 {
     position: relative;
     margin-left: 0%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-1 {
     position: relative;
     margin-left: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-2 {
     position: relative;
     margin-left: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-3 {
     position: relative;
     margin-left: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-4 {
     position: relative;
     margin-left: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-5 {
     position: relative;
     margin-left: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-6 {
     position: relative;
     margin-left: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-7 {
     position: relative;
     margin-left: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-8 {
     position: relative;
     margin-left: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-9 {
     position: relative;
     margin-left: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .large-offset-10 {
     position: relative;
     margin-left: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003168}}
+  /* line 168, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"]:last-child {
     float: right;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003169}}
+  /* line 169, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"].end {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003172}}
+  /* line 172, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.large-centered,
   .columns.large-centered {
     position: relative;
@@ -1412,7 +1412,7 @@ select {
     float: none !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003175}}
+  /* line 175, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.large-uncentered,
   .columns.large-uncentered {
     margin-left: 0;
@@ -1420,168 +1420,168 @@ select {
     float: left !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003182}}
+  /* line 182, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.large-uncentered.opposite,
   .columns.large-uncentered.opposite {
     float: right !important;
   }
 }
 @media only screen and (min-width: 90.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-1 {
     position: relative;
     left: 8.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-2 {
     position: relative;
     left: 16.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-3 {
     position: relative;
     left: 25%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-3 {
     position: relative;
     right: 25%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-4 {
     position: relative;
     left: 33.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-5 {
     position: relative;
     left: 41.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-6 {
     position: relative;
     left: 50%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-6 {
     position: relative;
     right: 50%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-7 {
     position: relative;
     left: 58.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-8 {
     position: relative;
     left: 66.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-9 {
     position: relative;
     left: 75%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-9 {
     position: relative;
     right: 75%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-10 {
     position: relative;
     left: 83.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-push-11 {
     position: relative;
     left: 91.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003157}}
+  /* line 157, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column,
   .columns {
     position: relative;
@@ -1590,155 +1590,155 @@ select {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-1 {
     position: relative;
     width: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-2 {
     position: relative;
     width: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-3 {
     position: relative;
     width: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-4 {
     position: relative;
     width: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-5 {
     position: relative;
     width: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-6 {
     position: relative;
     width: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-7 {
     position: relative;
     width: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-8 {
     position: relative;
     width: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-9 {
     position: relative;
     width: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-10 {
     position: relative;
     width: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-11 {
     position: relative;
     width: 91.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-12 {
     position: relative;
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-0 {
     position: relative;
     margin-left: 0%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-1 {
     position: relative;
     margin-left: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-2 {
     position: relative;
     margin-left: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-3 {
     position: relative;
     margin-left: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-4 {
     position: relative;
     margin-left: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-5 {
     position: relative;
     margin-left: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-6 {
     position: relative;
     margin-left: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-7 {
     position: relative;
     margin-left: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-8 {
     position: relative;
     margin-left: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-9 {
     position: relative;
     margin-left: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xlarge-offset-10 {
     position: relative;
     margin-left: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003168}}
+  /* line 168, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"]:last-child {
     float: right;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003169}}
+  /* line 169, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"].end {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003172}}
+  /* line 172, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.xlarge-centered,
   .columns.xlarge-centered {
     position: relative;
@@ -1747,7 +1747,7 @@ select {
     float: none !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003175}}
+  /* line 175, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.xlarge-uncentered,
   .columns.xlarge-uncentered {
     margin-left: 0;
@@ -1755,168 +1755,168 @@ select {
     float: left !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003182}}
+  /* line 182, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.xlarge-uncentered.opposite,
   .columns.xlarge-uncentered.opposite {
     float: right !important;
   }
 }
 @media only screen and (min-width: 120.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-1 {
     position: relative;
     left: 8.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-1 {
     position: relative;
     right: 8.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-2 {
     position: relative;
     left: 16.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-2 {
     position: relative;
     right: 16.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-3 {
     position: relative;
     left: 25%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-3 {
     position: relative;
     right: 25%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-4 {
     position: relative;
     left: 33.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-4 {
     position: relative;
     right: 33.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-5 {
     position: relative;
     left: 41.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-5 {
     position: relative;
     right: 41.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-6 {
     position: relative;
     left: 50%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-6 {
     position: relative;
     right: 50%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-7 {
     position: relative;
     left: 58.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-7 {
     position: relative;
     right: 58.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-8 {
     position: relative;
     left: 66.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-8 {
     position: relative;
     right: 66.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-9 {
     position: relative;
     left: 75%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-9 {
     position: relative;
     right: 75%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-10 {
     position: relative;
     left: 83.33333%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-10 {
     position: relative;
     right: 83.33333%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003148}}
+  /* line 148, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-push-11 {
     position: relative;
     left: 91.66667%;
     right: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003151}}
+  /* line 151, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-pull-11 {
     position: relative;
     right: 91.66667%;
     left: auto;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003157}}
+  /* line 157, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column,
   .columns {
     position: relative;
@@ -1925,155 +1925,155 @@ select {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-1 {
     position: relative;
     width: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-2 {
     position: relative;
     width: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-3 {
     position: relative;
     width: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-4 {
     position: relative;
     width: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-5 {
     position: relative;
     width: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-6 {
     position: relative;
     width: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-7 {
     position: relative;
     width: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-8 {
     position: relative;
     width: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-9 {
     position: relative;
     width: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-10 {
     position: relative;
     width: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-11 {
     position: relative;
     width: 91.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003161}}
+  /* line 161, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-12 {
     position: relative;
     width: 100%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-0 {
     position: relative;
     margin-left: 0%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-1 {
     position: relative;
     margin-left: 8.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-2 {
     position: relative;
     margin-left: 16.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-3 {
     position: relative;
     margin-left: 25%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-4 {
     position: relative;
     margin-left: 33.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-5 {
     position: relative;
     margin-left: 41.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-6 {
     position: relative;
     margin-left: 50%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-7 {
     position: relative;
     margin-left: 58.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-8 {
     position: relative;
     margin-left: 66.66667%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-9 {
     position: relative;
     margin-left: 75%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003165}}
+  /* line 165, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .xxlarge-offset-10 {
     position: relative;
     margin-left: 83.33333%;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003168}}
+  /* line 168, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"]:last-child {
     float: right;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003169}}
+  /* line 169, sass/stars/foundation/scss/foundation/components/_grid.scss */
   [class*="column"] + [class*="column"].end {
     float: left;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003172}}
+  /* line 172, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.xxlarge-centered,
   .columns.xxlarge-centered {
     position: relative;
@@ -2082,7 +2082,7 @@ select {
     float: none !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003175}}
+  /* line 175, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.xxlarge-uncentered,
   .columns.xxlarge-uncentered {
     margin-left: 0;
@@ -2090,14 +2090,14 @@ select {
     float: left !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_grid\.scss}line{font-family:\00003182}}
+  /* line 182, sass/stars/foundation/scss/foundation/components/_grid.scss */
   .column.xxlarge-uncentered.opposite,
   .columns.xxlarge-uncentered.opposite {
     float: right !important;
   }
 }
 /* Foundation Visibility HTML Classes */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\0000327}}
+/* line 27, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .show-for-small,
 .show-for-small-only,
 .show-for-medium-down,
@@ -2116,7 +2116,7 @@ select {
   display: inherit !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\0000343}}
+/* line 43, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .hide-for-small,
 .hide-for-small-only,
 .hide-for-medium-down,
@@ -2136,27 +2136,27 @@ select {
 }
 
 /* Specific visibility for tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\0000361}}
+/* line 61, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 table.show-for-small, table.show-for-small-only, table.show-for-medium-down, table.show-for-large-down, table.hide-for-medium, table.hide-for-medium-up, table.hide-for-medium-only, table.hide-for-large, table.hide-for-large-up, table.hide-for-large-only, table.hide-for-xlarge, table.hide-for-xlarge-up, table.hide-for-xlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge-only {
   display: table;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\0000378}}
+/* line 78, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 thead.show-for-small, thead.show-for-small-only, thead.show-for-medium-down, thead.show-for-large-down, thead.hide-for-medium, thead.hide-for-medium-up, thead.hide-for-medium-only, thead.hide-for-large, thead.hide-for-large-up, thead.hide-for-large-only, thead.hide-for-xlarge, thead.hide-for-xlarge-up, thead.hide-for-xlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge-only {
   display: table-header-group !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\0000395}}
+/* line 95, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 tbody.show-for-small, tbody.show-for-small-only, tbody.show-for-medium-down, tbody.show-for-large-down, tbody.hide-for-medium, tbody.hide-for-medium-up, tbody.hide-for-medium-only, tbody.hide-for-large, tbody.hide-for-large-up, tbody.hide-for-large-only, tbody.hide-for-xlarge, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge-only {
   display: table-row-group !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003112}}
+/* line 112, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 tr.show-for-small, tr.show-for-small-only, tr.show-for-medium-down, tr.show-for-large-down, tr.hide-for-medium, tr.hide-for-medium-up, tr.hide-for-medium-only, tr.hide-for-large, tr.hide-for-large-up, tr.hide-for-large-only, tr.hide-for-xlarge, tr.hide-for-xlarge-up, tr.hide-for-xlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge-only {
   display: table-row !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003126}}
+/* line 126, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 td.show-for-small, td.show-for-small-only, td.show-for-medium-down
 td.show-for-large-down, td.hide-for-medium, td.hide-for-medium-up, td.hide-for-large, td.hide-for-large-up, td.hide-for-xlarge
 td.hide-for-xlarge-up, td.hide-for-xxlarge-up,
@@ -2176,7 +2176,7 @@ th.hide-for-xxlarge-up {
 
 /* Medium Displays: 641px and up */
 @media only screen and (min-width: 40.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003144}}
+  /* line 144, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .hide-for-small,
   .hide-for-small-only,
   .show-for-medium,
@@ -2194,7 +2194,7 @@ th.hide-for-xxlarge-up {
     display: inherit !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003160}}
+  /* line 160, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .show-for-small,
   .show-for-small-only,
   .hide-for-medium,
@@ -2214,27 +2214,27 @@ th.hide-for-xxlarge-up {
   }
 
   /* Specific visibility for tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003177}}
+  /* line 177, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   table.hide-for-small, table.hide-for-small-only, table.show-for-medium, table.show-for-medium-down, table.show-for-medium-up, table.show-for-medium-only, table.hide-for-large, table.hide-for-large-up, table.hide-for-large-only, table.hide-for-xlarge, table.hide-for-xlarge-up, table.hide-for-xlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge-only {
     display: table;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003193}}
+  /* line 193, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   thead.hide-for-small, thead.hide-for-small-only, thead.show-for-medium, thead.show-for-medium-down, thead.show-for-medium-up, thead.show-for-medium-only, thead.hide-for-large, thead.hide-for-large-up, thead.hide-for-large-only, thead.hide-for-xlarge, thead.hide-for-xlarge-up, thead.hide-for-xlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge-only {
     display: table-header-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003209}}
+  /* line 209, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tbody.hide-for-small, tbody.hide-for-small-only, tbody.show-for-medium, tbody.show-for-medium-down, tbody.show-for-medium-up, tbody.show-for-medium-only, tbody.hide-for-large, tbody.hide-for-large-up, tbody.hide-for-large-only, tbody.hide-for-xlarge, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge-only {
     display: table-row-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003225}}
+  /* line 225, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tr.hide-for-small, tr.hide-for-small-only, tr.show-for-medium, tr.show-for-medium-down, tr.show-for-medium-up, tr.show-for-medium-only, tr.hide-for-large, tr.hide-for-large-up, tr.hide-for-large-only, tr.hide-for-xlarge, tr.hide-for-xlarge-up, tr.hide-for-xlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge-only {
     display: table-row !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003242}}
+  /* line 242, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   td.hide-for-small, td.hide-for-small-only, td.show-for-medium, td.show-for-medium-down, td.show-for-medium-up, td.show-for-medium-only, td.hide-for-large, td.hide-for-large-up, td.hide-for-large-only, td.hide-for-xlarge, td.hide-for-xlarge-up, td.hide-for-xlarge-only, td.hide-for-xxlarge-up, td.hide-for-xxlarge-only,
   th.hide-for-small,
   th.hide-for-small-only,
@@ -2255,7 +2255,7 @@ th.hide-for-xxlarge-up {
 }
 /* Large Displays: 1024px and up */
 @media only screen and (min-width: 64.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003261}}
+  /* line 261, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .hide-for-small,
   .hide-for-small-only,
   .hide-for-medium,
@@ -2273,7 +2273,7 @@ th.hide-for-xxlarge-up {
     display: inherit !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003274}}
+  /* line 274, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .show-for-small-only,
   .show-for-medium,
   .show-for-medium-down,
@@ -2290,27 +2290,27 @@ th.hide-for-xxlarge-up {
   }
 
   /* Specific visilbity for tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003291}}
+  /* line 291, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   table.hide-for-small, table.hide-for-small-only, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-medium-only, table.show-for-medium-up, table.show-for-large, table.show-for-large-up, table.show-for-large-only, table.hide-for-xlarge, table.hide-for-xlarge-up, table.hide-for-xlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge-only {
     display: table;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003307}}
+  /* line 307, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   thead.hide-for-small, thead.hide-for-small-only, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.show-for-large, thead.show-for-large-up, thead.show-for-large-only, thead.hide-for-xlarge, thead.hide-for-xlarge-up, thead.hide-for-xlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge-only {
     display: table-header-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003323}}
+  /* line 323, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tbody.hide-for-small, tbody.hide-for-small-only, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.show-for-large, tbody.show-for-large-up, tbody.show-for-large-only, tbody.hide-for-xlarge, tbody.hide-for-xlarge-up, tbody.hide-for-xlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge-only {
     display: table-row-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003339}}
+  /* line 339, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tr.hide-for-small, tr.hide-for-small-only, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.show-for-large, tr.show-for-large-up, tr.show-for-large-only, tr.hide-for-xlarge, tr.hide-for-xlarge-up, tr.hide-for-xlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge-only {
     display: table-row !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003356}}
+  /* line 356, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   td.hide-for-small, td.hide-for-small-only, td.hide-for-medium, td.hide-for-medium-down, td.hide-for-medium-only, td.show-for-medium-up, td.show-for-large, td.show-for-large-up, td.show-for-large-only, td.hide-for-xlarge, td.hide-for-xlarge-up, td.hide-for-xlarge-only, td.hide-for-xxlarge-up, td.hide-for-xxlarge-only,
   th.hide-for-small,
   th.hide-for-small-only,
@@ -2331,7 +2331,7 @@ th.hide-for-xxlarge-up {
 }
 /* X-Large Displays: 1441 and up */
 @media only screen and (min-width: 90.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003373}}
+  /* line 373, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .hide-for-small,
   .hide-for-small-only,
   .hide-for-medium,
@@ -2347,7 +2347,7 @@ th.hide-for-xxlarge-up {
     display: inherit !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003386}}
+  /* line 386, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .show-for-small-only,
   .show-for-medium,
   .show-for-medium-down,
@@ -2364,27 +2364,27 @@ th.hide-for-xxlarge-up {
   }
 
   /* Specific visilbity for tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003401}}
+  /* line 401, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   table.hide-for-small, table.hide-for-small-only, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-medium-only, table.show-for-medium-up, table.show-for-large-up, table.show-for-xlarge, table.show-for-xlarge-up, table.show-for-xlarge-only, table.hide-for-xxlarge-up, table.hide-for-xxlarge-only {
     display: table;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003415}}
+  /* line 415, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   thead.hide-for-small, thead.hide-for-small-only, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.show-for-large-up, thead.show-for-xlarge, thead.show-for-xlarge-up, thead.show-for-xlarge-only, thead.hide-for-xxlarge-up, thead.hide-for-xxlarge-only {
     display: table-header-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003429}}
+  /* line 429, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tbody.hide-for-small, tbody.hide-for-small-only, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.show-for-large-up, tbody.show-for-xlarge, tbody.show-for-xlarge-up, tbody.show-for-xlarge-only, tbody.hide-for-xxlarge-up, tbody.hide-for-xxlarge-only {
     display: table-row-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003443}}
+  /* line 443, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tr.hide-for-small, tr.hide-for-small-only, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.show-for-large-up, tr.show-for-xlarge, tr.show-for-xlarge-up, tr.show-for-xlarge-only, tr.hide-for-xxlarge-up, tr.hide-for-xxlarge-only {
     display: table-row !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003458}}
+  /* line 458, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   td.hide-for-small, td.hide-for-small-only, td.hide-for-medium, td.hide-for-medium-down, td.hide-for-medium-only, td.show-for-medium-up, td.show-for-large-up, td.show-for-xlarge, td.show-for-xlarge-up, td.show-for-xlarge-only, td.hide-for-xxlarge-up, td.hide-for-xxlarge-only,
   th.hide-for-small,
   th.hide-for-small-only,
@@ -2403,7 +2403,7 @@ th.hide-for-xxlarge-up {
 }
 /* XX-Large Displays: 1920 and up */
 @media only screen and (min-width: 120.063em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003473}}
+  /* line 473, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .hide-for-small,
   .hide-for-small-only,
   .hide-for-medium,
@@ -2417,7 +2417,7 @@ th.hide-for-xxlarge-up {
     display: inherit !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003485}}
+  /* line 485, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .show-for-small-only,
   .show-for-medium,
   .show-for-medium-down,
@@ -2433,27 +2433,27 @@ th.hide-for-xxlarge-up {
   }
 
   /* Specific visilbity for tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003498}}
+  /* line 498, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   table.hide-for-small, table.hide-for-small-only, table.hide-for-medium, table.hide-for-medium-down, table.hide-for-medium-only, table.show-for-medium-up, table.show-for-large-up, table.show-for-xlarge-up, table.show-for-xxlarge-up, table.show-for-xxlarge-only {
     display: table;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003510}}
+  /* line 510, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   thead.hide-for-small, thead.hide-for-small-only, thead.hide-for-medium, thead.hide-for-medium-down, thead.hide-for-medium-only, thead.show-for-medium-up, thead.show-for-large-up, thead.show-for-xlarge-up, thead.show-for-xxlarge-up, thead.show-for-xxlarge-only {
     display: table-header-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003522}}
+  /* line 522, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tbody.hide-for-small, tbody.hide-for-small-only, tbody.hide-for-medium, tbody.hide-for-medium-down, tbody.hide-for-medium-only, tbody.show-for-medium-up, tbody.show-for-large-up, tbody.show-for-xlarge-up, tbody.show-for-xxlarge-up, tbody.show-for-xxlarge-only {
     display: table-row-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003534}}
+  /* line 534, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tr.hide-for-small, tr.hide-for-small-only, tr.hide-for-medium, tr.hide-for-medium-down, tr.hide-for-medium-only, tr.show-for-medium-up, tr.show-for-large-up, tr.show-for-xlarge-up, tr.show-for-xxlarge-up, tr.show-for-xxlarge-only {
     display: table-row !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003547}}
+  /* line 547, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   td.hide-for-small, td.hide-for-small-only, td.hide-for-medium, td.hide-for-medium-down, td.hide-for-medium-only, td.show-for-medium-up, td.show-for-large-up, td.show-for-xlarge-up, td.show-for-xxlarge-up, td.show-for-xxlarge-only,
   th.hide-for-small,
   th.hide-for-small-only,
@@ -2469,40 +2469,40 @@ th.hide-for-xxlarge-up {
   }
 }
 /* Orientation targeting */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003554}}
+/* line 554, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .show-for-landscape,
 .hide-for-portrait {
   display: inherit !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003556}}
+/* line 556, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .hide-for-landscape,
 .show-for-portrait {
   display: none !important;
 }
 
 /* Specific visilbity for tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003561}}
+/* line 561, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 table.hide-for-landscape, table.show-for-portrait {
   display: table;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003565}}
+/* line 565, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 thead.hide-for-landscape, thead.show-for-portrait {
   display: table-header-group !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003569}}
+/* line 569, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 tbody.hide-for-landscape, tbody.show-for-portrait {
   display: table-row-group !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003573}}
+/* line 573, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 tr.hide-for-landscape, tr.show-for-portrait {
   display: table-row !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003578}}
+/* line 578, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 td.hide-for-landscape, td.show-for-portrait,
 th.hide-for-landscape,
 th.show-for-portrait {
@@ -2510,40 +2510,40 @@ th.show-for-portrait {
 }
 
 @media only screen and (orientation: landscape) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003583}}
+  /* line 583, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .show-for-landscape,
   .hide-for-portrait {
     display: inherit !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003585}}
+  /* line 585, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .hide-for-landscape,
   .show-for-portrait {
     display: none !important;
   }
 
   /* Specific visilbity for tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003590}}
+  /* line 590, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   table.show-for-landscape, table.hide-for-portrait {
     display: table;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003594}}
+  /* line 594, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   thead.show-for-landscape, thead.hide-for-portrait {
     display: table-header-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003598}}
+  /* line 598, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tbody.show-for-landscape, tbody.hide-for-portrait {
     display: table-row-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003602}}
+  /* line 602, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tr.show-for-landscape, tr.hide-for-portrait {
     display: table-row !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003607}}
+  /* line 607, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   td.show-for-landscape, td.hide-for-portrait,
   th.show-for-landscape,
   th.hide-for-portrait {
@@ -2551,40 +2551,40 @@ th.show-for-portrait {
   }
 }
 @media only screen and (orientation: portrait) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003613}}
+  /* line 613, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .show-for-portrait,
   .hide-for-landscape {
     display: inherit !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003615}}
+  /* line 615, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   .hide-for-portrait,
   .show-for-landscape {
     display: none !important;
   }
 
   /* Specific visilbity for tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003620}}
+  /* line 620, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   table.show-for-portrait, table.hide-for-landscape {
     display: table;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003624}}
+  /* line 624, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   thead.show-for-portrait, thead.hide-for-landscape {
     display: table-header-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003628}}
+  /* line 628, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tbody.show-for-portrait, tbody.hide-for-landscape {
     display: table-row-group !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003632}}
+  /* line 632, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   tr.show-for-portrait, tr.hide-for-landscape {
     display: table-row !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003637}}
+  /* line 637, sass/stars/foundation/scss/foundation/components/_visibility.scss */
   td.show-for-portrait, td.hide-for-landscape,
   th.show-for-portrait,
   th.hide-for-landscape {
@@ -2592,83 +2592,83 @@ th.show-for-portrait {
   }
 }
 /* Touch-enabled device targeting */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003642}}
+/* line 642, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .show-for-touch {
   display: none !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003643}}
+/* line 643, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .hide-for-touch {
   display: inherit !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003644}}
+/* line 644, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .touch .show-for-touch {
   display: inherit !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003645}}
+/* line 645, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .touch .hide-for-touch {
   display: none !important;
 }
 
 /* Specific visilbity for tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003648}}
+/* line 648, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 table.hide-for-touch {
   display: table;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003649}}
+/* line 649, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .touch table.show-for-touch {
   display: table;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003650}}
+/* line 650, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 thead.hide-for-touch {
   display: table-header-group !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003651}}
+/* line 651, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .touch thead.show-for-touch {
   display: table-header-group !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003652}}
+/* line 652, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 tbody.hide-for-touch {
   display: table-row-group !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003653}}
+/* line 653, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .touch tbody.show-for-touch {
   display: table-row-group !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003654}}
+/* line 654, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 tr.hide-for-touch {
   display: table-row !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003655}}
+/* line 655, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .touch tr.show-for-touch {
   display: table-row !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003656}}
+/* line 656, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 td.hide-for-touch {
   display: table-cell !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003657}}
+/* line 657, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .touch td.show-for-touch {
   display: table-cell !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003658}}
+/* line 658, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 th.hide-for-touch {
   display: table-cell !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_visibility\.scss}line{font-family:\00003659}}
+/* line 659, sass/stars/foundation/scss/foundation/components/_visibility.scss */
 .touch th.show-for-touch {
   display: table-cell !important;
 }
@@ -2740,27 +2740,27 @@ th.hide-for-touch {
 /*------------------------------------*\
     ::Alignment
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000311}}
+/* line 11, sass/planets/wp/_wp_defaults.scss */
 .alignnone,
 img.alignnone {
   margin: 5px 20px 20px 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000316}}
+/* line 16, sass/planets/wp/_wp_defaults.scss */
 .aligncenter,
 img.aligncenter {
   display: block;
   margin: 5px auto 5px auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000322}}
+/* line 22, sass/planets/wp/_wp_defaults.scss */
 .alignright,
 img.alignright {
   float: right;
   margin: 5px 0 20px 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000328}}
+/* line 28, sass/planets/wp/_wp_defaults.scss */
 .alignleft,
 img.alignleft {
   float: left;
@@ -2770,7 +2770,7 @@ img.alignleft {
 /*------------------------------------*\
     ::Captions
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000336}}
+/* line 36, sass/planets/wp/_wp_defaults.scss */
 .wp-caption {
   background: #fff;
   border: 1px solid #f0f0f0;
@@ -2778,7 +2778,7 @@ img.alignleft {
   padding: 5px 3px 10px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000342}}
+/* line 42, sass/planets/wp/_wp_defaults.scss */
 .wp-caption img {
   border: 0 none;
   height: auto;
@@ -2787,22 +2787,22 @@ img.alignleft {
   padding: 0;
   width: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000350}}
+/* line 50, sass/planets/wp/_wp_defaults.scss */
 .wp-caption .wp-caption-text {
   font-size: 11px;
   line-height: 17px;
   margin: 0;
   padding: 0 4px 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000356}}
+/* line 56, sass/planets/wp/_wp_defaults.scss */
 .wp-caption.alignright {
   margin: 5px 0 20px 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000359}}
+/* line 59, sass/planets/wp/_wp_defaults.scss */
 .wp-caption.alignleft {
   margin: 5px 20px 20px 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/planets\/wp\/_wp_defaults\.scss}line{font-family:\0000362}}
+/* line 62, sass/planets/wp/_wp_defaults.scss */
 .wp-caption.alignnone {
   margin: 5px 20px 20px 0;
 }
@@ -2819,7 +2819,7 @@ img.alignleft {
     ::Tables
     ::Wrappers
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000324}}
+/* line 24, sass/moons/base/_base.scss */
 article,
 aside,
 details,
@@ -2835,20 +2835,20 @@ summary {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000329}}
+/* line 29, sass/moons/base/_base.scss */
 audio,
 canvas,
 video {
   display: inline-block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000332}}
+/* line 32, sass/moons/base/_base.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000337}}
+/* line 37, sass/moons/base/_base.scss */
 [hidden],
 template {
   display: none;
@@ -2857,19 +2857,19 @@ template {
 /*------------------------------------*\
     ::Base
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000344}}
+/* line 44, sass/moons/base/_base.scss */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000349}}
+/* line 49, sass/moons/base/_base.scss */
 body {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000353}}
+/* line 53, sass/moons/base/_base.scss */
 [class*="--sidebar"] [class*="-main__sidebar"] {
   position: relative;
   padding-left: 0.9375rem;
@@ -2881,17 +2881,17 @@ body {
 /*------------------------------------*\
     ::Links
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000361}}
+/* line 61, sass/moons/base/_base.scss */
 a {
   background: transparent;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000364}}
+/* line 64, sass/moons/base/_base.scss */
 a:focus {
   outline: thin dotted;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000368}}
+/* line 68, sass/moons/base/_base.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -2900,31 +2900,31 @@ a:hover {
 /*------------------------------------*\
     ::Typography
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000375}}
+/* line 75, sass/moons/base/_base.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000379}}
+/* line 79, sass/moons/base/_base.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000383}}
+/* line 83, sass/moons/base/_base.scss */
 b,
 strong {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000386}}
+/* line 86, sass/moons/base/_base.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000394}}
+/* line 94, sass/moons/base/_base.scss */
 code,
 kbd,
 pre,
@@ -2933,22 +2933,22 @@ samp {
   font-size: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\0000398}}
+/* line 98, sass/moons/base/_base.scss */
 pre {
   white-space: pre-wrap;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003101}}
+/* line 101, sass/moons/base/_base.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003104}}
+/* line 104, sass/moons/base/_base.scss */
 small {
   font-size: 80%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003108}}
+/* line 108, sass/moons/base/_base.scss */
 sub,
 sup {
   font-size: 75%;
@@ -2957,12 +2957,12 @@ sup {
   vertical-align: baseline;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003114}}
+/* line 114, sass/moons/base/_base.scss */
 sup {
   top: -0.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003117}}
+/* line 117, sass/moons/base/_base.scss */
 sub {
   bottom: -0.25em;
 }
@@ -2970,12 +2970,12 @@ sub {
 /*------------------------------------*\
     ::Embedded Content
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003124}}
+/* line 124, sass/moons/base/_base.scss */
 img {
   border: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003127}}
+/* line 127, sass/moons/base/_base.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -2983,7 +2983,7 @@ svg:not(:root) {
 /*------------------------------------*\
     ::Figures
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003134}}
+/* line 134, sass/moons/base/_base.scss */
 figure {
   margin: 0;
 }
@@ -2991,20 +2991,20 @@ figure {
 /*------------------------------------*\
     ::Forms
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003141}}
+/* line 141, sass/moons/base/_base.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003146}}
+/* line 146, sass/moons/base/_base.scss */
 legend {
   border: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003153}}
+/* line 153, sass/moons/base/_base.scss */
 button,
 input,
 select,
@@ -3014,19 +3014,19 @@ textarea {
   margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003159}}
+/* line 159, sass/moons/base/_base.scss */
 button,
 input {
   line-height: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003163}}
+/* line 163, sass/moons/base/_base.scss */
 button,
 select {
   text-transform: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003169}}
+/* line 169, sass/moons/base/_base.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -3035,20 +3035,20 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003174}}
+/* line 174, sass/moons/base/_base.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003178}}
+/* line 178, sass/moons/base/_base.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003182}}
+/* line 182, sass/moons/base/_base.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
@@ -3056,20 +3056,20 @@ input[type="search"] {
   box-sizing: content-box;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003189}}
+/* line 189, sass/moons/base/_base.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003193}}
+/* line 193, sass/moons/base/_base.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003197}}
+/* line 197, sass/moons/base/_base.scss */
 textarea {
   overflow: auto;
   vertical-align: top;
@@ -3078,7 +3078,7 @@ textarea {
 /*------------------------------------*\
     ::Tables
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003205}}
+/* line 205, sass/moons/base/_base.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -3087,7 +3087,7 @@ table {
 /*------------------------------------*\
     ::Wrappers
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_base\.scss}line{font-family:\00003213}}
+/* line 213, sass/moons/base/_base.scss */
 [class*="__inner"] {
   width: 100%;
   margin-left: auto;
@@ -3097,12 +3097,12 @@ table {
   max-width: 1140px;
   *zoom: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003165}}
+/* line 165, sass/stars/foundation/scss/foundation/components/_global.scss */
 [class*="__inner"]:before, [class*="__inner"]:after {
   content: " ";
   display: table;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/foundation\/scss\/foundation\/components\/_global\.scss}line{font-family:\00003166}}
+/* line 166, sass/stars/foundation/scss/foundation/components/_global.scss */
 [class*="__inner"]:after {
   clear: both;
 }
@@ -3110,29 +3110,29 @@ table {
 /*------------------------------------*\
     ::Default CF7 Styling
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_cf7\.scss}line{font-family:\000036}}
+/* line 6, sass/moons/base/_cf7.scss */
 .wpcf7 input,
 .wpcf7 textarea {
   width: 100%;
   padding: 0;
   margin: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_cf7\.scss}line{font-family:\0000311}}
+/* line 11, sass/moons/base/_cf7.scss */
 .wpcf7 span.wpcf7-not-valid-tip {
   padding: 5px;
   color: #fff;
   background: #de5d5d;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_cf7\.scss}line{font-family:\0000316}}
+/* line 16, sass/moons/base/_cf7.scss */
 .wpcf7 div.wpcf7-response-output {
   text-align: center;
   border: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_cf7\.scss}line{font-family:\0000319}}
+/* line 19, sass/moons/base/_cf7.scss */
 .wpcf7 div.wpcf7-response-output.wpcf7-validation-errors {
   background: #ebe857;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/moons\/base\/_cf7\.scss}line{font-family:\0000322}}
+/* line 22, sass/moons/base/_cf7.scss */
 .wpcf7 div.wpcf7-response-output.wpcf7-mail-sent-ok {
   background: #6ade72;
 }
@@ -3152,25 +3152,25 @@ table {
 /*------------------------------------*\
     ::Footer
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\0000393}}
+/* line 93, sass/stars/zemplate/_mixins.scss */
 html, body {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\0000396}}
+/* line 96, sass/stars/zemplate/_mixins.scss */
 .wrap-all-the-things {
   display: table;
   height: 100%;
   width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003101}}
+/* line 101, sass/stars/zemplate/_mixins.scss */
 .main-head, .torso, .main-foot {
   display: table-row;
   height: 1px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003105}}
+/* line 105, sass/stars/zemplate/_mixins.scss */
 .torso {
   height: auto;
 }
@@ -3181,29 +3181,29 @@ html, body {
 /*------------------------------------*\
     ::Nav in the Footer
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003215}}
+/* line 215, sass/stars/zemplate/_mixins.scss */
 .page-foot__nav li {
   float: left;
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003218}}
+/* line 218, sass/stars/zemplate/_mixins.scss */
 .page-foot__nav li ul {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003221}}
+/* line 221, sass/stars/zemplate/_mixins.scss */
 .page-foot__nav li li {
   clear: both;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003224}}
+/* line 224, sass/stars/zemplate/_mixins.scss */
 .page-foot__nav li a {
   display: block;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003232}}
+/* line 232, sass/stars/zemplate/_mixins.scss */
 .page-foot__nav ul ul {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003234}}
+/* line 234, sass/stars/zemplate/_mixins.scss */
 .page-foot__nav ul ul li {
   float: left;
   clear: both;
@@ -3212,18 +3212,18 @@ html, body {
 /*------------------------------------*\
     ::Nav in the Header
 \*------------------------------------*/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003143}}
+/* line 143, sass/stars/zemplate/_mixins.scss */
 .page-head__nav {
   position: relative;
   z-index: 10;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003147}}
+/* line 147, sass/stars/zemplate/_mixins.scss */
 .page-head__nav ul li {
   display: block;
   float: left;
   list-style: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003152}}
+/* line 152, sass/stars/zemplate/_mixins.scss */
 .page-head__nav ul ul {
   visibility: hidden;
   padding: 0;
@@ -3240,7 +3240,7 @@ html, body {
   -o-transition-delay: 0s, 0.3s;
   transition-delay: 0s, 0.3s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003161}}
+/* line 161, sass/stars/zemplate/_mixins.scss */
 .page-head__nav ul ul:after {
   content: "";
   position: absolute;
@@ -3252,13 +3252,13 @@ html, body {
   opacity: 0;
   z-index: -1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003193}}
+/* line 193, sass/stars/zemplate/_mixins.scss */
 .page-head__nav li ul {
   display: block;
   position: absolute;
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/sites\/zenman\/new_zenman_7\/wp-content\/themes\/zemplate\/sass\/stars\/zemplate\/_mixins\.scss}line{font-family:\00003199}}
+/* line 199, sass/stars/zemplate/_mixins.scss */
 .page-head__nav li:hover ul {
   opacity: 1;
   visibility: visible;
