@@ -29,9 +29,9 @@
 
 <body <?php body_class('page-'.$post->post_name); ?>>
 <div class="wrap-all-the-things">
-    <header class="page-head">
-        <div class="page-head__inner">
-            <div class="page-head__nav">
+    <header class="main-head">
+        <div class="main-head__inner">
+            <div class="main-head__nav">
                 <?php wp_nav_menu(array('theme_location' => 'head-menu' )); ?>
             </div>
         </div> <!-- //__inner -->
