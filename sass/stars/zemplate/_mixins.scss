@@ -91,7 +91,7 @@
     $flex: '.sticky-footer__row--flex'){
 
     html, body {
-        height: 100%;
+        height: 99.99999%;//not 100% to eliminate horizontal scroll
     }
     #{$wrap} {
         display: table;
@@ -153,9 +153,9 @@
                     visibility: hidden;
                     padding: 0;
                     @if $fade {
-                        @include transition-property(#{opacity, visibility, background-color});
-                        @include transition-duration(#{$fade, 0s});
-                        @include transition-delay(#{0s, $fade});
+                        transition-property: #{opacity, visibility, background-color};
+                        transition-duration: #{$fade, 0s};
+                        transition-delay: #{0s, $fade};
                     }
                     @if $easy-hover {
                         &:after {
