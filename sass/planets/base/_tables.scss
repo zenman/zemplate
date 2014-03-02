@@ -1,13 +1,13 @@
 /*------------------------------------*\
-    ::Base
+    ::Tables
     ------------------------------------*
     ::Normalize.css v3.0.0 | MIT License | git.io/normalize
 \*------------------------------------*/
-html {
-	font-family: sans-serif;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-body {
-	margin: 0;
+td,
+th {
+	padding: 0;
 }

@@ -1,13 +1,11 @@
 /*------------------------------------*\
-    ::Base
+    ::Embedded Content
     ------------------------------------*
     ::Normalize.css v3.0.0 | MIT License | git.io/normalize
 \*------------------------------------*/
-html {
-	font-family: sans-serif;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+img {
+	border: 0;
 }
-body {
-	margin: 0;
+svg:not(:root) {
+	overflow: hidden;
 }

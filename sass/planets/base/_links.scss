@@ -1,13 +1,12 @@
 /*------------------------------------*\
-    ::Base
+    ::Links
     ------------------------------------*
     ::Normalize.css v3.0.0 | MIT License | git.io/normalize
 \*------------------------------------*/
-html {
-	font-family: sans-serif;
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+a {
+	background: transparent;
 }
-body {
-	margin: 0;
+a:active,
+a:hover {
+	outline: 0;
 }
