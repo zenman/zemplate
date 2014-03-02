@@ -3201,29 +3201,28 @@ html, body {
     ::Nav in the Footer
 \*------------------------------------*/
 /* line 215, sass/stars/zemplate/_mixins.scss */
-.page-foot__nav li {
+.foot-nav li {
   float: left;
   list-style: none;
 }
 /* line 218, sass/stars/zemplate/_mixins.scss */
-.page-foot__nav li ul {
+.foot-nav li ul {
   padding: 0;
 }
 /* line 221, sass/stars/zemplate/_mixins.scss */
-.page-foot__nav li li {
+.foot-nav li li {
   clear: both;
 }
 /* line 224, sass/stars/zemplate/_mixins.scss */
-.page-foot__nav li a {
+.foot-nav li a {
   display: block;
-  text-decoration: none;
 }
-/* line 232, sass/stars/zemplate/_mixins.scss */
-.page-foot__nav ul ul {
+/* line 231, sass/stars/zemplate/_mixins.scss */
+.foot-nav ul ul {
   padding: 0;
 }
-/* line 234, sass/stars/zemplate/_mixins.scss */
-.page-foot__nav ul ul li {
+/* line 233, sass/stars/zemplate/_mixins.scss */
+.foot-nav ul ul li {
   float: left;
   clear: both;
 }
@@ -3232,18 +3231,18 @@ html, body {
     ::Nav in the Header
 \*------------------------------------*/
 /* line 143, sass/stars/zemplate/_mixins.scss */
-.page-head__nav {
+.head-nav {
   position: relative;
   z-index: 10;
 }
 /* line 147, sass/stars/zemplate/_mixins.scss */
-.page-head__nav ul li {
+.head-nav ul li {
   display: block;
   float: left;
   list-style: none;
 }
 /* line 152, sass/stars/zemplate/_mixins.scss */
-.page-head__nav ul ul {
+.head-nav ul ul {
   visibility: hidden;
   padding: 0;
   -webkit-transition-property: opacity, visibility, background-color;
@@ -3260,7 +3259,7 @@ html, body {
   transition-delay: 0s, 0.3s;
 }
 /* line 161, sass/stars/zemplate/_mixins.scss */
-.page-head__nav ul ul:after {
+.head-nav ul ul:after {
   content: "";
   position: absolute;
   top: -1.2em;
@@ -3272,13 +3271,13 @@ html, body {
   z-index: -1;
 }
 /* line 193, sass/stars/zemplate/_mixins.scss */
-.page-head__nav li ul {
+.head-nav li ul {
   display: block;
   position: absolute;
   opacity: 0;
 }
 /* line 199, sass/stars/zemplate/_mixins.scss */
-.page-head__nav li:hover ul {
+.head-nav li:hover ul {
   opacity: 1;
   visibility: visible;
   -webkit-transition-delay: 0s, 0s;

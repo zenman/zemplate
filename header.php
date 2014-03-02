@@ -32,7 +32,15 @@
     <header class="main-head">
         <div class="main-head__inner">
             <div class="main-head__nav">
-                <?php wp_nav_menu(array('theme_location' => 'head-menu' )); ?>
+                <?php
+                    $attr = array(
+                        'theme_location'  => 'head-menu',
+                        'container'       => 'nav',
+                        'container_class' => 'head-nav',
+                        'menu_class'      => 'menu'
+                    );
+                    wp_nav_menu($attr);
+                ?>
             </div>
         </div> <!-- //__inner -->
     </header> <!-- //main-head -->

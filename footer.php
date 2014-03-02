@@ -14,7 +14,15 @@
     <footer class="main-foot">
         <div class="main-foot__nav">
             <div class="nav__inner">
-                <?php wp_nav_menu(array('theme_location' => 'foot-menu' )); ?>
+                <?php
+                    $attr = array(
+                        'theme_location'  => 'foot-menu',
+                        'container'       => 'nav',
+                        'container_class' => 'foot-nav',
+                        'menu_class'      => 'menu'
+                    );
+                    wp_nav_menu($attr);
+                ?>
             </div>
         </div>
     </footer><!-- // main-foot -->
