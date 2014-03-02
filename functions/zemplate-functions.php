@@ -6,7 +6,7 @@
  */
 
 /*------------------------------------*\
-    //Zemplate Setup
+    //Zemplate Setup
 \*------------------------------------*/
 //Usage: don't touch
 //Descript: Sets up some automatic things from twenty* themes.
@@ -34,7 +34,7 @@ function setup_menus(){
 add_action('after_setup_theme', 'setup_menus');
 
 /*------------------------------------*\
-    //Bloginfo Shortcode
+    //Bloginfo Shortcode
 \*------------------------------------*/
 //Usage: [bloginfo key='name']
 
@@ -47,7 +47,7 @@ function bloginfo_shortcode($atts) {
 add_shortcode('bloginfo', 'bloginfo_shortcode');
 
 /*------------------------------------*\
-    //WP Navmenu Shortcode
+    //WP Navmenu Shortcode
 \*------------------------------------*/
 //Usage: [wpnavmenu menu='menuname' menu_class='page_menu']
 //Descript: Returns our Wordpress menu inside page content
@@ -91,7 +91,7 @@ function wp_nav_menu_shortcode($atts, $content = null) {
 add_shortcode("wpnavmenu", "wp_nav_menu_shortcode");
 
 /*------------------------------------*\
-    //Continue Reading Link
+    //Continue Reading Link
 \*------------------------------------*/
 
 function excerpt_read_more_link($output) {
@@ -101,7 +101,7 @@ function excerpt_read_more_link($output) {
 add_filter('get_the_excerpt', 'excerpt_read_more_link');
 
 /*------------------------------------*\
-    //Gets rid of that stupid [...].
+    //Gets rid of that stupid [...].
 \*------------------------------------*/
 function replace_excerpt($content) {
        return str_replace('[...]',
@@ -112,7 +112,7 @@ function replace_excerpt($content) {
 add_filter('the_excerpt', 'replace_excerpt');
 
 /*------------------------------------*\
-    //More Control over Comments
+    //More Control over Comments
 \*------------------------------------*/
 //Usage: <?php wp_list_comments('type=comment&callback=mytheme_comment'); ? >
 //Descript: Overrides wp_list_comments
@@ -168,7 +168,7 @@ function zemplate_comment($comment, $args, $depth) {
 
 
 /*------------------------------------*\
-    //Custom Search
+    //Custom Search
 \*------------------------------------*/
 function custom_search($form) {
     $form = '<form role="search" method="get" id="searchform" action="' . home_url('/') . '" >
@@ -183,7 +183,7 @@ add_filter('get_search_form', 'custom_search');
 
 
 /*------------------------------------*\
-    //Archives by Category
+    //Archives by Category
 \*------------------------------------*/
 
 /*
@@ -372,7 +372,7 @@ function add_cat_to_archives(){
 }
 
 /*------------------------------------*\
-    //Show Templates
+    //Show Templates
 \*------------------------------------*/
 
 // /*

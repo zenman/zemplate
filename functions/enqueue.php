@@ -1,13 +1,13 @@
 <?php
 
 /*------------------------------------*\
-    //Enques
+    //Enques
 		//CSS
 		//Javascript
 \*------------------------------------*/
 
 /*------------------------------------*\
-    //CSS
+    //CSS
 \*------------------------------------*/
 	function theme_styles(){
 		wp_register_style( 'style', get_template_directory_uri() . '/style.css', array(), '1.0','screen, projection' );
@@ -26,7 +26,7 @@
 		add_action('wp_enqueue_scripts', 'ie_styles');
 	}
 /*------------------------------------*\
-    //Javascript
+    //Javascript
 \*------------------------------------*/
 // Register some javascript files, because we love javascript files. Enqueue a couple as well
 // Reference: wp_register_script( $handle, $src, $deps, $ver, $in_footer );
