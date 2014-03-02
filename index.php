@@ -10,28 +10,22 @@
  *
  * @package WordPress
  * @subpackage Zemplate
- * @since Zemplate 1.0
+ * @since Zemplate 3.0
  */
 
 
 get_header(); ?>
 
-    <section class="torso page-torso">
-
-        <article class="page-torso__content">
-
-			<?php the_content(); ?>
-
-			<?php if(isset($_GET['s']) && $_GET['s']==''): ?>
-
-				<h1>Search:</h1>
-				
-				<?php get_search_form(); ?>
-
-			<?php endif; ?>
-
-        </article><!-- //content -->
-
-    </section><!-- //page-torso -->
+    <section class="main-torso index-torso">
+        <div class="index-torso__inner">
+            <article class="index-torso__content">
+                <?php the_content(); ?>
+                <?php if(isset($_GET['s']) && $_GET['s']==''): ?>
+                    <h1>Search:</h1>
+                    <?php get_search_form(); ?>
+                <?php endif; ?>
+            </article><!-- //index-torso__content -->
+        </div><!-- //index-torso__inner -->
+    </section><!-- //index-torso -->
 
 <?php get_footer(); ?>

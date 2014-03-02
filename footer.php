@@ -3,7 +3,6 @@
  * The template for displaying the footer.
  *
  * Contains the closing of the wrap div and all content
- * after.  Calls sidebar-footer.php for bottom widgets.
  *
  * @package WordPress
  * @subpackage Zemplate
@@ -27,7 +26,7 @@
         </div>
     </footer><!-- // main-foot -->
 <!-- sticky footer will fail if anything goes between the closing footer and .wrap -->
-</div><!-- // wrap -->
+</div><!-- // wrap-all-the-things -->
 
 <?php wp_footer(); //mandatory ?>
 

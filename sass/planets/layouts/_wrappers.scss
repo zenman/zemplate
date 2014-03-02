@@ -4,8 +4,3 @@
 [class*="__inner"] {
     @include grid-row;
 }
-[class*="--sidebar"] {
-    [class*="-main__sidebar"]{
-        @include grid-column(4);
-    }
-}

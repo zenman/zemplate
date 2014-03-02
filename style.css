@@ -3032,6 +3032,26 @@ sub {
     ::Two Thirds One Third
 \*------------------------------------*/
 /*------------------------------------*\
+    ::Torso With Sidebar
+\*------------------------------------*/
+/* line 5, sass/planets/layouts/_torso_with_sidebar.scss */
+[class*="torso--sidebar"] [class*="torso__content"] {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 66.66667%;
+  float: left;
+}
+/* line 8, sass/planets/layouts/_torso_with_sidebar.scss */
+[class*="torso--sidebar"] [class*="torso__sidebar"] {
+  position: relative;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 33.33333%;
+  float: left;
+}
+
+/*------------------------------------*\
     ::Wrappers
 \*------------------------------------*/
 /* line 4, sass/planets/layouts/_wrappers.scss */
@@ -3052,15 +3072,6 @@ sub {
 /* line 166, sass/stars/foundation/scss/foundation/components/_global.scss */
 [class*="__inner"]:after {
   clear: both;
-}
-
-/* line 8, sass/planets/layouts/_wrappers.scss */
-[class*="--sidebar"] [class*="-main__sidebar"] {
-  position: relative;
-  padding-left: 0.9375rem;
-  padding-right: 0.9375rem;
-  width: 33.33333%;
-  float: left;
 }
 
 /*------------------------------------*\
@@ -3184,13 +3195,13 @@ html, body {
 }
 
 /* line 101, sass/stars/zemplate/_mixins.scss */
-.main-head, .torso, .main-foot {
+.main-head, .main-torso, .main-foot {
   display: table-row;
   height: 1px;
 }
 
 /* line 105, sass/stars/zemplate/_mixins.scss */
-.torso {
+.main-torso {
   height: auto;
 }
 

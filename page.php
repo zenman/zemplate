@@ -9,20 +9,20 @@
  *
  * @package WordPress
  * @subpackage Zemplate
- * @since Zemplate 2.0
+ * @since Zemplate 3.0
  */
 
 get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
-    <section class="torso page-torso">
-        <div class="content__inner">
+    <section class="main-torso page-torso">
+        <div class="page-torso__inner">
             <article class="page-torso__content">
                 <h1><?php the_title(); ?></h1>
                 <?php the_content(); ?>
-            </article><!-- //__content -->
-        </div> <!-- //__inner -->
+            </article><!-- //page-torso__content -->
+        </div><!-- //page-torso__inner -->
     </section><!-- //page-torso -->
 
 <?php endwhile; ?>

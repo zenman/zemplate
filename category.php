@@ -1,28 +1,28 @@
 <?php
 /**
- * The template for displaying Category Archive pages.
+ * The template for displaying category archive pages.
  *
  * @package WordPress
  * @subpackage Zemplate
- * @since Zemplate 1.0
+ * @since Zemplate 3.0
  */
 
 get_header(); ?>
 
-<section class="torso cat-torso--sidebar">
+<section class="main-torso cat-torso--sidebar">
     <div class="cat-torso__inner">
-        <div class="cat-torso__posts">
+        <article class="cat-torso__content">
             <h1><?php echo single_cat_title('', false); ?></h1>
             <?php
                 while (have_posts()) : the_post();
                     get_template_part('templates/parts/blog', 'excerpt');
                 endwhile;
             ?>
-        </div>
+        </article><!-- //cat-torso__content -->
         <aside class="cat-torso__sidebar">
             <?php get_sidebar(); ?>
-        </aside><!-- //sidebar -->
-    </div> <!-- //__inner -->
+        </aside><!-- //cat-torso__sidebar -->
+    </div><!-- //cat-torso__inner -->
 </section><!-- //cat-torso -->
 
 <?php get_footer(); ?>

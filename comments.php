@@ -1,10 +1,10 @@
 <?php
 /*
- * The template for displaying Comments.
+ * The template for displaying comments.
  *
  * @package WordPress
  * @subpackage Zemplate
- * @since Zemplate 2.0
+ * @since Zemplate 3.0
  */
 
 /*

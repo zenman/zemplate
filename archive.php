@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying Archive pages.
+ * The template for displaying archive pages.
  *
  * Used to display archive-type pages if nothing more specific matches a query.
  * For example, puts together date-based pages if no date.php file exists.
@@ -9,14 +9,14 @@
  *
  * @package WordPress
  * @subpackage Zemplate
- * @since Zemplate 2.0
+ * @since Zemplate 3.0
  */
 
 get_header(); ?>
 
-<section class="torso arch-torso--sidebar">
+<section class="main-torso arch-torso--sidebar">
     <div class="arch-torso__inner">
-        <div class="arch-torso__posts">
+        <article class="arch-torso__content">
             <?php if (have_posts()): ?>
                 <h1><?php
                     if (is_day()) :
@@ -29,19 +29,17 @@ get_header(); ?>
                         echo 'Archives';
                     endif;
                 ?></h1>
-
             <?php
                 while (have_posts()) : the_post();
                     get_template_part('templates/parts/blog', 'excerpt');
                 endwhile;
             ?>
         <?php endif; ?>
-    </div> <!-- //posts -->
-    <aside class="main-torso__sidebar">
-        <?php get_sidebar(); ?>
-    </aside><!-- //sidebar -->
-</div>
-</section><!-- //content -->
-
+        </article> <!-- //arch-torso__content -->
+        <aside class="arch-torso__sidebar">
+            <?php get_sidebar(); ?>
+        </aside><!-- //arch-torso__sidebar -->
+    </div><!-- //arch-torso__inner -->
+</section><!-- //arch-torso -->
 
 <?php get_footer(); ?>

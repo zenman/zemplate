@@ -1,0 +1,11 @@
+/*------------------------------------*\
+    ::Torso With Sidebar
+\*------------------------------------*/
+[class*="torso--sidebar"] {
+    [class*="torso__content"]{
+		@include grid-column(8);
+    }
+    [class*="torso__sidebar"]{
+        @include grid-column(4);
+    }
+}
