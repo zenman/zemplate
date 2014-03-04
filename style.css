@@ -65,6 +65,7 @@ meta.foundation-mq-xxlarge {
 *:before,
 *:after {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2827,7 +2828,6 @@ input {
 /* line 42, sass/planets/base/_forms.scss */
 input[type="checkbox"],
 input[type="radio"] {
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
 }
@@ -2842,6 +2842,7 @@ input[type="number"]::-webkit-outer-spin-button {
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
 
@@ -3270,11 +3271,8 @@ html, body {
 .head-nav ul ul {
   visibility: hidden;
   padding: 0;
-  -webkit-transition-property: opacity, visibility, background-color;
   transition-property: opacity, visibility, background-color;
-  -webkit-transition-duration: 0.3s, 0s;
   transition-duration: 0.3s, 0s;
-  -webkit-transition-delay: 0s, 0.3s;
   transition-delay: 0s, 0.3s;
 }
 /* line 161, sass/stars/zemplate/_mixins.scss */
@@ -3299,7 +3297,6 @@ html, body {
 .head-nav li:hover ul {
   opacity: 1;
   visibility: visible;
-  -webkit-transition-delay: 0s, 0s;
   transition-delay: 0s, 0s;
 }
 
