@@ -20,12 +20,18 @@ if (post_password_required())
 
     <?php if (have_comments()) : ?>
         <h2>
-            <?php printf(  'One comment on &ldquo;%2$s&rdquo;',
-                            '%1$s comments on &ldquo;%2$s&rdquo;',
-                            get_comments_number(),
-                            number_format_i18n(get_comments_number()),
-                            get_the_title()
-               ); ?>
+            <?php
+                printf(
+                    _n(
+                        'One Response to %2$s',
+                        '%1$s Responses to %2$s',
+                        get_comments_number(),
+                        'twentyten'
+                    ),
+                    number_format_i18n(get_comments_number()),
+                    '' . get_the_title()
+                );
+            ?>
         </h2>
 
         <ol>
