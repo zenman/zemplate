@@ -21,7 +21,8 @@ Tags: zemplate, naked, clean, basic, fondation, semantic
 /*------------------------------------*\
     ::Framework Customizations
 \*------------------------------------*/
-$row-width: 1140px; //sets the width of the rows for foundation (must be above all).
+$row-width: 1140px;                     //sets the width of the rows for foundation (must be above all).
+$include-html-global-classes: false;    //eliminates foundation basic styling from founcations _global.scss
 
 /*------------------------------------*\
     ::Stars
