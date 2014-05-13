@@ -138,7 +138,6 @@ function zemplate_comment($comment, $args, $depth) {
     echo '<div class="comment__author vcard">';
     if ($args['avatar_size'] != 0):
         echo get_avatar($comment, $args['avatar_size']);
-        printf(__('<cite class="fn">%s</cite> <span class="commented">commented:</span>'));
         echo get_comment_author_link();
     echo '</div>';
     endif;
@@ -148,7 +147,6 @@ function zemplate_comment($comment, $args, $depth) {
     endif;
 
     echo '<div class="comment__date commentmetadata">';
-        printf(__('%1$s at %2$s'));
         echo get_comment_date();
         echo get_comment_time();
         echo edit_comment_link(__('(Edit)'),'  ','');
