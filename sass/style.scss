@@ -33,7 +33,7 @@ $include-html-global-classes: false;    //eliminates foundation basic styling fr
     don't get output: they're just
     tools to use elsewhere.
 \*------------------------------------*/
-@import "stars/foundation/scss/foundation";
+@import "stars/foundation/scss/foundation/components/grid";
 @import "stars/zemplate/*";
 
 /*------------------------------------*\
