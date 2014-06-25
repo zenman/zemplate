@@ -104,7 +104,7 @@ add_filter('get_the_excerpt', 'excerpt_read_more_link');
     //Gets rid of that stupid [...].
 \*------------------------------------*/
 function replace_excerpt($content) {
-       return str_replace('[...]',
+       return str_replace('[&hellip;]',
                ' ',
                $content
       );
