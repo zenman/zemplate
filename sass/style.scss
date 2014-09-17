@@ -1,38 +1,79 @@
-// /*------------------------------------*\
-//     $SASS Controller
-// \*------------------------------------*/
+/*!
+Theme Name: Zemplate + Foundation
+Theme URI: http://zenman.com
+Description: An empty framework built on Foundation. Love that blue yeti.
+Version: 3.0
+Author: Dominic Magnifico and Tomas Mulder
+Tags: zemplate, naked, clean, basic, fondation, semantic
+*/
 
+/*------------------------------------*\
+    ::Index SASS Controller
+    ----------------------------------*
+    ::Framework Customizations
+	::Stars
+	::Planets
+	::Moons
+	::Comets
+	::Debris
+\*------------------------------------*/
 
-// /*------------------------------------*\
-//     //Framework Customizations
-// \*------------------------------------*/
-$row-width: 1140px;                             //Sets the width of the rows for foundation (must be above all).
+/*------------------------------------*\
+    ::Framework Customizations
+\*------------------------------------*/
+$row-width: 1140px;                     //sets the width of the rows for foundation (must be above all).
+$include-html-global-classes: false;    //eliminates foundation basic styling from founcations _global.scss
 
-// /*------------------------------------*\
-//     //Partial Imports // Pulls in partial files. Remove what you don't need.
-// \*------------------------------------*/
+/*------------------------------------*\
+    ::Stars
+    ----------------------------------*
+    high level stuff goes here, like
+    mixins, variables, and grid
+    frameworks. Usually things in here
+    don't get output: they're just
+    tools to use elsewhere.
+\*------------------------------------*/
+@import "stars/foundation/scss/foundation/components/grid";
+@import "stars/zemplate/*";
 
-@import
-    //wordpress
-    "settings/template",                        //wordpress's template stylesheet header (must come first)
+/*------------------------------------*\
+    ::Plannets
+    ----------------------------------*
+    global styling that affects nearly
+    every page goes here, like
+    normalize, global text styling,
+    or basic and reusable layout rules.
+\*------------------------------------*/
+@import "planets/**/*";
 
-    //frameworks
-    "compass",                                  //load the sass framework
+/*------------------------------------*\
+    ::Moons
+    ----------------------------------*
+    styling that affects the individual
+    components of the site goes here,
+    like header, contact form, logo,
+    navigation, etc.
+\*------------------------------------*/
+@import "moons/**/*";
 
-    "framework/foundation/variables",           //Required Framework Partials
-    "framework/foundation/components/global",
+/*------------------------------------*\
+    ::Comets
+    ----------------------------------*
+    styling that affects special
+    versions of components goes here,
+    like if the home page has special
+    header that differs from every
+    other page
+\*------------------------------------*/
+@import "comets/**/*";
 
-    "framework/foundation/components/grid",     //Optional Framework Partials
-
-    //settings
-    "settings/variables",                       //zemplate's variables
-    "settings/mixins",                          //zemplate's mixins
-    "settings/fonts",                           //@font-face RULES!
-
-    //styles
-    "partials/base",                            //normalize, all your globals are belong to us
-    "partials/anatomy",                         //header, footer, sidebar, and guts of the site
-    "partials/page",                            //styling specific to pages on the site
-    "partials/blog",                            //category, tag, archive, author, comment, search, etc.
-    //"partials/store",                         //uncomment to add ecommerce styling
-    "partials/shame";                           //shame on you if you put anything in here
+/*------------------------------------*\
+    ::Stars
+    ----------------------------------*
+    styling that is quick and dirty can
+    go here, like unrefined styling you
+    plan to refine later or plugin
+    resets that require !important to
+    work.
+\*------------------------------------*/
+@import "debris/**/*";

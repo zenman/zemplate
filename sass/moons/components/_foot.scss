@@ -1,0 +1,8 @@
+/*------------------------------------*\
+    ::Footer
+\*------------------------------------*/
+@include sticky-footer(
+    $wrap: '.wrap-all-the-things',
+    $row:  '.main-head, .main-torso, .main-foot',
+    $flex: '.main-torso'
+);
