@@ -1,0 +1,5 @@
+.DS_Store
+sitemap.xml
+sitemap.xml.gz
+.sass-cache
+node_modules
