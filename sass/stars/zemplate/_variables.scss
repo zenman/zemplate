@@ -1,0 +1,88 @@
+/*------------------------------------*\
+    ::Variables
+    ----------------------------------*
+    ::Colors
+    ::Breakpoints
+    ::Layout
+    ::Text Styling
+\*------------------------------------*/
+
+/*------------------------------------*\
+    ::Colors
+\*------------------------------------*/
+
+//primary colors / page anchor tags
+$color-1:           #2b2b2b;
+$color-1-light:     lighten($color-1,20%);
+$color-1-dark:      darken($color-1,20%);
+
+//secondary colors / global nav and Local Nav.
+$color-2:           #007DAB;
+$color-2-light:     lighten($color-2,20%);
+$color-2-dark:      darken($color-2,20%);
+
+//tertiary colors / secondary global nav and secondary local nav.
+$color-3:           #F79021;
+$color-3-light:     lighten($color-3,20%);
+$color-3-dark:      darken($color-3,20%);
+
+//alert colors
+$color-good:        #6ADE72;
+$color-bad:         #DE5D5D;
+$color-meh:         #EBE857;
+
+/*------------------------------------*\
+    ::Breakpoints
+\*------------------------------------*/
+$galaxy:        1140px;
+$solarsystem:   1024px;
+$planetary:     480px;
+
+/*------------------------------------*\
+    ::Layout
+\*------------------------------------*/
+$pad:       0.9375rem;
+
+/*------------------------------------*\
+    ::Text Styling
+\*------------------------------------*/
+
+//font colors
+$txt-color-1:       $color-1-dark;
+$txt-color-2:       $color-1-dark;
+$txt-color-3:       $color-3-dark;
+
+//font families
+$fam-heading:       "Century Gothic", sans-serif;
+$fam-body:          palatino, serif;
+$fam-nav:           $fam-body;
+
+//internal/page anchor tags
+$a-color-link:      $color-2;
+$a-color-visited:   $a-color-link;
+$a-color-hover:     lighten($a-color-link,20%);
+$a-color-active:    lighten($a-color-link,30%);
+
+//global nav
+$g-color-link:      $color-3;
+$g-color-visited:   $g-color-link;
+$g-color-hover:     lighten($g-color-link,20%);
+$g-color-active:    lighten($g-color-link,30%);
+
+//local nav
+$l-color-link:      $g-color-link;
+$l-color-visited:   $l-color-link;
+$l-color-hover:     lighten($l-color-link,20%);
+$l-color-active:    lighten($l-color-link,30%);
+
+//secondary global nav
+$g-2-color-link:    $color-2;
+$g-2-color-visited: $g-2-color-link;
+$g-2-color-hover:   lighten($g-2-color-link,20%);
+$g-2-color-active:  lighten($g-2-color-link,20%);
+
+//secondary local nav
+$l-2-color-link:    $g-color-link;
+$l-2-color-visited: $l-2-color-link;
+$l-2-color-hover:   lighten($l-2-color-link,20%);
+$l-2-color-active:  lighten($l-2-color-link,10%);
