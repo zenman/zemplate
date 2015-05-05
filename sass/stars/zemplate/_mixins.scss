@@ -1,6 +1,8 @@
 /*------------------------------------*\
     ::Mixins
     ----------------------------------*
+    ::Strip Unit
+    ::Pixels to EMs
     ::Placeholder Color
     ::@Font Face Shortener
     ::Media Queries
@@ -8,6 +10,35 @@
     ::Sticky Footer
     ::Nav
 \*------------------------------------*/
+
+/*------------------------------------*\
+    ::Strip Unit
+\*------------------------------------*/
+//Usage:
+// p {
+//   line-height: strip-unit(16px); // compiles to line-height: 16;
+// }
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+/*------------------------------------*\
+    ::Pixels to Ems
+\*------------------------------------*/
+//Usage:
+// converts a pixel value to an em value
+// p {
+//     width: em(16px); // compiles to 1em
+// }
+//
+// or for non-standard base font size:
+// p {
+//     padding: em(16px,8px); // compiles to 2em
+// }
+@function em($value, $base: 16) {
+    $value: strip-unit($value) / strip-unit($base) * 1em;
+    @return $value;
+}
 
 /*------------------------------------*\
     ::Placeholder Color
