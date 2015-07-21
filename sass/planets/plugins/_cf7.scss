@@ -1,0 +1,26 @@
+/*------------------------------------*\
+    ::Default CF7 Styling
+\*------------------------------------*/
+.wpcf7{
+	input,
+	textarea {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+	span.wpcf7-not-valid-tip{
+		padding: 5px;
+		color: #fff;
+		background: $color-bad;
+	}
+	div.wpcf7-response-output{
+		text-align: center;
+		border:none;
+		&.wpcf7-validation-errors{
+			background: $color-meh;
+		}
+		&.wpcf7-mail-sent-ok{
+			background: $color-good;
+		}
+	}
+}

@@ -1,0 +1,270 @@
+/*------------------------------------*\
+    ::Mixins
+    ----------------------------------*
+    ::Strip Unit
+    ::Pixels to EMs
+    ::Placeholder Color
+    ::@Font Face Shortener
+    ::Media Queries
+    ::Changing grid-column to col
+    ::Sticky Footer
+    ::Nav
+\*------------------------------------*/
+
+/*------------------------------------*\
+    ::Strip Unit
+\*------------------------------------*/
+//Usage:
+// p {
+//   line-height: strip-unit(16px); // compiles to line-height: 16;
+// }
+@function strip-unit($num) {
+    @return $num / ($num * 0 + 1);
+}
+
+/*------------------------------------*\
+    ::Pixels to Ems
+\*------------------------------------*/
+//Usage:
+// converts a pixel value to an em value
+// p {
+//     width: em(16px); // compiles to 1em
+// }
+//
+// or for non-standard base font size:
+// p {
+//     padding: em(16px,8px); // compiles to 2em
+// }
+@function em($value, $base: 16) {
+    $value: strip-unit($value) / strip-unit($base) * 1em;
+    @return $value;
+}
+
+/*------------------------------------*\
+    ::Placeholder Color
+\*------------------------------------*/
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+/*------------------------------------*\
+    ::@Font Face Shortener
+\*------------------------------------*/
+//Usage:
+//Descript:
+@mixin font-face($font-family, $font-path, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+    @font-face {
+        font-family: '#{$font-family}';
+
+        src: url('fonts/#{$font-path}.eot');
+        src: url('fonts/#{$font-path}.eot?#iefix') format('embedded-opentype'),
+             url('fonts/#{$font-path}.woff') format('woff'),
+             url('fonts/#{$font-path}.ttf') format('truetype'),
+             url('fonts/#{$font-path}.svg##{$font-family}') format('svg');
+
+        font-weight: $font-weight;
+        font-style: $font-style;
+        font-stretch: $font-stretch;
+    }
+}
+
+/*------------------------------------*\
+    ::Media Queries
+\*------------------------------------*/
+//Usage:
+// @include bp($max: 600px){ body { background:#000 } }
+// @include bp($min: 600px){ body { background:#fff } }
+// @include bp($min: 600px, $max: 600px){ body { background:#000 } }
+// @include bp($planetary){ body { background:#fff } }
+
+@mixin bp($media: false, $min: false, $max: false) {
+    @if $media {
+        @media only screen and (max-width: $media) { @content; }
+    }
+    @else if $min and $max {
+        @media only screen and (min-width: $min) and (max-width: $max) { @content; }
+    }
+    @else if $min {
+        @media only screen and (min-width: $min) { @content; }
+    }
+    @else if $max {
+        @media only screen and (max-width: $max) { @content; }
+    }
+
+}
+
+/*------------------------------------*\
+    ::Changing grid-column to col
+\*------------------------------------*/
+
+//Just @include col(x);
+@mixin col($columns, $last-column:false, $center:false, $offset:false, $push:false, $pull:false, $collapse:false, $float:left) {
+    @include grid-column($columns, $last-column, $center, $offset, $push, $pull, $collapse, $float);
+}
+
+/*------------------------------------*\
+    ::Sticky Footer
+\*------------------------------------*/
+
+// Use this mixin to make the footer sticky.
+// Just add the following line somewhere in your stylesheet:
+//
+//      @include sticky-footer($footer-height:200px);
+//
+
+@mixin sticky-footer(
+    $wrap: '.sticky-footer',
+    $row:  '.sticky-footer__row',
+    $flex: '.sticky-footer__row--flex'){
+
+    html, body {
+        height: 99.99999%;//not 100% to eliminate horizontal scroll
+    }
+    #{$wrap} {
+        display: table;
+        table-layout: fixed;
+        height: 100%;
+        width: 100%;
+    }
+    #{$row} {
+        display: table-row;
+        height: 1px;
+    }
+    #{$flex} {
+        height: auto;
+    }
+}
+
+/*------------------------------------*\
+    ::Navigation
+\*------------------------------------*/
+
+// Use this mixin to add basic nav styling.
+// Just add the following code within your styles:
+//
+//
+//      @include nav(
+//          $type: 'nested',            //nav type: dropdown or nested
+//          $nav-container: '.nav',     //& by default
+//          $fade: .3s,                 //fade speed for dropdown (take out for no animation)
+//          $easy-hover: 50px,          //amount of invisible overflow for dropdown (take out to not use)
+//          $easy-hover-top: 0          //set top easy-hover value (you can also set $easy-hover-right, -bottom, and -left separately)
+//      );
+//
+// or to just use the defaults inside any parent element, simply
+//
+//      .nav {
+//          @include nav();
+//      }
+
+@mixin nav(
+    $type: 'nested',
+    $nav-container: '&',
+    $fade: false,
+    $easy-hover: false,
+    $easy-hover-top: false,
+    $easy-hover-right: false,
+    $easy-hover-bottom: false,
+    $easy-hover-left: false
+){
+    @if $type == dropdown {
+        #{$nav-container} {
+            position: relative;
+            z-index: 10;
+            ul {
+                li {
+                    display: block;
+                    float: left;
+                    list-style: none;
+                }
+                ul {
+                    visibility: hidden;
+                    padding: 0;
+                    @if $fade {
+                        transition-property: #{opacity, visibility, background-color};
+                        transition-duration: #{$fade, 0s};
+                        transition-delay: #{0s, $fade};
+                    }
+                    @if $easy-hover {
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            @if $easy-hover-top {
+                                top: -1 * $easy-hover-top;
+                            } @else {
+                                top: -1 * $easy-hover;
+                            }
+                            @if $easy-hover-bottom {
+                                bottom:  -1 * $easy-hover-bottom;
+                            } @else {
+                                bottom:  -1 * $easy-hover;
+                            }
+                            @if $easy-hover-left {
+                                left:  -1 * $easy-hover-left;
+                            } @else {
+                                left:  -1 * $easy-hover;
+                            }
+                            @if $easy-hover-right {
+                                right:  -1 * $easy-hover-right;
+                            } @else {
+                                right:  -1 * $easy-hover;
+                            }
+                            background-color: #000;
+                            opacity: 0;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+            //local nav
+            li {
+                ul {
+                    display: block;
+                    position: absolute;
+                    opacity: 0;
+                }
+                &:hover {
+                    ul {
+                        opacity: 1;
+                        visibility: visible;
+                        @if $fade {
+                            transition-delay: 0s, 0s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @if $type == 'nested' {
+        #{$nav-container} {
+            li {
+                float: left;
+                list-style: none;
+                ul {
+                    padding: 0;
+                }
+                li {
+                    clear: both;
+                }
+                a {
+                    display: block;
+                }
+            }
+            //global nav
+            ul {
+                //local nav
+                ul {
+                    padding:0;
+                    li {
+                        float: left;
+                        clear: both;
+                    }
+                }
+            }
+        }
+    }
+}
