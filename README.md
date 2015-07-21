@@ -17,7 +17,10 @@ For more information on the company that maintains Zemplate, see the Zenman webs
 
 ## Changelog
 
-Version 3.3 for WP4.2.2    
+Version 3.4 - @magnificode - 15.07.21
+- Modify SASS folder structure to include views
+
+Version 3.3 for WP4.2.2
 - Upgrades to foundation 5
 - Upgrades Normalize
 - Utilizes atomic (or galactic) folder structure
