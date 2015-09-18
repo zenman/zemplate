@@ -31,15 +31,6 @@ img.alignleft {
     margin: 5px 20px 20px 0;
 }
 
-@include bp($interstellar) {
-    img.alignleft,
-    img.alignright{
-        float: none;
-        display: block;
-        margin: {top:auto;bottom:$pad;left:auto;};
-    }
-}
-
 /*------------------------------------*\
     ::Captions
 \*------------------------------------*/
