@@ -14,6 +14,7 @@ img.alignnone {
 
 .aligncenter,
 img.aligncenter {
+    text-align: center;
     display: block;
     margin: 5px auto 5px auto;
 }
@@ -28,6 +29,15 @@ img.alignright {
 img.alignleft {
     float: left;
     margin: 5px 20px 20px 0;
+}
+
+@include bp($interstellar) {
+    img.alignleft,
+    img.alignright{
+        float: none;
+        display: block;
+        margin: {top:auto;bottom:$pad;left:auto;};
+    }
 }
 
 /*------------------------------------*\
@@ -53,33 +63,14 @@ img.alignleft {
 	    padding: 0 4px 5px;
 	    font-size: 11px;
 	    line-height: 17px;
-	    background: #fff;
-        border: 1px solid #f0f0f0;
-        max-width: 96%;
-        padding: 5px 3px 10px;
-        text-align: center;
-	    img{
-	        border: 0 none;
-	        height: auto;
-	        margin: 0;
-	        max-width: 98.5%;
-	        padding: 0;
-	        width: auto;
-	    }
-	    .wp-caption-text {
-	        font-size: 11px;
-	        line-height: 17px;
-	        margin: 0;
-	        padding: 0 4px 5px;
-	    }
-	    &.alignright{
-	        margin: 5px 0 20px 20px;
-	    }
-	    &.alignleft {
-	        margin: 5px 20px 20px 0;
-	    }
-	    &.alignnone {
-	        margin: 5px 20px 20px 0;
-	   }
-    }
+	}
+	&.alignright{
+	    margin: 5px 0 20px 20px;
+	}
+	&.alignleft {
+	    margin: 5px 20px 20px 0;
+	}
+	&.alignnone {
+	    margin: 5px 20px 20px 0;
+	}
 }
