@@ -17,19 +17,24 @@ For more information on the company that maintains Zemplate, see the Zenman webs
 
 ## Changelog
 
-Version 3.4 - @magnificode - 15.07.21
+Version
+
+Version 3.4.1 - @tcmulder - 15.12.29
+- Updated styles.scss to reflect changes in 3.4.0
+
+Version 3.4.0 - @magnificode - 15.07.21
 - Modify SASS folder structure to include views
 
-Version 3.3 for WP4.2.2
+Version 3.3.0 for WP4.2.2
 - Upgrades to foundation 5
 - Upgrades Normalize
 - Utilizes atomic (or galactic) folder structure
 - Adds a few new mixins for things like basic WP navigation
 - Adds sticky footer mixin
 
-Version 3.0 for WP3.8,      updated 01.07.2014
+Version 3.0.0 for WP3.8,      updated 01.07.2014
 
-Version 2.1 for WP3.4.1     updated 12.8.2012
+Version 2.1.0 for WP3.4.1     updated 12.8.2012
 
 -----
 
