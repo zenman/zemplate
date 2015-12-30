@@ -6,13 +6,22 @@ Version: 3.0
 Author: Dominic Magnifico and Tomas Mulder
 Tags: zemplate, naked, clean, basic, fondation, semantic
 */
+
 /*------------------------------------*\
     ::Index SASS Controller
     ----------------------------------*
     ::Framework Customizations
 	::Stars
+        ::Foundation
+        ::Zemplate
 	::Planets
+        ::Base
+        ::Layouts
+        ::Plugins
+        ::WordPress (WP)
 	::Moons
+        ::Components
+        ::Views
 	::Comets
 	::Debris
 \*------------------------------------*/
@@ -20,8 +29,8 @@ Tags: zemplate, naked, clean, basic, fondation, semantic
 /*------------------------------------*\
     ::Framework Customizations
 \*------------------------------------*/
-$row-width: 1140px;                     //sets the width of the rows for foundation (must be above all).
-$include-html-classes: false;           //eliminates foundation basic styling from founcations _global.scss
+$row-width: 1140px;           //sets the width of rows for foundation (must be at top).
+$include-html-classes: false; //eliminates foundation basic styling from _global.scss
 
 /*------------------------------------*\
     ::Stars
@@ -32,8 +41,19 @@ $include-html-classes: false;           //eliminates foundation basic styling fr
     don't get output: they're just
     tools to use elsewhere.
 \*------------------------------------*/
-@import "stars/foundation/scss/foundation/components/grid";
-@import "stars/zemplate/*";
+    /*------------------------------------*\
+        ::Foundation
+        ----------------------------------*
+        0000 DETAILS0000
+    \*------------------------------------*/
+    @import "stars/foundation/scss/foundation/components/grid";
+
+    /*------------------------------------*\
+        ::Zemplate
+        ----------------------------------*
+        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+    \*------------------------------------*/
+    @import "stars/zemplate/*";
 
 /*------------------------------------*\
     ::Plannets
@@ -43,7 +63,34 @@ $include-html-classes: false;           //eliminates foundation basic styling fr
     normalize, global text styling,
     or basic and reusable layout rules.
 \*------------------------------------*/
-@import "planets/**/*";
+
+    /*------------------------------------*\
+        ::Base
+        ----------------------------------*
+        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+    \*------------------------------------*/
+    @import "planets/base/**/*";
+
+    /*------------------------------------*\
+        ::WordPress (WP)
+        ----------------------------------*
+        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+    \*------------------------------------*/
+    @import "planets/wp/**/*";
+
+    /*------------------------------------*\
+        ::Plugins
+        ----------------------------------*
+        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+    \*------------------------------------*/
+    @import "planets/plugins/**/*";
+
+    /*------------------------------------*\
+        ::Layouts
+        ----------------------------------*
+        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+    \*------------------------------------*/
+    @import "planets/layouts/**/*";
 
 /*------------------------------------*\
     ::Moons
@@ -53,7 +100,20 @@ $include-html-classes: false;           //eliminates foundation basic styling fr
     like header, contact form, logo,
     navigation, etc.
 \*------------------------------------*/
-@import "moons/**/*";
+
+    /*------------------------------------*\
+        ::Components
+        ----------------------------------*
+        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+    \*------------------------------------*/
+    @import "moons/components/**/*";
+
+    /*------------------------------------*\
+        ::Views
+        ----------------------------------*
+        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+    \*------------------------------------*/
+    @import "moons/views/**/*";
 
 /*------------------------------------*\
     ::Comets
