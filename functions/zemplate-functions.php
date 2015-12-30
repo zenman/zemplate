@@ -299,9 +299,11 @@ function add_cat_to_archives(){
      *             modified SQL WHERE clause with additional selection by category if $args contains a
      *             parameter called cat.
      */
-    function kwebble_getarchives_where_for_category($where, $args){
+
+    function kwebble_getarchives_where_for_category($where, $args = null){
         global $kwebble_getarchives_data, $wpdb;
-        if (isset($args['cat'])){
+        if ($args !== null && isset($args['cat'])){
+            // Preserve the category for later use.
             // Preserve the category for later use.
             $kwebble_getarchives_data['cat'] = $args['cat'];
             // Split 'cat' parameter in categories to include and exclude.
