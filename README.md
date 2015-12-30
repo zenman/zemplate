@@ -19,6 +19,9 @@ For more information on the company that maintains Zemplate, see the Zenman webs
 
 Version
 
+Version 3.4.2 - @tcmulder - 15.12.30
+- Updated zemplate-functions.php to eliminate warnings.
+
 Version 3.4.1 - @tcmulder - 15.12.29
 - Updated styles.scss to reflect changes in 3.4.0
 
