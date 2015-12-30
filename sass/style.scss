@@ -10,27 +10,20 @@ Tags: zemplate, naked, clean, basic, fondation, semantic
 /*------------------------------------*\
     ::Index SASS Controller
     ----------------------------------*
-    ::Framework Customizations
-	::Stars
+    ::Stars
         ::Foundation
         ::Zemplate
-	::Planets
+    ::Plannets
         ::Base
-        ::Layouts
-        ::Plugins
         ::WordPress (WP)
-	::Moons
+        ::Plugins
+        ::Layouts
+    ::Moons
         ::Components
         ::Views
-	::Comets
-	::Debris
+    ::Comets
+    ::Stars
 \*------------------------------------*/
-
-/*------------------------------------*\
-    ::Framework Customizations
-\*------------------------------------*/
-$row-width: 1140px;           //sets the width of rows for foundation (must be at top).
-$include-html-classes: false; //eliminates foundation basic styling from _global.scss
 
 /*------------------------------------*\
     ::Stars
@@ -44,14 +37,19 @@ $include-html-classes: false; //eliminates foundation basic styling from _global
     /*------------------------------------*\
         ::Foundation
         ----------------------------------*
-        0000 DETAILS0000
+        this is the framework we use, mainly
+        as our grid system.
     \*------------------------------------*/
+    $row-width: 1140px;           //sets the width of rows
+    $include-html-classes: false; //eliminates basic styling (_global.scss)
     @import "stars/foundation/scss/foundation/components/grid";
 
     /*------------------------------------*\
         ::Zemplate
         ----------------------------------*
-        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+        variables, mixins, extends, and
+        other functional helpers you'd like
+        available project-wide go here.
     \*------------------------------------*/
     @import "stars/zemplate/*";
 
@@ -67,28 +65,40 @@ $include-html-classes: false; //eliminates foundation basic styling from _global
     /*------------------------------------*\
         ::Base
         ----------------------------------*
-        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+        base is based off normalize and is
+        where you should add all high-level
+        styling for elements and global
+        classes.
     \*------------------------------------*/
     @import "planets/base/**/*";
 
     /*------------------------------------*\
         ::WordPress (WP)
         ----------------------------------*
-        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+        built-in wordpress classes like
+        .alignleft go here as a baseline
+        for handling wordpress's wysiwyg
+        output.
     \*------------------------------------*/
     @import "planets/wp/**/*";
 
     /*------------------------------------*\
         ::Plugins
         ----------------------------------*
-        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+        global plugin styling or overrides
+        go here.
     \*------------------------------------*/
     @import "planets/plugins/**/*";
 
     /*------------------------------------*\
         ::Layouts
         ----------------------------------*
-        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+        layouts define block positioning
+        for elements and are reusable.
+        visual skinning of modules should
+        go in moons/views so layouts
+        maintain portability between
+        sites.
     \*------------------------------------*/
     @import "planets/layouts/**/*";
 
@@ -96,7 +106,7 @@ $include-html-classes: false; //eliminates foundation basic styling from _global
     ::Moons
     ----------------------------------*
     styling that affects the individual
-    components of the site goes here,
+    elements on the site goes here,
     like header, contact form, logo,
     navigation, etc.
 \*------------------------------------*/
@@ -104,14 +114,22 @@ $include-html-classes: false; //eliminates foundation basic styling from _global
     /*------------------------------------*\
         ::Components
         ----------------------------------*
-        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+        components are non-transferable
+        modules or elements that wouldn't
+        make sense to reuse on future
+        sites. because of this, they
+        can contain layout and view in
+        the same file.
     \*------------------------------------*/
     @import "moons/components/**/*";
 
     /*------------------------------------*\
         ::Views
         ----------------------------------*
-        0000 DETAILS 0000000000000000000000000000000000000000000000000000
+        a view skins a layout located in
+        planets/layouts. a view should not
+        exist if there is no matching
+        layout (use a component instead)
     \*------------------------------------*/
     @import "moons/views/**/*";
 
@@ -119,10 +137,10 @@ $include-html-classes: false; //eliminates foundation basic styling from _global
     ::Comets
     ----------------------------------*
     styling that affects special
-    versions of components goes here,
+    versions of elements goes here,
     like if the home page has special
     header that differs from every
-    other page
+    other page.
 \*------------------------------------*/
 @import "comets/**/*";
 
@@ -131,7 +149,7 @@ $include-html-classes: false; //eliminates foundation basic styling from _global
     ----------------------------------*
     styling that is quick and dirty can
     go here, like unrefined styling you
-    plan to refine later or plugin
+    plan to refine later or plugin/IE
     resets that require !important to
     work.
 \*------------------------------------*/
