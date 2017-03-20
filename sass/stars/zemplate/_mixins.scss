@@ -122,7 +122,7 @@
     $flex: '.sticky-footer__row--flex'){
 
     html, body {
-        height: 99.99999%;//not 100% to eliminate horizontal scroll
+        height: 99.99999999%;//not 100% to eliminate horizontal scroll
     }
     #{$wrap} {
         display: table;

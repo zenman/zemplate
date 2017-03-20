@@ -9,20 +9,19 @@ Tags: zemplate, naked, clean, basic, fondation, semantic
 
 /*------------------------------------*\
     ::Index SASS Controller
+    ::Based on - https://mattstauffer.co/blog/organizing-css-oocss-smacss-and-bem#how-does-tighten-use-all-three
     ----------------------------------*
-    ::Stars
+    ::Stars (_base.scss)
+        ::Base
         ::Foundation
         ::Zemplate
-    ::Plannets
-        ::Base
-        ::WordPress (WP)
-        ::Plugins
-        ::Layouts
-    ::Moons
+    ::Planets (_layout.scss)
         ::Components
-        ::Views
-    ::Comets
-    ::Stars
+        ::Layouts
+        ::WordPress (WP)
+    ::Moons (_modules.scss)
+    ::Comets (_other.scss)
+    ::Debris (_shame.scss)
 \*------------------------------------*/
 
 /*------------------------------------*\
@@ -34,6 +33,26 @@ Tags: zemplate, naked, clean, basic, fondation, semantic
     don't get output: they're just
     tools to use elsewhere.
 \*------------------------------------*/
+
+    /*------------------------------------*\
+        ::Zemplate
+        ----------------------------------*
+        variables, mixins, extends, and
+        other functional helpers you'd like
+        available project-wide go here.
+    \*------------------------------------*/
+    @import "stars/zemplate/*";
+    
+    /*------------------------------------*\
+        ::Base
+        ----------------------------------*
+        base is based off normalize and is
+        where you should add all high-level
+        styling for elements and global
+        classes.
+    \*------------------------------------*/
+    @import "stars/base/**/*";
+
     /*------------------------------------*\
         ::Foundation
         ----------------------------------*
@@ -44,17 +63,8 @@ Tags: zemplate, naked, clean, basic, fondation, semantic
     $include-html-classes: false; //eliminates basic styling (_global.scss)
     @import "stars/foundation/scss/foundation/components/grid";
 
-    /*------------------------------------*\
-        ::Zemplate
-        ----------------------------------*
-        variables, mixins, extends, and
-        other functional helpers you'd like
-        available project-wide go here.
-    \*------------------------------------*/
-    @import "stars/zemplate/*";
-
 /*------------------------------------*\
-    ::Plannets
+    ::Planets
     ----------------------------------*
     global styling that affects nearly
     every page goes here, like
@@ -63,32 +73,14 @@ Tags: zemplate, naked, clean, basic, fondation, semantic
 \*------------------------------------*/
 
     /*------------------------------------*\
-        ::Base
+        ::Components
         ----------------------------------*
-        base is based off normalize and is
-        where you should add all high-level
-        styling for elements and global
-        classes.
+        components are non-transferable
+        modules or elements that wouldn't
+        make sense to reuse on future
+        sites, like headers and footers
     \*------------------------------------*/
-    @import "planets/base/**/*";
-
-    /*------------------------------------*\
-        ::WordPress (WP)
-        ----------------------------------*
-        built-in wordpress classes like
-        .alignleft go here as a baseline
-        for handling wordpress's wysiwyg
-        output.
-    \*------------------------------------*/
-    @import "planets/wp/**/*";
-
-    /*------------------------------------*\
-        ::Plugins
-        ----------------------------------*
-        global plugin styling or overrides
-        go here.
-    \*------------------------------------*/
-    @import "planets/plugins/**/*";
+    @import "planets/components/**/*";
 
     /*------------------------------------*\
         ::Layouts
@@ -102,45 +94,30 @@ Tags: zemplate, naked, clean, basic, fondation, semantic
     \*------------------------------------*/
     @import "planets/layouts/**/*";
 
+    /*------------------------------------*\
+        ::WordPress (WP)
+        ----------------------------------*
+        built-in wordpress classes like
+        .alignleft go here as a baseline
+        for handling wordpress's wysiwyg
+        output.
+    \*------------------------------------*/
+    @import "planets/wp/**/*";
+
 /*------------------------------------*\
     ::Moons
     ----------------------------------*
-    styling that affects the individual
-    elements on the site goes here,
-    like header, contact form, logo,
-    navigation, etc.
+    styling specific to each individual
+    module from ACF.
 \*------------------------------------*/
-
-    /*------------------------------------*\
-        ::Components
-        ----------------------------------*
-        components are non-transferable
-        modules or elements that wouldn't
-        make sense to reuse on future
-        sites. because of this, they
-        can contain layout and view in
-        the same file.
-    \*------------------------------------*/
-    @import "moons/components/**/*";
-
-    /*------------------------------------*\
-        ::Views
-        ----------------------------------*
-        a view skins a layout located in
-        planets/layouts. a view should not
-        exist if there is no matching
-        layout (use a component instead)
-    \*------------------------------------*/
-    @import "moons/views/**/*";
+@import "moons/**/*";
 
 /*------------------------------------*\
     ::Comets
     ----------------------------------*
-    styling that affects special
-    versions of elements goes here,
-    like if the home page has special
-    header that differs from every
-    other page.
+    styling that doesn't fit anywhere
+    else, usually like plugin styling
+    and overrides...
 \*------------------------------------*/
 @import "comets/**/*";
 

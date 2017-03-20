@@ -1,0 +1,119 @@
+/*------------------------------------*\
+    ::Global Modifications
+|*------------------------------------*|
+    ::Block
+    ::Text
+\*------------------------------------*/
+
+/*------------------------------------*\
+    ::Block
+\*------------------------------------*/
+// extends
+%--margin-top {
+    margin-top: $gap--big;
+    @include bp($solarsystem){
+        margin-top: $gap--baby*.65;
+    }
+    @include bp($planetary){
+        margin-top: $gap--baby*.55;
+    }
+}
+%--margin-bottom {
+    margin-bottom: $gap--big;
+    @include bp($solarsystem){
+        margin-bottom: $gap--baby*.65;
+    }
+    @include bp($planetary){
+        margin-bottom: $gap--baby*.55;
+    }
+}
+%--padding-bottom {
+    padding-bottom: $gap--baby;
+    @include bp($solarsystem){
+        padding-bottom: $gap--big*.65;
+    }
+    @include bp($planetary){
+        padding-bottom: $gap--big*.55;
+    }
+}
+%--padding-top {
+    padding-top: $gap--baby;
+    @include bp($solarsystem){
+        padding-top: $gap--big*.65;
+    }
+    @include bp($planetary){
+        padding-top: $gap--big*.55;
+    }
+}
+
+%--small-side-padding {
+    padding-left: $gap*3.5;
+    padding-right: $gap*3.5;
+    @include bp($interstellar){
+        padding-left: $gap*2;
+        padding-right: $gap*2;
+    }
+    @include bp($planetary){
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+%--large-side-padding {
+    padding-left: $gap*12;
+    padding-right: $gap*12;
+    @include bp($solarsystem){
+        padding-left: $gap*5;
+        padding-right: $gap*5;
+    }
+    @include bp($interstellar){
+        padding-left: $gap*2;
+        padding-right: $gap*2;
+    }
+    @include bp($planetary){
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+// implementations
+[class*="--margin-top"] { @extend %--margin-top; }
+[class*="--margin-bottom"] { @extend %--margin-bottom; }
+[class*="--padding-top"] { @extend %--padding-top; }
+[class*="--padding-bottom"] { @extend %--padding-bottom; }
+
+[class*="--small-side-padding"]{ @extend %--small-side-padding;}
+[class*="--large-side-padding"]{ @extend %--large-side-padding;}
+
+/*------------------------------------*\
+    ::Text
+\*------------------------------------*/
+%--align-left {
+    text-align: left;
+}
+%--align-right {
+    text-align: right;
+}
+%--align-center {
+    text-align: center;
+}
+
+// implementations
+[class*="--align-left"] { @extend %--align-left; }
+[class*="--align-right"] { @extend %--align-right; }
+[class*="--align-center"] { @extend %--align-center }
+
+
+/*------------------------------------*\
+    ::Background/Frames
+\*------------------------------------*/
+%--bg-white {
+    background-color: white;
+}
+%--bg-lgray {
+    background-color: #e3e3e3;
+}
+
+// implementations
+[class*="--bg-white"]{ @extend %--bg-white; }
+[class*="--bg-lgray"]{ @extend %--bg-lgray; }
