@@ -2,5 +2,16 @@
     ::Wrappers
 \*------------------------------------*/
 [class*="__inner"] {
-    @include grid-row;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 1140px;
+    padding: 0 25px;
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
 }

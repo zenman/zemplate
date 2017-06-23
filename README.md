@@ -3,7 +3,7 @@
 -----
 
 
-Zemplate is a bare-bones WordPress theme that utilizes Foundation, an (astronomical) variation of the Atomic Design System, and keeps BEM on the brain to act as a starting point for theme devleopers.
+Zemplate is a bare-bones WordPress theme that keeps BEM on the brain to act as a starting point for theme devleopers.
 
 Free of all presentational elements and non-semantic markup, Zemplate is the perfect 'blank slate' for your WordPress projects.
 
