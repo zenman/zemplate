@@ -1,6 +1,7 @@
 /*------------------------------------*\
     ::Mixins
     ----------------------------------*
+    ::Grid Column
     ::Strip Unit
     ::Pixels to EMs
     ::Placeholder Color
@@ -10,6 +11,85 @@
     ::Sticky Footer
     ::Nav
 \*------------------------------------*/
+
+/*------------------------------------*\
+    ::Grid Column
+\*------------------------------------*/
+// Creates a column, should be used inside of a media query to control layouts
+//
+// $columns - The number of columns this should be
+// $last-column - Is this the last column? Default: false.
+// $center - Center these columns? Default: false.
+// $offset - # of columns to offset. Default: false.
+// $push - # of columns to push. Default: false.
+// $pull - # of columns to pull. Default: false.
+// $collapse - Get rid of gutter padding on column? Default: false.
+// $float - Should this float? Default: true. Options: true, false, left, right.
+
+$column-gutter: rem-calc(30) !default;
+$total-columns: 12 !default;
+$default-float: left;
+
+@mixin grid-column(
+  $columns:false,
+  $last-column:false,
+  $center:false,
+  $offset:false,
+  $push:false,
+  $pull:false,
+  $collapse:false,
+  $float:true,
+  $position:false) {
+
+  // If positioned for default .column, include relative position
+  // push and pull require position set
+  @if $position or $push or $pull {
+    position: relative;
+  }
+
+  // If collapsed, get rid of gutter padding
+  @if $collapse {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // Gutter padding whenever a column isn't set to collapse
+  // (use $collapse:null to do nothing)
+  @else if $collapse == false {
+    padding-left: $column-gutter / 2;
+    padding-right: $column-gutter / 2;
+  }
+
+  // If a column number is given, calculate width
+  @if $columns {
+    width: grid-calc($columns, $total-columns);
+
+    // If last column, float naturally instead of to the right
+    @if $last-column { float: $opposite-direction; }
+  }
+
+  // Source Ordering, adds left/right depending on which you use.
+  @if $push { #{$default-float}: grid-calc($push, $total-columns); #{$opposite-direction}: auto; }
+  @if $pull { #{$opposite-direction}: grid-calc($pull, $total-columns); #{$default-float}: auto; }
+
+  @if $float {
+    @if $float == left or $float == true { float: $default-float; }
+    @else if $float == right { float: $opposite-direction; }
+    @else { float: none; }
+  }
+
+  // If centered, get rid of float and add appropriate margins
+  @if $center {
+    margin-#{$default-float}: auto;
+    margin-#{$opposite-direction}: auto;
+    float: none;
+  }
+
+  // If offset, calculate appropriate margins
+  @if $offset { margin-#{$default-float}: grid-calc($offset, $total-columns) !important; }
+
+}
+
 
 /*------------------------------------*\
     ::Strip Unit
