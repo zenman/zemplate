@@ -19,6 +19,9 @@ For more information on the company that maintains Zemplate, see the Zenman webs
 
 Version
 
+Version 3.5.2 - @corinne - 17.06.22
+- Removed foundation since it's not used
+
 Version 3.4.2 - @tcmulder - 15.12.30
 - Updated zemplate-functions.php to eliminate warnings.
 
