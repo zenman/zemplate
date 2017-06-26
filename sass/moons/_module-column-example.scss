@@ -4,40 +4,6 @@
         ::Three or Less
         ::Four or More
 \*------------------------------------*/
-.column{
-    &__inner{
-        ul{
-            font-family: $fam-heading-span;
-            font-size: 115%;
-            margin: 0;
-            padding: 2em 0em 0em 1.5em;
-        }
-    }
-    &--has-bg-img{
-        position: relative;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        &:after{
-            content: '';
-            position: absolute;
-            z-index: 20;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(black, 0.55);
-            .town &{
-                background-color: rgba($gray-text, 0.8);
-            }
-        }
-        .column__inner{
-            position: relative;
-            z-index: 50;
-            color: white;
-        }
-    }
-}
 /*------------------------------------*\
     ::Three or Less
 \*------------------------------------*/
