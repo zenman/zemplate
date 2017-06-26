@@ -1,0 +1,142 @@
+/*------------------------------------*\
+    ::Column Module
+    ----------------------------------*
+        ::Three or Less
+        ::Four or More
+\*------------------------------------*/
+.column{
+    &__inner{
+        ul{
+            font-family: $fam-heading-span;
+            font-size: 115%;
+            margin: 0;
+            padding: 2em 0em 0em 1.5em;
+        }
+    }
+    &--has-bg-img{
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &:after{
+            content: '';
+            position: absolute;
+            z-index: 20;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(black, 0.55);
+            .town &{
+                background-color: rgba($gray-text, 0.8);
+            }
+        }
+        .column__inner{
+            position: relative;
+            z-index: 50;
+            color: white;
+        }
+    }
+}
+/*------------------------------------*\
+    ::Three or Less
+\*------------------------------------*/
+.column--1 {
+    .column__inner{
+        display: flex;
+    }
+    .column__group {
+        padding: 0 $pad;
+        width: 100%;
+    }
+}
+.column--2 {
+    .column__inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column__group {
+        padding: 0 $pad;
+    }
+    &.column__two-col--half {
+        .column__group {
+            width: calc(6/12*100% - 0.1%);
+        }
+    }
+    &.column__two-col--two { // two thirds, one third
+        .column__group--1 {
+            width: calc(8/12*100% - 0.1%);
+        }
+        .column__group--2 {
+            width: calc(4/12*100% - 0.1%);
+        }
+    }
+    &.column__two-col--one { // one third, two thirds
+        .column__group--1 {
+            width: calc(4/12*100% - 0.1%);
+        }
+        .column__group--2 {
+            width: calc(8/12*100% - 0.1%);
+        }
+    }
+    @include bp($solarsystem){
+        [class*=" column__group--"]{ //it's a specificity thing
+            &.column__group {
+                width: calc(6/12*100% - 0.1%);
+            }
+        }
+    }
+    @include bp($max:675px){
+        [class*=" column__group--"]{ //it's a specificity thing
+            &.column__group {
+                width: 100%;
+            }
+        }
+    }
+}
+.column--3 {
+    .column__inner{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .column__group {
+        padding: 0 $pad;
+        width: calc(4/12*100% - 0.1%);
+        @include bp($solarsystem){
+            width: 100%;
+        }
+    }
+}
+
+.column__inner {
+    .column--vert-align-center &{
+        align-items: center;
+    }
+    .column--vert-align-top &{
+        align-items: flex-start;
+    }
+    .column--vert-align-bottom &{
+        align-items: flex-end;
+    }
+}
+/*------------------------------------*\
+    ::Four or More
+\*------------------------------------*/
+.column__grid-group {
+    @include clearfix();
+    display: flex;
+    flex-wrap: wrap;
+}
+.column__grid-item {
+    display: inline-block;
+    padding: {left: $pad; right: $pad;}
+    width: 24.99%; // rounded for IE10
+    position: relative;
+    @include bp($solarsystem){
+        width: 48.89%; // rounded for IE10
+        margin-bottom: $pad;
+    }
+    @include bp($max:675px){
+        width: 100%;
+    }
+}
