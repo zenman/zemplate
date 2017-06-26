@@ -1,6 +1,7 @@
 /*------------------------------------*\
     ::Mixins
     ----------------------------------*
+    ::Clearfix
     ::Grid Column
     ::Strip Unit
     ::Pixels to EMs
@@ -11,6 +12,14 @@
     ::Sticky Footer
     ::Nav
 \*------------------------------------*/
+
+/*------------------------------------*\
+    ::Clearfix
+\*------------------------------------*/
+@mixin clearfix {
+  &:before, &:after { content: " "; display: table; }
+  &:after { clear: both; }
+}
 
 /*------------------------------------*\
     ::Grid Column
@@ -345,6 +354,61 @@ $default-float: left;
                     }
                 }
             }
+        }
+    }
+}
+/*------------------------------------*\
+    ::Nav Selectors
+\*------------------------------------*/
+//Usage:
+// Just copy and paste all of the following
+// into an appropriate container and
+// breakpoint, like:
+//
+// .main-nav {
+//     @include bp($solarsystem){
+//         @include nav-all-li {}
+//         @include nav-all-a {}
+//         @include nav-primary-ul {}
+//         @include nav-primary-li {}
+//         @include nav-primary-a {}
+//     }
+// }
+//
+// then add styles within the curly braces
+// of any appropriate selector. Just leave
+// the rest of the selectors in the
+// stylesheet, but leave them empty so
+// they're available if needed later; since
+// there's nothing in them, they won't output
+// anything or lead to bloat.
+
+@mixin nav-all-li() {
+    & li {
+        @content;
+    }
+}
+@mixin nav-all-a() {
+    & a {
+        @content;
+    }
+}
+@mixin nav-primary-ul() {
+    & > ul {
+        @content;
+    }
+}
+@mixin nav-primary-li() {
+    @include nav-primary-ul(){
+        & > li {
+            @content;
+        }
+    }
+}
+@mixin nav-primary-a() {
+    @include nav-primary-li(){
+        & > .menu-item-wrap a {
+            @content;
         }
     }
 }
