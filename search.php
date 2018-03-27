@@ -1,31 +1,34 @@
 <?php
-/**
- * The template for displaying search results pages.
- *
- * @package WordPress
- * @subpackage Zemplate
- * @since Zemplate 3.0
- */
-
 get_header(); ?>
 
-<section class="main-torso search-torso">
-    <div class="search-torso__inner">
-        <article class="search-torso__content">
-            <?php if (have_posts()) : ?>
-                <h3>Not what you're looking for? Search again</h3>
-                <?php get_search_form(); ?>
-                <h1><?php echo 'Search Results for: ' . get_search_query(); ?></h1>
-                <?php while (have_posts()) : the_post(); ?>
-                    <?php get_template_part('templates/parts/search', 'results'); ?>
-                <?php endwhile; ?>
-            <?php else : ?>
-                <h1><?php echo 'Nothing Found'; ?></h1>
-                <p><?php echo 'We couldn\'t find anything that matched your search criteria. Please try again with some different keywords.'; ?></p>
-                <?php get_search_form(); ?>
-            <?php endif; ?>
-        </article><!-- //search-torso__content -->
-    </div><!-- //search-torso__inner -->
-</section><!-- //search-torso -->
+<main class="site-main" role="main">
+	<h1 class="page-title"><?php
+		if ( have_posts() ){
+			printf( __( 'Results for: %s', 'zemplate' ), '<span>' . get_search_query() . '</span>' );
+		} else {
+			_e( 'Nothing Found', 'zemplate' );
+		}
+	?></h1>
+
+	<?php
+	if ( have_posts() ) :
+		while ( have_posts() ) : the_post();
+			get_template_part( 'templates/search', 'results' );
+		endwhile;
+
+		get_template_part( 'templates/pagination' );
+		?>
+
+		<h2>Not what you're looking for? Search again:</h2>
+		<?php get_search_form();
+
+	else : ?>
+
+		<p><?php _e( 'We couldn\'t find anything to show you for that search. Please try again with some different keywords.', 'zemplate' ); ?></p>
+		<?php
+			get_search_form();
+
+	endif; ?>
+</main>
 
 <?php get_footer(); ?>

@@ -1,0 +1,213 @@
+nav {
+	ul {
+		position: relative;
+		list-style-type: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	ul.sub-menu {
+		display: none;
+	}
+
+	a {
+		display: inline-block;
+		height: 100%;
+		text-decoration: none;
+	}
+}
+
+label.nav-toggler {
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	min-width: 1em;
+	margin-right: -1em;
+	color: $color-secondary;
+
+	&:after {
+		content: '+';
+	}
+}
+input.nav-toggler {
+	display: none;
+
+	&:checked {
+		& ~ label.nav-toggler:after {
+			content: '-';
+		}
+
+		& ~ ul.sub-menu {
+			display: block;
+		}
+	}
+}
+
+.utility-nav {
+	background-color: $color-primary;
+	min-height: 1em;
+
+	a {
+		position: relative;
+		color: #fff;
+	}
+	img {
+		position: absolute;
+		top: .2em;
+		right: 110%;
+		height: 1em;
+	}
+
+	ul {
+		justify-content: flex-end;
+	}
+}
+
+.hamburger {
+	cursor: pointer;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	width: 3rem;
+	height: 3rem;
+	margin: 0;
+}
+.hamburger span,
+.hamburger:before,
+.hamburger:after {
+	display: block;
+	content: " ";
+	background: $color-secondary;
+	width: 3rem;
+	height: .5rem; // whole pixels
+	margin-top: .5rem; // whole pixels
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease;
+	transform-origin: .1rem; // magic number
+}
+.hamburger:before {
+	margin-top: 0;
+}
+#mobile-nav-hamburger:checked ~ .hamburger span {
+	opacity: 0;
+	transform: scale(0.2, 0.2);
+}
+#mobile-nav-hamburger:checked ~ .hamburger:before {
+	transform: rotate(45deg);
+}
+#mobile-nav-hamburger:checked ~ .hamburger:after {
+	transform: rotate(-45deg);
+}
+#mobile-nav-hamburger:checked ~ .header-nav {
+	display: block;
+}
+
+.header-nav {
+	display: none;
+	margin: 1em 0;
+
+	ul {
+		display: block;
+	}
+
+	ul.sub-menu {
+		text-align: right;
+		background-color: $color-bg-alt;
+	}
+
+	a {
+		color: $color-primary;
+	}
+	.current-menu-item > a,
+	.current-menu-ancestor > a,
+	a:hover {
+		color: $color-secondary;
+	}
+
+	.main-menu-item {
+		text-align: right;
+		padding-right: 2em;
+	}
+	.menu-center-logo-spacer {
+		display: none;
+	}
+
+	.main-menu-link {
+		padding: .75em 1em;
+	}
+
+	.sub-menu-link {
+		padding: .75em 1em;
+		color: $color-secondary;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
+
+@media (min-width: 50rem) {
+	.nav-toggler {
+		display: none !important;
+	}
+	input.nav-toggler:checked ~ ul.sub-menu {
+		display: none; // hover specifity below is greater, so this will be over-ridden correctly
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.header-nav {
+		display: block;
+		padding-right: 0;
+		margin: 0;
+
+		ul {
+			display: flex;
+		}
+
+		.menu-item-has-children {
+			position: relative;
+		}
+
+		ul.sub-menu {
+			position: absolute;
+			top: 100%;
+			text-align: left;
+			width: 100%;
+		}
+
+		li:hover ul.sub-menu {
+			display: block;
+		}
+
+		.main-menu-item {
+			flex: 1;
+			text-align: center;
+			line-height: 1.2;
+
+			&:hover > a {
+				color: $color-secondary;
+			}
+		}
+
+		.main-menu-link {
+			// vertical align text to bottom
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+		}
+
+		.sub-menu-link {
+			display: block;
+			color: $color-primary;
+			border-left: 6px solid transparent; // can't be bg color because of box-shadow
+
+			&:hover {
+				color: $color-secondary;
+				border-color: $color-primary;
+			}
+		}
+	}
+}

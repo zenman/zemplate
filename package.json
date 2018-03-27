@@ -1,0 +1,40 @@
+{
+  "name": "zemplate-build",
+  "version": "1.2.0",
+  "description": "Modified from the excellent npm-build-boilerplate by Damon Bauer",
+  "license": "MIT",
+  "config": {
+    "libpath": "lib",
+    "srcpath": "src"
+  },
+  "scripts": {
+    "clean": "rm -f $npm_package_config_libpath/assets/*",
+    "scss": "node-sass --importer node_modules/node-sass-globbing/index.js --output-style compressed --source-map true -o $npm_package_config_libpath $npm_package_config_srcpath/css/style.scss",
+    "postcss": "postcss -u autoprefixer css-mqpacker cssnano -r $npm_package_config_libpath/style.css",
+    "uglify": "for d in $npm_package_config_srcpath/js/*; do uglifyjs $d/*.js -m -c > $npm_package_config_libpath/js/${d##*/}.min.js; done",
+    "imagemin": "imagemin $npm_package_config_srcpath/assets/* -o $npm_package_config_libpath/assets",
+    "serve": "browser-sync start --server --files \"$npm_package_config_libpath/style.css, $npm_package_config_libpath/js/*.js, *.php\"",
+    "build:css": "run-s -s scss postcss",
+    "build:js": "run-s -s uglify",
+    "build:images": "run-s -s clean imagemin",
+    "build": "run-s -s build:*",
+    "watch:css": "onchange \"$npm_package_config_srcpath/css\" -- run-s build:css",
+    "watch:js": "onchange \"$npm_package_config_srcpath/js\" -- run-s build:js",
+    "watch:images": "onchange \"$npm_package_config_srcpath/assets\" -- run-s build:images",
+    "watch": "run-p -s serve watch:*",
+    "postinstall": "run-s -s build watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.8",
+    "css-mqpacker": "^6.0.2",
+    "cssnano": "^3.10.0",
+    "imagemin-cli": "^3.0.0",
+    "node-sass": "^3.7.0",
+    "node-sass-globbing": "0.0.23",
+    "npm-run-all": "^2.1.1",
+    "onchange": "^2.4.0",
+    "postcss-cli": "^2.5.2",
+    "uglify-js": "^2.6.2"
+  }
+}

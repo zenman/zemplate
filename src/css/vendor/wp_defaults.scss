@@ -1,0 +1,65 @@
+// Alignment
+
+.aligncenter {
+	text-align: center;
+	display: block;
+	margin: 1em auto;
+}
+
+.alignright {
+	float: right;
+	margin: 1em 0 1em 1em;
+}
+
+.alignleft {
+	float: left;
+	margin: 1em 1em 1em 0;
+}
+
+// Captions
+
+.wp-caption {
+	clear: both;
+	text-align: center;
+}
+
+.wp-caption-text {
+	padding: 1em .5em .5em;
+	border-top: 1px solid #f0f0f0;
+	font-size: .75rem;
+}
+
+// Gallery
+
+.gallery-columns-2,
+.gallery-columns-3,
+.gallery-columns-4 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	figure {
+		margin: 1em 0;
+	}
+}
+
+@media (min-width: 50em){
+	.gallery-columns-2 figure,
+	.gallery-columns-4 figure {
+		flex: 1 1 45%;
+	}
+}
+
+@media (min-width: 60em){
+	.gallery-columns-3 figure {
+		flex: 1 1 30%;
+
+	}
+	.gallery-columns-4 figure {
+		flex: 1 1 22.5%;
+	}
+}
+
+.gallery-icon {
+	text-align: center;
+}

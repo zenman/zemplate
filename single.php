@@ -1,45 +1,32 @@
 <?php
-/**
- * The Template for displaying all single posts.
- *
- * @package WordPress
- * @subpackage Zemplate
- * @since Zemplate 3.0
- */
+get_header();
+?>
+	<main class="site-main" role="main">
+	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+		<article class="content-width">
+			<h1><?php the_title(); ?></h1>
 
-get_header(); ?>
+			<section class="post-content">
+				<?php the_content(); ?>
+				<?php if (get_field('i')){echo zen_inline_if_svg(get_field('i'));} ?>
+			</section>
 
-<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-    <section class="main-torso single-torso--sidebar">
-        <div class="single-torso__inner">
-            <article class="single-torso__content">
-                <h1><?php the_title(); ?></h1>
+			<section class="post-meta">
+				<p><?php echo get_the_date();?></p>
+				<?php
+					if (has_tag()){
+						the_tags();
+					}
+				?>
+			</section>
 
-                <div class="post__posted">
-                    Posted on <?php echo get_the_date();?>
-                    by <?php the_author(); ?>.
-                    <?php if(has_tag()) : ?>
-                        <?php the_tags('Tagged: ');?>
-                    <?php endif;?>
-                </div> <!-- // post__posted -->
+			<?php comments_template( '', true ); ?>
+		</article>
 
-                <div class="post__text">
-                    <?php the_content(); ?>
-                </div> <!-- // post__text -->
+	<?php endwhile;
 
-                <div class="post__comments">
-                    <?php if(!is_attachment()): ?>
-                        <?php comments_template( '', true ); ?>
-                    <?php endif; ?>
-                </div>  <!-- //post__comments -->
-            </article> <!-- //single-torso__content -->
+	get_sidebar(); ?>
 
-            <aside class="single-torso__sidebar">
-                <?php get_sidebar(); ?>
-            </aside><!-- //single-torso__sidebar -->
+	</main><?php
 
-        </div> <!-- //single-torso__inner -->
-    </section><!-- // single-torso -->
-<?php endwhile; // end of the loop. ?>
-
-<?php get_footer(); ?>
+get_footer(); ?>

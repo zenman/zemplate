@@ -1,0 +1,235 @@
+.hidden {
+	display: none;
+}
+
+.ir {
+	white-space: nowrap;
+	overflow: hidden;
+	text-indent: 100%;
+}
+
+.cf:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.no-bullets {
+	list-style-type: none;
+}
+ul.inside {
+	margin-left: 1.5em;
+}
+
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.text-justify {
+	text-align: justify;
+}
+
+.horiz {
+	display: flex;
+	flex-wrap: wrap;
+}
+.horiz.centered {
+	justify-content: center;
+}
+.horiz.space-between {
+	justify-content: space-between;
+}
+.horiz.space-around {
+	justify-content: space-around;
+}
+
+input.toggler {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+}
+label.toggler {
+	cursor: pointer;
+}
+.toggle-target {
+	display: none;
+}
+input.toggler:checked ~ .toggle-target {
+	display: block;
+}
+
+.bg-img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.outlined {
+	outline: 2px solid #fff;
+	outline-offset: -1em;
+	transition: outline-offset .1s ease;
+}
+a:hover .outlined,
+label:hover .outlined {
+	outline-offset: -.5em;
+}
+
+.moving-caret:after {
+	content: "\27e9";
+	display: inline-block;
+	margin-left: .5em;
+	transition: transform .1s linear;
+}
+.moving-caret:hover:after {
+	transform: translateX(.25em);
+}
+
+.dark-overlay {
+	position: relative;
+	color: #fff;
+}
+.dark-overlay:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+}
+.dark-overlay > * {
+	position: relative;
+}
+.dark-overlay a,
+.dark-overlay a:hover {
+	color: #fff;
+}
+
+.dark-overlay.outlined:before {
+	// just do it again on the overlay instead of getting crazy to make it on top
+	outline: 2px solid #fff;
+	outline-offset: -1em;
+}
+
+.horiz.x2 > *,
+.horiz.x3 > *,
+.horiz.x4 > * {
+	flex: 1 1 90%;
+}
+
+@media (min-width: 50rem){
+	.horiz.x2,
+	.horiz.x3,
+	.horiz.x4 {
+		justify-content: space-between;
+	}
+	.horiz.x2 > * {
+		padding: 1rem;
+		margin-top: 0;
+		flex: 1 1 45%;
+	}
+	.horiz.x3 > * {
+		padding: 1rem;
+		margin-top: 0;
+		flex: 1 1 30%;
+	}
+	.horiz.x4 > * {
+		padding: 1rem;
+		margin-top: 0;
+		flex: 1 1 45%;
+	}
+	.horiz > .push {
+		padding: 1rem;
+		flex: 1.5;
+	}
+	.padding-match {
+		// in some cases (like forms), you'll have content adjacent to these columns
+		// so, this little class will square up the layout without anything messy
+		padding: 1rem;
+	}
+	form .horiz.x2 > *,
+	form .horiz.x3 > *,
+	form .horiz.x4 > *,
+	form .horiz > .push,
+	form .padding-match {
+		padding: 0 1rem;
+	}
+}
+
+@media (min-width: 71.25rem) {
+	.horiz.x4 > * {
+		flex: 1 1 22.5%;
+	}
+}
+
+.column-wrap {
+	text-align: left;
+}
+.column-wrap.x2 {
+	columns: 2 24em;
+}
+.column-wrap.x3 {
+	columns: 3 16em;
+}
+.column-wrap.x4 {
+	columns: 4 16em;
+}
+ul.column-wrap {
+	// we need to override the above widths to force columns, but set it to something reasonable instead of nothing at all for edge cases
+	column-width: 12em !important;
+}
+.column-wrap > li {
+	// keep outside positioned bullets, but give some space for them to show in column layout
+	margin-left: 1em;
+}
+.column-wrap.no-bullets > li {
+	margin-left: 0;
+}
+
+section.breakout {
+	margin-bottom: 9em;
+}
+.breakout {
+	margin-bottom: -9em;
+	position: relative;
+}
+
+.bottom-mask > * {
+	position: relative;
+	z-index: 2;
+}
+.bottom-mask:before {
+	content: '';
+	display: block;
+	position: absolute;
+	background-color: $color-bg;
+	height: 17em;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.modal {
+	margin-top: 0;
+	padding: 2em;
+	background-color: #fff;
+	border: 2px solid $color-secondary;
+	box-shadow: .25em .25em 1em rgba(0,0,0,.33), -.25em -.25em 1em rgba(0,0,0,.33);
+}
+.modal.centered {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.modal-close {
+	float: right;
+	font-size: 3em;
+	line-height: 1;
+	color: $color-primary;
+}

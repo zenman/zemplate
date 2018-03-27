@@ -1,34 +1,9 @@
 <?php
-/*
- * @package WordPress
- * @subpackage Zemplate
- * @since Zemplate 1.0
- */
+// Enqueue CSS and JS the WordPress way
+require_once('src/functions/enqueue.php');
 
-/*
- * Require any custom functions you'd like to add to this theme.
- *
- * This is where you should add any custom functions specific
- * to the current theme.
- */
-require_once('functions/enqueue.php');
+// Require Zemplate's standard collection of miscellaneous functions
+require_once('src/functions/zemplate-functions.php');
 
-
-/*
- * Require any custom functions you'd like to add to this theme.
- *
- * This is where you should add any custom functions specific
- * to the current theme.
- */
-require_once('functions/custom-functions.php');
-
-
-
-
-/*
- * Require Zemplate's standard collection of miscellaneous functions
- *
- * These are helpful functions included with all Zemplate themes.
- */
-
-require_once('functions/zemplate-functions.php');
+// Require any custom functions you'd like to add to this theme
+require_once('src/functions/custom-functions.php');

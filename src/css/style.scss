@@ -1,0 +1,29 @@
+/*
+ * # Base
+ * Variables, mixins, and any rules that absolutely have to be loaded first
+ */
+@import "base/**/*.scss";
+
+/*
+ * # Common
+ * Rules that should be fairly consistent from project to project (utility classes, framework-y things)
+ */
+@import "common/**/*.scss";
+
+/*
+ * # Components
+ * Buttons, links, form elements, building blocks....
+ */
+@import "elements/**/*.scss";
+
+/*
+ * # Layouts
+ * Header, footer, nav, pages, posts, modules
+ */
+@import "layouts/**/*.scss";
+
+/*
+ * # Vendor
+ * WP-core-specific things, plugins, overrides, external dependencies, etc
+ */
+@import "vendor/**/*.scss";

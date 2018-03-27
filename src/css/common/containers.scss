@@ -1,0 +1,55 @@
+.content-width {
+	width: 100%;
+	max-width: $content-width;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 1em;
+}
+
+.less-wide {
+	width: 80%;
+	max-width: $content-width * $less-wide-factor;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// to account for the left and right padding on .content-width, we need to break after incorporating it
+// NOTE: this means $content-width and the math immediately below need to be the same units (see base/_variables.scss)
+@media (min-width: $content-width + 2em){
+	.content-width {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media (min-width: $content-width * $more-wide-factor){
+	.wider {
+		max-width: $content-width * $more-wide-factor;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.section {
+	margin-top: 0;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+.bg-alt {
+	background-color: $color-bg-alt;
+}
+.bg-highlight {
+	background-color: $color-primary;
+	color: #fff;
+}
+
+// sticky footer
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+.site-main {
+	flex: 1;
+}

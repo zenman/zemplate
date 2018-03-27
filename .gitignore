@@ -1,5 +1,23 @@
+# OSX system files
 .DS_Store
-sitemap.xml
-sitemap.xml.gz
-.sass-cache
+.AppleDouble
+._*
+
+# Windows system files
+Thumbs.db
+
+# build tools
 node_modules
+.sass-cache
+*.log
+
+# compiled assets
+lib/js/*
+lib/assets/*
+lib/*.css
+*.map
+
+# keep intentionally empty folders
+!lib/assets/
+!lib/js/
+!src/acf-fields/

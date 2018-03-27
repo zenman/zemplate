@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Colors
+   ========================================================================== */
+
+$color-primary: #f79122;
+$color-primary-light: lighten($color-primary,20%);
+$color-primary-dark: darken($color-primary,20%);
+
+$color-secondary: #02a0b9;
+$color-secondary-light: lighten($color-secondary,20%);
+$color-secondary-dark: darken($color-secondary,20%);
+
+$color-bg: #fff;
+$color-bg-alt: #eaeaea;
+
+$color-success: #b2f2bb;
+$color-error: #ffc9c9;
+$color-warn: #ffec99;
+
+/* ==========================================================================
+   Containers
+   ========================================================================== */
+
+// did you know calc() doesn't work in media queries? which means we have to rely on SASS to do the math here and that only works with like units
+// NOTE: if you set $content-width in something other than em, be sure to also change the math in common/containers.scss
+$content-width: 71.25em; // 1140px
+$less-wide-factor: .8;
+$more-wide-factor: 1.2;
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+$font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-body: "SomeHipFont", $font-system;

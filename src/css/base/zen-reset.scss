@@ -1,0 +1,67 @@
+/* ==========================================================================
+   First, start with nothing
+   ========================================================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ==========================================================================
+   Owl selector = free vertical rhythm
+   ========================================================================== */
+// this takes a little getting used to, but is so wonderful once you get into the mindset of how to work around its quirks....
+// https://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+* + * {
+	margin-top: 1.5em;
+}
+// if you need to turn it off (for, say, horizontal content), you can always specify margin directly, which will be more specific and override the owl rule
+// or you can give this class to the parent element and work without the extra margins everywhere
+.margins-off * + * {
+	margin-top: 0;
+}
+// and then if you've done "margins-off" for some complicated layout, but are back to WYSIWYG or other more reliable content and want the margins back, just turn them back on with this class on the parent where things get back to normal
+.margins-on * + * {
+	margin-top: 1.5em;
+}
+
+/* ==========================================================================
+   Building blocks
+   ========================================================================== */
+
+img {
+	max-width: 100%;
+	height: auto;
+	image-rendering: -webkit-optimize-contrast;
+}
+a img {
+	display: block;
+}
+
+html {
+	color: #3b3b3b;
+	font-size: 1em; // 16px
+	line-height: 1.5;
+	height: 100%;
+}
+
+body {
+	margin-top: 0; // <head> triggers the owl rule's margin on <body>
+	font-family: $font-body;
+	height: 100%;
+}
+
+::selection {
+	background: $color-primary;
+	color: #fff;
+	text-shadow: none;
+}
+
+input, textarea, select, button {
+	font-size: 1em;
+}
+button {
+	border-radius: 0;
+	cursor: pointer;
+}
