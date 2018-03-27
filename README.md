@@ -74,17 +74,17 @@ SVG icons are intentionally *not* compiled to sprites. SVG sprites are extremely
 
 ## Known Issues
 
-* [BrowserSync gets triggered twice](./issues/10) on style changes because the file it's watching is transformed two times (sass compilation, then postcss processing). This isn't excellent, but also hasn't seemed noticeable in terms of real-world performance....
+* [BrowserSync gets triggered twice](../../issues/10) on style changes because the file it's watching is transformed two times (sass compilation, then postcss processing). This isn't excellent, but also hasn't seemed noticeable in terms of real-world performance....
 
-* All images get re-compressed whenever any single image changes in the assets folder. We tried to [make the changes more atomic](./issues/7) but this introduced more issues than it solved.
+* All images get re-compressed whenever any single image changes in the assets folder. We tried to [make the changes more atomic](../../issues/7) but this introduced more issues than it solved.
 
-* [Nested folders](./issues/8) inside `src/assets` don't get passed along to `lib`. This is by design, but isn't maybe the best thing. Our thought is that the contents will be manageable enough in a flat structure, but globbing could be added to the scripts fairly easily if it becomes necessary.
+* [Nested folders](../../issues/8) inside `src/assets` don't get passed along to `lib`. This is by design, but isn't maybe the best thing. Our thought is that the contents will be manageable enough in a flat structure, but globbing could be added to the scripts fairly easily if it becomes necessary.
 
 * Non-image files placed in `src/assets` (e.g a font) will get copied over (unharmed) to `lib` which makes linking to the file simple and consistent. But now we're duplicating assets without even a pretense of transforming them, and that's not great. The compiled assets in `lib` (whether actually compiled or just passed along) are .gitignored, so they won't clog up your repo, but they will still exist on disk in a not-maximally-efficient form.
 
 ## TODO
 
-We put these in [Issues](./issues?q=is%3Aissue+is%3Aopen+label%3Atodo) like good GitHub citizens.
+We put these in [Issues](../../issues?q=is%3Aissue+is%3Aopen+label%3Atodo) like good GitHub citizens.
 
 -----
 
