@@ -16,11 +16,6 @@
 	<meta name="theme-color" content="#fff">
 
 	<?php wp_head(); ?>
-																				<?php
-																					// if ($extra_header_scripts = cmb2_get_option( 'code-injections', 'codoorways_scripts_header' )){
-																					// 	echo $extra_header_scripts;
-																					// }
-																				?>
 </head>
 
 <body <?php body_class(); ?>>
