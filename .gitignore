@@ -18,6 +18,4 @@ lib/*.css
 *.map
 
 # keep intentionally empty folders
-!lib/assets/
-!lib/js/
-!src/acf-fields/
+!.gitkeep
