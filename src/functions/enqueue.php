@@ -7,8 +7,7 @@ function zen_enqueues(){
 	//======================================================================
 	// Fonts
 	//======================================================================
-	wp_enqueue_style('googleFonts1', '//fonts.googleapis.com/css?family=Muli:400,700');
-	// wp_enqueue_style('googleFonts2', '//fonts.googleapis.com/css?family=Exo:600');
+	wp_enqueue_style('googleFonts', '//fonts.googleapis.com/css?family=Muli:400,700');
 
 	//======================================================================
 	// CSS

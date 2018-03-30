@@ -2,13 +2,8 @@
    Colors
    ========================================================================== */
 
-$color-primary: #f79122;
-$color-primary-light: lighten($color-primary,20%);
-$color-primary-dark: darken($color-primary,20%);
-
-$color-secondary: #02a0b9;
-$color-secondary-light: lighten($color-secondary,20%);
-$color-secondary-dark: darken($color-secondary,20%);
+$color-primary: #f79123;
+$color-secondary: #15afe5;
 
 $color-bg: #fff;
 $color-bg-alt: #eaeaea;
@@ -32,4 +27,4 @@ $more-wide-factor: 1.2;
    ========================================================================== */
 
 $font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-body: "SomeHipFont", $font-system;
+$font-body: "Muli", $font-system;
