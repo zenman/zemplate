@@ -9,11 +9,11 @@ get_header(); ?>
 				get_template_part('templates/blog', 'excerpt');
 			endwhile;
 			get_template_part( 'templates/pagination' );
+			get_sidebar();
 		?>
 		</div>
 	<?php
 		endif;
-		get_sidebar();
 	?>
 </main>
 
