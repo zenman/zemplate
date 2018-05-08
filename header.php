@@ -21,15 +21,15 @@
 <body <?php body_class(); ?>>
 	<header class="main">
 		<?php
-			$utlity_nav = array(
-				'theme_location'  => 'utilty-nav',
+			$utility_nav = array(
+				'theme_location'  => 'utility-nav',
 				'container'       => 'nav',
 				'container_class' => 'utility-nav',
 				'menu_class'      => 'menu margins-off',
 				'depth'           => 1,
 				'fallback_cb'     => false,
 			);
-			wp_nav_menu($utlity_nav);
+			wp_nav_menu($utility_nav);
 		?>
 		<div class="content-width">
 			<?php
