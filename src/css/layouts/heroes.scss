@@ -1,0 +1,27 @@
+$hero-height: 30em;
+
+.hero {
+	height: 56.25vw;
+	max-height: $hero-height;
+	overflow: hidden;
+
+	.videoholder {
+		height: 100%;
+		padding: 0; // unset the ol' padded box
+
+		video {
+			margin: 0 auto;
+		}
+	}
+
+	img {
+		display: block;
+	}
+}
+
+@media (min-width: ($hero-height / .5625)){ // $hero-height / 56.25% (16:9) aspect ratio = when the video starts to overscan
+	.hero .videoholder video,
+	.hero img {
+		margin-top: calc(-1 * (56.25vw - #{$hero-height}) / 2); // 56.25vw = the natural height of the video - $hero-height for what's visible and / 2 to equally center it vertically
+	}
+}
