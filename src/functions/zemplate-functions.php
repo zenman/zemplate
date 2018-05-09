@@ -60,6 +60,16 @@ function zen_setup_menus(){
 add_action('after_setup_theme', 'zen_setup_menus');
 
 //======================================================================
+// Custom Post Types
+//======================================================================
+function zen_custom_post_types(){
+	foreach (glob(__DIR__.'/post-types/*.php') as $post_type){
+		require_once($post_type);
+	}
+}
+add_action('init', 'zen_custom_post_types');
+
+//======================================================================
 // SVGs
 //======================================================================
 // Inline an SVG if it's in our assets folder
@@ -96,7 +106,7 @@ add_filter( 'wp_revisions_to_keep', 'zen_store_fewer_revisions', 10, 2 );
 // Add a bar at the bottom of the page that shows the template being used.
 function show_template() {
 	global $template;
-	echo '<div style="position:fixed;right:0;bottom:0;left:0;background-color:rgba(247,145,34,.9);color:#fff;padding:.5em;font-size:.8em;">'.$template.'</div>';
+	echo '<div style="position:fixed;right:0;bottom:0;left:0;background-color:rgba(255,108,47,.9);color:#fff;padding:.5em;font-size:.8em;">'.$template.'</div>';
 }
 if (isset($_GET['template'])){add_action('wp_footer', 'show_template');}
 
@@ -335,7 +345,7 @@ function zen_append_footer_legal( $items, $args ) {
 }
 
 function zen_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Made with <svg id="zenman" title=":: zen ::" style="width: 1em; height: 1em; margin: 0 .125em -.125em;" viewBox="0 0 1000 1000" fill="#f79122"><path d="M497 343c51 0 92-57 92-126 0-70-41-126-92-126s-92 57-92 126c0 70 41 126 92 126zM79 794c0 162 209 81 418 0-209-81-418-163-418 0zM497 794c209 81 418 162 418 0 0-163-209-82-418 0zM497 353c-442-1-2 439 0 441 2-2 442-441 0-441z"></path></svg> by <a href="https://www.zenman.com/" target="_blank">Zenman</a></span>.', 'zemplate' );
+	_e( '<span id="footer-thankyou">Made with <svg id="zenman" title=":: zen ::" style="width: 1em; height: 1em; margin: 0 .125em -.125em;" viewBox="0 0 24 24" fill="#ff6c2f"><path d="M12 7.9c1.5 0 2.6-1.6 2.6-3.6S13.5.8 12 .8 9.4 2.4 9.4 4.3s1.1 3.6 2.6 3.6zM0 20.6c0 4.5 5.9 2.3 11.8 0 .1 0 .1 0 0-.1C5.9 18.3 0 16.1 0 20.6zm24 0c0 4.5-5.9 2.3-11.8 0-.1 0-.1 0 0-.1 5.9-2.2 11.8-4.4 11.8.1zM12 8.1c-12.2 0-.9 11.4 0 12.3.9-.9 12.2-12.3 0-12.3z"/></svg> by <a href="https://www.zenman.com/" target="_blank">Zenman</a></span>.', 'zemplate' );
 }
 add_filter( 'admin_footer_text', 'zen_custom_admin_footer' );
 
