@@ -13,7 +13,7 @@
 	margin-right: auto;
 }
 
-// to account for the left and right padding on .content-width, we need to break after incorporating it
+// to account for the left and right padding on .content-width, we need to break after incorporating that padding
 // NOTE: this means $content-width and the math immediately below need to be the same units (see base/_variables.scss)
 @media (min-width: $content-width + 2em){
 	.content-width {

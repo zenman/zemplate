@@ -151,7 +151,7 @@ input.nav-toggler {
 		display: none !important;
 	}
 	input.nav-toggler:checked ~ ul.sub-menu {
-		display: none; // hover specifity below is greater, so this will be over-ridden correctly
+		display: none; // hover specificity below is greater, so this will be over-ridden correctly
 	}
 
 	.hamburger {
