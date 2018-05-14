@@ -207,7 +207,7 @@ class zen_nav_submenu_maker extends Walker_Nav_Menu {
 
 		// Open element
 		$el_id = '';
-		if ( $item->ID ){
+		if ( isset( $item->ID ) && $item->ID ){
 			$el_id = ' id="nav-menu-item-'. $item->ID . '"';
 		}
 		$output .= $indent . '<li'. $el_id . ' class="' . $class_names . '">';
@@ -225,7 +225,7 @@ class zen_nav_submenu_maker extends Walker_Nav_Menu {
 				$args->before,
 				$attributes,
 				$args->link_before,
-				apply_filters( 'the_title', $item->title, $item->ID ),
+				@apply_filters( 'the_title', $item->title, $item->ID ),
 				$args->link_after,
 				$args->after
 			);
@@ -234,7 +234,7 @@ class zen_nav_submenu_maker extends Walker_Nav_Menu {
 			$item_output = sprintf( '%1$s%2$s%3$s%4$s%5$s',
 				$args->before,
 				$args->link_before,
-				apply_filters( 'the_title', $item->title, $item->ID ),
+				@apply_filters( 'the_title', $item->title, $item->ID ),
 				$args->link_after,
 				$args->after
 			);
