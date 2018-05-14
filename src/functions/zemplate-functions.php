@@ -345,7 +345,7 @@ function zen_append_footer_legal( $items, $args ) {
 }
 
 function zen_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Made with <svg id="zenman" title=":: zen ::" style="width: 1em; height: 1em; margin: 0 .125em -.125em;" viewBox="0 0 24 24" fill="#ff6c2f"><path d="M12 7.9c1.5 0 2.6-1.6 2.6-3.6S13.5.8 12 .8 9.4 2.4 9.4 4.3s1.1 3.6 2.6 3.6zM0 20.6c0 4.5 5.9 2.3 11.8 0 .1 0 .1 0 0-.1C5.9 18.3 0 16.1 0 20.6zm24 0c0 4.5-5.9 2.3-11.8 0-.1 0-.1 0 0-.1 5.9-2.2 11.8-4.4 11.8.1zM12 8.1c-12.2 0-.9 11.4 0 12.3.9-.9 12.2-12.3 0-12.3z"/></svg> by <a href="https://www.zenman.com/" target="_blank">Zenman</a></span>.', 'zemplate' );
+	_e( '<span id="footer-thankyou">Made with <svg id="zenman" title=":: zen ::" style="width: 1em; height: 1em; margin: 0 .125em -.125em;" viewBox="0 0 24 24" fill="#ff6c2f"><path d="M0 20.6c0 4.5 5.9 2.3 11.9 0C6 18.3 0 16.1 0 20.6m24 0c0 4.5-5.9 2.3-11.9 0 5.9-2.3 11.9-4.5 11.9 0M12 8.1c-12.2 0-1 11.2 0 12.2 1-1 12.2-12.2 0-12.2m0-7.35a2.6 3.6 0 1 0 .001 0"/></svg> by <a href="https://www.zenman.com/" target="_blank">Zenman</a></span>.', 'zemplate' );
 }
 add_filter( 'admin_footer_text', 'zen_custom_admin_footer' );
 
