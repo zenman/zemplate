@@ -13,7 +13,11 @@
 		</div>
 	</footer>
 
-	<?php wp_footer(); ?>
-
+	<?php
+		wp_footer();
+		if ($extra_footer_scripts = get_theme_mod( 'zen_additional_scripts_body' )){
+			echo $extra_footer_scripts;
+		}
+	?>
 </body>
 </html>

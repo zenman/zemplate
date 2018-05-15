@@ -16,6 +16,13 @@
 	<meta name="theme-color" content="#fff">
 
 	<?php wp_head(); ?>
+
+	<?php
+		wp_head();
+		if ($extra_header_scripts = get_theme_mod( 'zen_additional_scripts_head' )){
+			echo $extra_header_scripts;
+		}
+	?>
 </head>
 
 <body <?php body_class(); ?>>

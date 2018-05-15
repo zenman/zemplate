@@ -128,6 +128,53 @@ function replace_ellipsis($content) {
 add_filter('the_excerpt', 'replace_ellipsis');
 
 //======================================================================
+// Theme Options in the Customizer
+//======================================================================
+function zen_theme_options($wp_customize){
+	$wp_customize->add_section('zen_additional_scripts', array(
+		'title'       => __('Additional Scripts', 'zemplate'),
+		'description' => __('<p>Here you can paste some content to appear at the end of the <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> tags.</p><p>Usually this is for third-party scripts, like analytics or some widgety plugin (live chat, etc).</p><p><strong>Keep in mind:</strong> Whatever you paste here will be stored in the database and rendered to the page without modification. Be careful and make sure you know what you\'re doing....</p>', 'zemplate'),
+		'priority'    => 300, // default is 160, "Additional CSS" is last at 200
+	));
+
+	$wp_customize->add_setting('zemplate_theme_options[scripts_head]', array(
+		'default'   => '',
+		'type'      => 'theme_mod',
+		'transport' => 'postMessage', // we're not using this, but refreshing while typing is rough (especially when the change is unlikely to render)
+	));
+	$wp_customize->add_setting('zemplate_theme_options[scripts_body]', array(
+		'default'   => '',
+		'type'      => 'theme_mod',
+		'transport' => 'postMessage', // we're not using this, but refreshing while typing is rough (especially when the change is unlikely to render)
+	));
+
+	$wp_customize->add_control('zemplate_theme_options[scripts_head]', array(
+		'type' => 'textarea',
+		'label'      => __('Before closing HEAD', 'zemplate'),
+		'section'    => 'zen_additional_scripts',
+		'description' => esc_html__( 'This will load on every page before the content has a chance to display, so performance will take a hit. If it can go before the closing &lt;body&gt; without critically breaking, it should.' ),
+		'priority' => 10,
+		'input_attrs' => array(
+			'rows' => 12, // maybe this will be supported someday
+			'placeholder' => __( '<!-- Go really easy here -->' ),
+		),
+	));
+
+	$wp_customize->add_control('zemplate_theme_options[scripts_body]', array(
+		'type' => 'textarea',
+		'label'      => __('Before closing BODY', 'zemplate'),
+		'section'    => 'zen_additional_scripts',
+		'description' => __( '<p>This will still impact performance, so you shouldn\'t go wild, but at least there will be some page loaded and available before the scripts start clogging things up.</p><p>You might be looking for:</p><p><ul><li><a href="https://developers.google.com/tag-manager/quickstart">Google Tag Manager</a></li><li><a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tracking_snippet">Analytics Only</a></li></ul></p>' ),
+		'priority' => 20,
+		'input_attrs' => array(
+			'rows' => 12, // wishful thinking
+			'placeholder' => __( '<!-- Go fairly easy here -->' ),
+		),
+	));
+}
+add_action('customize_register', 'zen_theme_options');
+
+//======================================================================
 // Main Nav Walker
 //======================================================================
 // Add depth and sub-menu classes
