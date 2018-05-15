@@ -12,6 +12,7 @@ a:hover {
 }
 
 button,
+.button,
 .btn {
 	padding: .5em 1em;
 	border: 1px solid $color-primary;
@@ -22,18 +23,21 @@ button,
 	transition: color .2s linear, border-color .2s linear;
 }
 button:hover,
+.button:hover,
 .btn:hover {
 	border-color: $color-secondary;
 	color: $color-secondary;
 }
 
 button.secondary,
+.button.secondary,
 .btn.secondary {
 	border-color: $color-secondary;
 	color: $color-secondary;
 	transition: background-color .2s linear;
 }
 button.secondary:hover,
+.button.secondary:hover,
 .btn.secondary:hover {
 	background-color: $color-secondary;
 	color: #fff;
