@@ -8,7 +8,6 @@ get_header();
 
 			<section class="post-content">
 				<?php the_content(); ?>
-				<?php if (get_field('i')){echo zen_inline_if_svg(get_field('i'));} ?>
 			</section>
 
 			<section class="post-meta">
