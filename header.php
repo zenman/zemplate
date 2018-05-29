@@ -14,8 +14,6 @@
 	<meta name="msapplication-config" content="<?php echo get_stylesheet_directory_uri(); ?>/browserconfig.xml">
 	<meta name="theme-color" content="#fff">
 
-	<?php wp_head(); ?>
-
 	<?php
 		wp_head();
 		if ($extra_header_scripts = get_theme_mod( 'zen_additional_scripts_head' )){
