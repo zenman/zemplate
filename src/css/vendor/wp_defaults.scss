@@ -21,6 +21,8 @@
 .wp-caption {
 	clear: both;
 	text-align: center;
+	// the FIGURE element wrapped around images in the WYSIWYG get super helpful inline widths....
+	width: auto !important;
 }
 
 .wp-caption-text {
