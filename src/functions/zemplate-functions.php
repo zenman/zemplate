@@ -103,12 +103,24 @@ add_filter( 'wp_revisions_to_keep', 'zen_store_fewer_revisions', 10, 2 );
 //======================================================================
 // Template check
 //======================================================================
-// Add a bar at the bottom of the page that shows the template being used.
+// Add a bar at the bottom of the page that shows the template being used
 function show_template() {
 	global $template;
-	echo '<div style="position:fixed;right:0;bottom:0;left:0;background-color:rgba(255,108,47,.9);color:#fff;padding:.5em;font-size:.8em;">'.$template.'</div>';
+	echo '<div style="position:fixed;bottom:0;left:0;background-color:rgba(255,108,47,.9);color:#fff;padding:.5em;font-size:.8em;">'.$template.'</div>';
 }
 if (isset($_GET['template'])){add_action('wp_footer', 'show_template');}
+
+//======================================================================
+// Performance check
+//======================================================================
+// Add a bar at the bottom of the page that shows resource usage
+function show_perf_stats() {
+	echo '<div style="position:fixed;right:0;bottom:0;background-color:rgba(255,108,47,.9);color:#fff;padding:.5em;font-size:.8em;">'.
+		'<strong>Memory:</strong> '.number_format( memory_get_peak_usage() / 1024 / 1024, 2 ) . 'MB '.
+		'<strong>DB Queries:</strong> '.get_num_queries().
+	'</div>';
+}
+if (isset($_GET['perf'])){add_action('wp_footer', 'show_perf_stats');}
 
 
 //======================================================================
