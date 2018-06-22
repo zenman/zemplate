@@ -2,62 +2,50 @@ input, textarea, select {
 	border: 1px solid #ccc;
 	border-radius: 0;
 	padding: .5em .75em;
+	background: #fff;
+	color: inherit;
+
+	&:focus {
+		border-color: $color-primary;
+	}
+}
+
+textarea {
+	resize: vertical;
 }
 
 select {
-	/* remove default arrow */
-	-webkit-appearance: none;
-	-moz-appearance: none;
+	// remove default arrow
 	appearance: none;
 
-	/* add custom arrow */
-	background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' preserveAspectRatio='xMaxYMid'%3E%3Cpolyline fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='1' points='2,6 12,18 22,6'/%3E%3C/svg%3E") right center no-repeat;
+	// add custom arrow
+	background: #fff svg_url('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" preserveAspectRatio="xMaxYMid"><polyline fill="none" stroke="'+$color-secondary+'" points="2,6 12,18 22,6"/></svg>') right center no-repeat;
 	background-size: auto 60%;
 	background-position: calc(100% - .5em) 50%;
 
 	padding-right: 3em;
-	margin-left: .5em;
 }
 select::-ms-expand {
-	/* hide the default arrow in ie10 and ie11 */
+	// hide the default arrow in ie10 and ie11
 	display: none;
 }
 
 option {
-	margin-left: 1em;
+	margin-left: .75rem;
 }
 
-input[type=search] {
-	border: 1px solid #00446a;
-	border-color: var(--color-link-primary);
-	padding: .5em 1em;
-	border-top-left-radius: .5em;
-	border-bottom-left-radius: .5em;
-}
-input[type=search] + button {
-	min-width: auto;
-	border-top-right-radius: .5em;
-	border-bottom-right-radius: .5em;
-	/* these magic numbers work in Chrome and get close elsewhere, so.... */
-	vertical-align: top;
-	line-height: 1.15;
-}
-input[type=search] + button svg.icon {
-	margin: 0;
-}
+form {
+	label {
+		display: block;
+	}
 
-form label {
-	display: block;
-}
-
-.block-labels input,
-.block-labels textarea,
-.block-labels select {
-	display: block;
-	width: 100%;
-	margin-left: 0;
-}
-
-.block-labels input[type=submit] {
-	width: auto;
+	input,
+	textarea,
+	select {
+		display: block;
+		width: 100%;
+	}
+	input[type=submit] {
+		width: auto;
+	}
 }
