@@ -137,7 +137,7 @@ function zen_debug($foo) {
 function replace_ellipsis($content) {
 	return str_replace('[&hellip;]','&hellip;',$content);
 }
-add_filter('the_excerpt', 'replace_ellipsis');
+add_filter('get_the_excerpt', 'replace_ellipsis');
 
 //======================================================================
 // Theme Options in the Customizer
