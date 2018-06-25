@@ -149,18 +149,18 @@ function zen_theme_options($wp_customize){
 		'priority'    => 300, // default is 160, "Additional CSS" is last at 200
 	));
 
-	$wp_customize->add_setting('zemplate_theme_options[scripts_head]', array(
+	$wp_customize->add_setting('zen_additional_scripts_head', array(
 		'default'   => '',
 		'type'      => 'theme_mod',
-		'transport' => 'postMessage', // we're not using this, but refreshing while typing is rough (especially when the change is unlikely to render)
+		'transport' => 'postMessage', // we're not using this, but the alternative is refreshing while typing and that's rough (especially when the change is unlikely to render)
 	));
-	$wp_customize->add_setting('zemplate_theme_options[scripts_body]', array(
+	$wp_customize->add_setting('zen_additional_scripts_body', array(
 		'default'   => '',
 		'type'      => 'theme_mod',
-		'transport' => 'postMessage', // we're not using this, but refreshing while typing is rough (especially when the change is unlikely to render)
+		'transport' => 'postMessage', // we're not using this, but the alternative is refreshing while typing and that's rough (especially when the change is unlikely to render)
 	));
 
-	$wp_customize->add_control('zemplate_theme_options[scripts_head]', array(
+	$wp_customize->add_control('zen_additional_scripts_head', array(
 		'type' => 'textarea',
 		'label'      => __('Before closing HEAD', 'zemplate'),
 		'section'    => 'zen_additional_scripts',
@@ -172,7 +172,7 @@ function zen_theme_options($wp_customize){
 		),
 	));
 
-	$wp_customize->add_control('zemplate_theme_options[scripts_body]', array(
+	$wp_customize->add_control('zen_additional_scripts_body', array(
 		'type' => 'textarea',
 		'label'      => __('Before closing BODY', 'zemplate'),
 		'section'    => 'zen_additional_scripts',
