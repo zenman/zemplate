@@ -52,7 +52,7 @@ $args = array(
 	'supports'             => $supports,
 	'has_archive'          => true,
 	'rewrite'              => true,
-	'query_var'            => true,
+	// 'query_var'            => false,
 	'can_export'           => true,
 );
 
