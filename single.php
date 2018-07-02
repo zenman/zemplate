@@ -6,7 +6,7 @@ get_header();
 		<article class="content-width">
 			<h1><?php the_title(); ?></h1>
 
-			<section class="post-content">
+			<section class="post-content cf">
 				<?php the_content(); ?>
 			</section>
 
