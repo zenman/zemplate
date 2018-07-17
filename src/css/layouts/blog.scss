@@ -1,0 +1,11 @@
+.post-content {
+	// WYSIWYG paragraphs are inconsistent, so make BRs act like Ps
+	br {
+		display: block;
+		margin-top: 1.5em;
+	}
+
+	ul ul {
+		margin-left: 1.5em;
+	}
+}
