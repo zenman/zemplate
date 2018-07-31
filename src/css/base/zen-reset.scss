@@ -43,13 +43,13 @@ html {
 	color: #3b3b3b;
 	font-size: 1em; // 16px
 	line-height: 1.5;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 body {
 	margin-top: 0; // <head> triggers the owl rule's margin on <body>
 	font-family: $font-body;
-	height: 100vh;
+	min-height: 100vh;
 }
 
 ::selection {
