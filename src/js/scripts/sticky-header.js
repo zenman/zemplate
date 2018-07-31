@@ -7,6 +7,10 @@
 
 var header = document.getElementById('sticky-header');
 
+var recalc_sticky_header = debounce(function(evt){
+	header_offset();
+}, 100);
+
 if (header){
 	header_offset();
 	window.addEventListener('resize', recalc_sticky_header, false);
@@ -15,7 +19,3 @@ if (header){
 function header_offset() {
 	header.nextElementSibling.style.marginTop = header.offsetHeight + 'px';
 }
-
-var recalc_sticky_header = debounce(function(evt){
-	header_offset();
-}, 100);
