@@ -1,4 +1,12 @@
 /*
+ * # Media Queries source order fix for mqpacker
+ * https://www.npmjs.com/package/css-mqpacker#the-first-win-algorithm
+ */
+@media (min-width: 50em){}
+@media (min-width: 60em){}
+@media (min-width: 71.25em){}
+
+/*
  * # Base
  * Variables, mixins, and any rules that absolutely have to be loaded first
  */
