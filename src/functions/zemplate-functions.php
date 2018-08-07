@@ -94,6 +94,44 @@ function zen_inline_if_svg( $att_id, $size = 'medium', $attr = '' ){
 }
 
 //======================================================================
+// Automagic social media icons
+//======================================================================
+// grab more from here: https://simpleicons.org/
+function get_social_icon($url){
+	$found = '';
+
+	$known = array(
+		'behance.net' => 'behance',
+		'codepen.io' => 'codepen',
+		'dribbble.com' => 'dribbble',
+		'facebook.com' => 'facebook',
+		'github.com' => 'github',
+		'instagram.com' => 'instagram',
+		'keybase.io' => 'keybase', // a guy can hope
+		'linkedin.com' => 'linkedin',
+		'pinterest.com' => 'pinterest',
+		'twitter.com' => 'twitter',
+		'vimeo.com' => 'vimeo',
+		'youtube.com' => 'youtube',
+	);
+
+	$fallbacks = array('message-circle', 'star');
+
+	foreach ($known as $search => $slug){
+		if (stripos($url, $search) !== false){
+			$found = $slug;
+			break;
+		}
+	}
+
+	if (!$found){
+		$found = 'fallback-'.$fallbacks[array_rand($fallbacks)];
+	}
+
+	return zen_svg_icon('social-'.$found, 'big icon');
+}
+
+//======================================================================
 // Revision Control
 //======================================================================
 // Maybe we don't keep _everything_ yeah?
@@ -308,6 +346,68 @@ class zen_nav_submenu_maker extends Walker_Nav_Menu {
 }
 
 //======================================================================
+// Social Nav Walker - replace social media links with their icons
+//======================================================================
+// call this by adding:
+// 'walker'          => new zen_nav_social_icons(),
+// to the wp_nav_menu() $args
+class zen_nav_social_icons extends Walker_Nav_Menu {
+	function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+		$indent = ( $depth > 0 ? str_repeat( "\t", $depth ) : '' ); // code indent
+
+		// Passed classes
+		$classes = empty( $item->classes ) ? array() : (array) $item->classes;
+
+		// Depth-dependent classes
+		if ($depth === 0){
+			$classes[] = 'main-menu-item';
+		} else {
+			$classes[] = 'sub-menu-item';
+		}
+		$classes[] = 'menu-item-depth-' . $depth;
+
+		$class_names = esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ) );
+
+		// Open element
+		$el_id = '';
+		if ( isset( $item->ID ) && $item->ID ){
+			$el_id = ' id="nav-menu-item-'. $item->ID . '"';
+		}
+		$output .= $indent . '<li'. $el_id . ' class="' . $class_names . '">';
+
+		if ( !empty( $item->url ) ){
+			// Link attributes
+			$attributes  = !empty( $item->attr_title ) ? ' title="'  . esc_attr( $item->attr_title ) .'"' : ' title="Follow ' . get_bloginfo('name') . ' on ' . esc_attr($item->title) . '"';
+			$attributes .= !empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
+			$attributes .= !empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
+			$attributes .= ' href="'   . esc_attr( $item->url        ) .'"';
+			$attributes .= ' class="menu-link ' . ( $depth > 0 ? 'sub-menu-link' : 'main-menu-link' ) . '"';
+
+			// Build link output and pass through the proper filter
+			$item_output = sprintf( '%1$s<a%2$s>%3$s%4$s%5$s</a>%6$s',
+				$args->before,
+				$attributes,
+				$args->link_before,
+				get_social_icon($item->url),
+				$args->link_after,
+				$args->after
+			);
+		} else {
+			// Build "link" output sans anchor and pass through the proper filter
+			$item_output = sprintf( '%1$s%2$s%3$s%4$s%5$s',
+				$args->before,
+				$args->link_before,
+				@apply_filters( 'the_title', $item->title, $item->ID ),
+				$args->link_after,
+				$args->after
+			);
+		}
+
+		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+	}
+}
+
+//======================================================================
 // Main Nav Logo Injector
 //======================================================================
 /**
@@ -409,10 +509,10 @@ function zen_custom_admin_footer() {
 add_filter( 'admin_footer_text', 'zen_custom_admin_footer' );
 
 function zen_remove_menus(){
-	remove_menu_page( 'edit-comments.php' ); //Comments
-	remove_menu_page( 'themes.php' ); //Appearance
-	remove_menu_page( 'plugins.php' ); //Plugins
-	remove_menu_page( 'tools.php' ); //Tools
+	remove_menu_page( 'edit-comments.php' ); // Comments
+	remove_menu_page( 'themes.php' ); // Appearance
+	remove_menu_page( 'plugins.php' ); // Plugins
+	remove_menu_page( 'tools.php' ); // Tools
 	remove_menu_page( 'edit.php?post_type=acf-field-group' ); // ACF
 	remove_menu_page( 'admin.php?page=WP-Optimize' ); // WP-Optimize
 
