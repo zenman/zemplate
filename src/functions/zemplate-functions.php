@@ -209,7 +209,6 @@ function zen_theme_options($wp_customize){
 			'placeholder' => __( '<!-- Go really easy here -->' ),
 		),
 	));
-
 	$wp_customize->add_control('zen_additional_scripts_body', array(
 		'type' => 'textarea',
 		'label'      => __('Before closing BODY', 'zemplate'),
@@ -221,6 +220,26 @@ function zen_theme_options($wp_customize){
 			'placeholder' => __( '<!-- Go fairly easy here -->' ),
 		),
 	));
+
+	// Default Images
+	$wp_customize->add_section('zen_default_images', array(
+		'title'       => __('Default Images', 'zemplate'),
+		'description' => __('<p>Here you can define some images to act as fallbacks.</p>', 'zemplate'),
+		'priority'    => 210, // default is 160, "Additional CSS" is last at 200
+	));
+
+	$wp_customize->add_setting('zen_default_images_blog', array(
+		'default'   => '',
+		'type'      => 'theme_mod',
+		'transport' => 'postMessage', // we're not using this, but the alternative is refreshing while typing and that's rough (especially when the change is unlikely to render)
+	));
+	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'zen_default_images_blog', array(
+		'mime_type' => 'image',
+		'label'      => __('Blog :: Featured Image', 'zemplate'),
+		'section'    => 'zen_default_images',
+		'description' => esc_html__( 'This image will display as the featured image for any posts that don\'t have one of their own.' ),
+		'priority' => 10,
+	)));
 }
 add_action('customize_register', 'zen_theme_options');
 
