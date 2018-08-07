@@ -7,6 +7,7 @@
 					'container_class' => 'footer',
 					'menu_class'      => 'menu margins-off',
 					'fallback_cb'     => false,
+					'walker'          => new zen_nav_submenu_maker(),
 				);
 				wp_nav_menu($footer_menu_args);
 			?>
