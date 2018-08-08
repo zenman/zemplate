@@ -53,3 +53,7 @@ body {
 .site-main {
 	flex: 1 0 auto;
 }
+header.main,
+footer.main {
+	flex-shrink: 0; // IE11 gets aggressive
+}
