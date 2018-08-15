@@ -2,9 +2,9 @@
  * # Media Queries source order fix for mqpacker
  * https://www.npmjs.com/package/css-mqpacker#the-first-win-algorithm
  */
-@media (min-width: 50em){}
-@media (min-width: 60em){}
-@media (min-width: 71.25em){}
+@media (min-width: 50em){ html{margin: 0;} }
+@media (min-width: 60em){ html{margin: 0;} }
+@media (min-width: 71.25em){ html{margin: 0;} }
 
 /*
  * # Base
