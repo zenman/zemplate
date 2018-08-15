@@ -24,7 +24,9 @@ button,
 }
 button:hover,
 .button:hover,
-.btn:hover {
+.btn:hover,
+.fake-button:hover .button,
+.fake-button:hover .btn {
 	border-color: $color-secondary;
 	color: $color-secondary;
 }
@@ -38,16 +40,21 @@ button.secondary,
 }
 button.secondary:hover,
 .button.secondary:hover,
-.btn.secondary:hover {
+.btn.secondary:hover,
+.fake-button:hover .button.secondary,
+.fake-button:hover .btn.secondary {
 	background-color: $color-secondary;
 	color: #fff;
 }
 
+// .fake-button?!? so you can do this: https://codepen.io/zenman-productions/pen/yqWydQ
+
 .button-group {
+	// not setting display: flex so you can add .horiz or not depending on your own layout
 	justify-content: center;
 	align-items: center;
-	margin: 1em;
+	margin: 0; // cancel owl because the buttons themselves will have margins set below
 }
 .button-group > * {
-	margin: 1em;
+	margin: 1.5em .75em;
 }
