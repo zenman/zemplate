@@ -173,9 +173,50 @@ function zen_debug($foo) {
 // I like ellipses more than most, but I don't love the excerpt
 //======================================================================
 function replace_ellipsis($content) {
-	return str_replace('[&hellip;]','&hellip;',$content);
+	return str_replace(' [&hellip;]','&hellip;',$content);
 }
 add_filter('get_the_excerpt', 'replace_ellipsis');
+
+//======================================================================
+// Halt the main query in the case of an empty search
+//======================================================================
+// https://wordpress.stackexchange.com/a/216734
+function empty_search_halt($search, \WP_Query $q){
+	if (!is_admin() && empty($search) && $q->is_search() && $q->is_main_query()){
+		$search .= " AND 0=1";
+	}
+
+	return $search;
+}
+add_filter('posts_search', 'empty_search_halt', 10, 2);
+
+//======================================================================
+// Search results sorted by post type
+//======================================================================
+function order_search_by_posttype( $orderby ){
+	if( ! is_admin() && is_search() ){
+		global $wpdb;
+		$orderby = "{$wpdb->prefix}posts.post_type ASC, {$wpdb->prefix}posts.post_title ASC";
+	}
+	return $orderby;
+}
+add_filter( 'posts_orderby', 'order_search_by_posttype', 10, 1 );
+
+//======================================================================
+// Post Type labels for search results
+//======================================================================
+function zen_friendlier_post_type($post_type){
+	$friendlier = array(
+		// 'singular_name' => 'Something Friendlier',
+		'Post' => 'Blog Post',
+	);
+
+	if (isset($friendlier[$post_type])){
+		return $friendlier[$post_type];
+	}
+
+	return $post_type;
+}
 
 //======================================================================
 // Theme Options in the Customizer

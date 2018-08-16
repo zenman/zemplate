@@ -1,0 +1,16 @@
+.search-query {
+	color: $color-primary;
+}
+
+.search-form {
+	align-items: flex-end;
+
+	button {
+		margin-left: 1.5em;
+	}
+}
+
+// .bg-highlight sets color to #fff, and the input has a bg-color of #fff, so reset this specific combination....
+.bg-highlight .search-form input {
+	color: #3b3b3b;
+}
