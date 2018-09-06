@@ -196,7 +196,7 @@ add_filter('posts_search', 'empty_search_halt', 10, 2);
 function order_search_by_posttype( $orderby ){
 	if( ! is_admin() && is_search() ){
 		global $wpdb;
-		$orderby = "{$wpdb->prefix}posts.post_type ASC, {$wpdb->prefix}posts.post_title ASC";
+		$orderby = $wpdb->prefix . 'posts.post_type ASC, ' . $wpdb->prefix . 'posts.post_title ASC';
 	}
 	return $orderby;
 }
@@ -468,64 +468,6 @@ class zen_nav_social_icons extends Walker_Nav_Menu {
 }
 
 //======================================================================
-// Main Nav Logo Injector
-//======================================================================
-/**
-* Insert spacer into middle of nav
-*/
-function zen_put_the_logo_in_the_middle( $items, $args ) {
-	// only do this if it's the main nav
-	// NOTE: this slug needs to match what was set above in line 57
-	if ( $args->theme_location !== 'header-menu' ) {return $items;}
-
-	// grab all top-level menu items
-	$parents = array();
-	foreach ( $items as $item ){
-		if ( $item->menu_item_parent === '0' ){
-			$parents[] = array('id' => $item->ID, 'pos' => $item->menu_order);
-		}
-	}
-
-	// calculate mid-point
-	$middle_index = floor(count($parents) / 2); // floor() will round down for odd menu counts, ceil() will round up....
-	$middle = $parents[$middle_index]; // -1 to compensate for zero-based array indexes
-
-	// create logo link item
-	$logo = array(
-		'title'            => '&nbsp;',
-		'menu_item_parent' => 0,
-		'menu_order'       => $middle['pos'],
-		// 'ID'               => 'logo_spacer',
-		'db_id'            => '',
-		'url'              => '',
-		'classes'          => array( 'menu-center-logo-spacer' )
-	);
-	$logo = (object)$logo;
-
-	// insert it into menu items and offset everything after it by 1
-	$_items = array();
-	$inserted = false;
-	foreach ( $items as $item ){
-		if (!$inserted){
-			if ($item->ID !== $middle['id']){
-				// everything is normal
-				$_items[] = $item;
-				continue;
-			} else {
-				// this is our middle guy
-				$_items[] = $logo;
-				$inserted = true;
-			}
-		}
-		$item->menu_order++;
-		$_items[] = $item;
-	}
-
-	return $_items;
-}
-// add_filter( 'wp_nav_menu_objects', 'zen_put_the_logo_in_the_middle', 10, 2 );
-
-//======================================================================
 // Footer Legal Copyright Injector
 //======================================================================
 // Insert some useful static bits into the legal nav
@@ -557,8 +499,10 @@ function zen_append_footer_legal( $items, $args ) {
 	);
 
 	// insert them into menu items
-	$items[] = (object)$copyright;
-	$items[] = (object)$website;
+	// array_unshift($items, (object)$website); // at beginning
+	// array_unshift($items, (object)$copyright); // at beginning
+	$items[] = (object)$copyright; // at end
+	$items[] = (object)$website; // at end
 
 	return $items;
 }

@@ -128,9 +128,6 @@ input.nav-toggler {
 		text-align: right;
 		padding-right: 2em;
 	}
-	.menu-center-logo-spacer {
-		display: none;
-	}
 
 	.main-menu-link {
 		padding: .75em 1em;
@@ -160,11 +157,28 @@ input.nav-toggler {
 
 	.header-nav {
 		display: block;
-		padding-right: 0;
 		margin: 0;
 
 		ul {
 			display: flex;
+		}
+
+		.main-menu-item {
+			flex: 1;
+			text-align: center;
+			padding-right: 0;
+			line-height: 1.2;
+
+			&:hover > a {
+				color: $color-secondary;
+			}
+		}
+
+		.main-menu-link {
+			// vertical align text to bottom
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
 		}
 
 		.menu-item-has-children {
@@ -180,23 +194,6 @@ input.nav-toggler {
 
 		li:hover ul.sub-menu {
 			display: block;
-		}
-
-		.main-menu-item {
-			flex: 1;
-			text-align: center;
-			line-height: 1.2;
-
-			&:hover > a {
-				color: $color-secondary;
-			}
-		}
-
-		.main-menu-link {
-			// vertical align text to bottom
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-end;
 		}
 
 		.sub-menu-link {
