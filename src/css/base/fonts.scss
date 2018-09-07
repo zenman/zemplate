@@ -6,13 +6,15 @@
 	woff2 is the best we've got, but it's not supported quite everywhere
 	woff is the next best, and it's supported all the way back to IE9 so don't bother with any other formats....
 	https://caniuse.com/#feat=woff
+
+	add a "fonts" folder to "lib" and these paths will work out
 */
 
 /*
 @font-face {
 	font-family: 'Whatever';
-	src: url('lib/fonts/whatever.woff2') format('woff2'),
-		 url('lib/fonts/whatever.woff') format('woff');
+	src: url('fonts/whatever.woff2') format('woff2'),
+		 url('fonts/whatever.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
