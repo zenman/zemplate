@@ -43,7 +43,7 @@
 					$logo_content = zen_inline_if_svg($custom_logo, 'large', array('alt' => esc_attr(get_bloginfo('name'))));
 				}
 			?>
-			<a id="logo" href="<?php echo home_url(); ?>" rel="nofollow" itemscope itemtype="http://schema.org/Organization"><?php echo $logo_content; ?></a>
+			<a id="logo" href="<?php echo home_url(); ?>" itemscope itemtype="http://schema.org/Organization"><?php echo $logo_content; ?></a>
 			<input id="mobile-nav-hamburger" class="hidden" type="checkbox" /><label class="hamburger" for="mobile-nav-hamburger"><span></span></label>
 			<?php
 				$nav = array(
