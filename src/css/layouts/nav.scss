@@ -13,8 +13,6 @@ nav {
 
 	a {
 		display: inline-block;
-		height: 100%;
-		text-decoration: none;
 	}
 }
 
@@ -34,11 +32,11 @@ input.nav-toggler {
 	display: none;
 
 	&:checked {
-		& ~ label.nav-toggler:after {
+		~ label.nav-toggler:after {
 			content: '-';
 		}
 
-		& ~ ul.sub-menu {
+		~ ul.sub-menu {
 			display: block;
 		}
 	}
@@ -158,13 +156,14 @@ input.nav-toggler {
 	.header-nav {
 		display: block;
 		margin: 0;
+		flex: 1 0 auto;
 
 		ul {
 			display: flex;
 		}
 
 		.main-menu-item {
-			flex: 1;
+			flex: 1 1 auto;
 			text-align: center;
 			padding-right: 0;
 			line-height: 1.2;
@@ -199,11 +198,9 @@ input.nav-toggler {
 		.sub-menu-link {
 			display: block;
 			color: $color-primary;
-			border-left: 6px solid transparent; // can't be bg color because of box-shadow
 
 			&:hover {
 				color: $color-secondary;
-				border-color: $color-primary;
 			}
 		}
 	}

@@ -14,7 +14,7 @@ a:hover {
 button,
 .button,
 .btn {
-	padding: .5em 1em;
+	padding: .75em;
 	border: 1px solid $color-primary;
 	color: $color-primary;
 	display: inline-block;
@@ -23,10 +23,15 @@ button,
 	transition: color .2s linear, border-color .2s linear;
 }
 button:hover,
+button:focus,
 .button:hover,
+.button:focus,
 .btn:hover,
+.btn:focus,
 .fake-button:hover .button,
-.fake-button:hover .btn {
+.fake-button:focus .button,
+.fake-button:hover .btn,
+.fake-button:focus .btn {
 	border-color: $color-secondary;
 	color: $color-secondary;
 }
@@ -39,10 +44,15 @@ button.secondary,
 	transition: background-color .2s linear;
 }
 button.secondary:hover,
+button.secondary:focus,
 .button.secondary:hover,
+.button.secondary:focus,
 .btn.secondary:hover,
+.btn.secondary:focus,
 .fake-button:hover .button.secondary,
-.fake-button:hover .btn.secondary {
+.fake-button:focus .button.secondary,
+.fake-button:hover .btn.secondary,
+.fake-button:focus .btn.secondary {
 	background-color: $color-secondary;
 	color: #fff;
 }

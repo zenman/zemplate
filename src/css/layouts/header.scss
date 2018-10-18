@@ -1,4 +1,22 @@
 header.main {
 	padding: 1em 0;
 	margin-top: 0; // browser-sync and the like....
+
+	> div {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+#logo {
+	display: block;
+	min-width: 9rem;
+	max-width: 15rem;
+	margin-right: 1.5rem;
+
+	svg {
+		width: 100%;
+	}
 }

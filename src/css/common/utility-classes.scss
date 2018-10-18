@@ -69,26 +69,37 @@ input.toggler:checked ~ .toggle-target {
 	background-position: center center;
 }
 
+// inset outlines (with animation)
+// https://codepen.io/zenman-productions/pen/yKbVjw
 .outlined {
 	outline: 2px solid #fff;
 	outline-offset: -1em;
 	transition: outline-offset .1s ease;
 }
 a:hover .outlined,
-label:hover .outlined {
+a:focus .outlined,
+label:hover .outlined,
+label:focus .outlined {
 	outline-offset: -.5em;
 }
 
+// [ some link > ] with a subtly moving ">"
+// https://codepen.io/zenman-productions/pen/VXyjEv
 .moving-caret:after {
 	content: "\27e9";
 	display: inline-block;
 	margin-left: .5em;
 	transition: transform .1s linear;
 }
-.moving-caret:hover:after {
+.fake-button:hover .moving-caret:after,
+.fake-button:focus .moving-caret:after,
+.moving-caret:hover:after,
+.moving-caret:focus:after {
 	transform: translateX(.25em);
 }
 
+// when you need to have a dark overlay over an image, this will do it consistently and without assuming it'll be done to the photo before it's uploaded
+// https://codepen.io/zenman-productions/pen/OvzXYj
 .dark-overlay {
 	position: relative;
 	color: #fff;
@@ -103,10 +114,11 @@ label:hover .outlined {
 	background: rgba(0,0,0,.5);
 }
 .dark-overlay > * {
-	position: relative;
+	position: relative; // z-index is fun
 }
 .dark-overlay a,
-.dark-overlay a:hover {
+.dark-overlay a:hover,
+.dark-overlay a:focus {
 	color: #fff;
 }
 
@@ -116,13 +128,14 @@ label:hover .outlined {
 	outline-offset: -1em;
 }
 
+//
 .horiz.x2 > *,
 .horiz.x3 > *,
 .horiz.x4 > * {
 	flex: 1 1 90%;
 }
 
-@media (min-width: 50rem){
+@media (min-width: 50em){
 	.horiz.x2,
 	.horiz.x3,
 	.horiz.x4 {
@@ -159,9 +172,17 @@ label:hover .outlined {
 	form .padding-match {
 		padding: 0 1rem;
 	}
+
+	.horiz.no-grow > * {
+		flex-grow: 0 !important;
+	}
+
+	.horiz.no-padding > * {
+		padding: 0;
+	}
 }
 
-@media (min-width: 71.25rem) {
+@media (min-width: 71.25em) {
 	.horiz.x4 > * {
 		flex: 1 1 22.5%;
 	}
@@ -219,7 +240,7 @@ section.breakout {
 	padding: 2em;
 	background-color: #fff;
 	border: 2px solid $color-secondary;
-	box-shadow: .25em .25em 1em rgba(0,0,0,.33), -.25em -.25em 1em rgba(0,0,0,.33);
+	box-shadow: 0 0 1em rgba(0,0,0,.33);
 }
 .modal.centered {
 	position: fixed;
@@ -232,4 +253,24 @@ section.breakout {
 	font-size: 3em;
 	line-height: 1;
 	color: $color-primary;
+}
+
+.videoholder {
+	position: relative;
+	overflow: hidden;
+	height: 0;
+	padding-bottom: 56.25%;
+
+	video,
+	iframe,
+	object,
+	embed {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		// height: auto;
+		// top: 50%;
+		// left: 50%;
+		// transform: translate(-50%, -50%);
+	}
 }
