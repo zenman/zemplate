@@ -266,7 +266,7 @@ function zen_theme_options($wp_customize){
 	$wp_customize->add_section('zen_default_images', array(
 		'title'       => __('Default Images', 'zemplate'),
 		'description' => __('<p>Here you can define some images to act as fallbacks.</p>', 'zemplate'),
-		'priority'    => 210, // default is 160, "Additional CSS" is last at 200
+		'priority'    => 310, // default is 160, "Additional CSS" is last at 200
 	));
 
 	$wp_customize->add_setting('zen_default_images_blog', array(
