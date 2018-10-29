@@ -8,6 +8,13 @@
 	ul ul {
 		margin-left: 1.5em;
 	}
+
+	// clearfix all the WYSIWYGs because you never know what floaty things they'll get up to
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
 }
 
 .page-numbers {
