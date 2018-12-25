@@ -212,6 +212,23 @@ ul.column-wrap {
 	margin-left: 0;
 }
 
+dl.inline {
+	dt {
+		font-weight: bold;
+		display: inline;
+
+		&:before {
+			content: "";
+			display: block;
+		}
+	}
+
+	dd {
+		display: inline;
+		margin-left: .75em;
+	}
+}
+
 section.breakout {
 	margin-bottom: 9em;
 }
