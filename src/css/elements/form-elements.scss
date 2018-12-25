@@ -45,6 +45,14 @@ form {
 		display: block;
 		width: 100%;
 	}
+
+	input[type=radio],
+	input[type=checkbox] {
+		display: inline-block;
+		width: auto;
+		transform: translateY(.125em);
+	}
+
 	input[type=submit] {
 		width: auto;
 	}
