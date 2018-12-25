@@ -94,6 +94,19 @@ function zen_inline_if_svg( $att_id, $size = 'medium', $attr = '' ){
 }
 
 //======================================================================
+// bg-srcset
+//======================================================================
+function zen_bg_srcset($img_id, $largest_mobile_size = 'medium', $max = 'large') {
+	$src = wp_get_attachment_image_url($img_id, $largest_mobile_size);
+	if (!$src){ return; }
+
+	$atts = 'style="background-image: url('.$src.');" '.
+			'data-bg-srcset="'.wp_get_attachment_image_srcset($img_id, $max).'"';
+
+	return $atts;
+}
+
+//======================================================================
 // Automagic social media icons
 //======================================================================
 // grab more from here: https://simpleicons.org/
