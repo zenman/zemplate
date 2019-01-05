@@ -46,8 +46,7 @@ function zemplate_setup() {
 add_action('after_setup_theme', 'zemplate_setup');
 
 // remove WP version from RSS
-function zen_remove_rss_version() { return ''; }
-add_filter( 'the_generator', 'zen_remove_rss_version' );
+add_filter( 'the_generator', '__return_empty_string' );
 
 //======================================================================
 // Menus
@@ -526,16 +525,16 @@ function zen_custom_admin_footer() {
 add_filter( 'admin_footer_text', 'zen_custom_admin_footer' );
 
 function zen_remove_menus(){
-	remove_menu_page( 'edit-comments.php' ); // Comments
-	remove_menu_page( 'themes.php' ); // Appearance
-	remove_menu_page( 'plugins.php' ); // Plugins
-	remove_menu_page( 'tools.php' ); // Tools
-	remove_menu_page( 'edit.php?post_type=acf-field-group' ); // ACF
-	remove_menu_page( 'admin.php?page=WP-Optimize' ); // WP-Optimize
+	// remove_menu_page( 'edit-comments.php' ); // Comments
+	// remove_menu_page( 'themes.php' ); // Appearance
+	// remove_menu_page( 'plugins.php' ); // Plugins
+	// remove_menu_page( 'tools.php' ); // Tools
+	// remove_menu_page( 'edit.php?post_type=acf-field-group' ); // ACF
+	// remove_menu_page( 'admin.php?page=WP-Optimize' ); // WP-Optimize
 
-	remove_submenu_page( 'index.php', 'update-core.php' ); // WP Updates
+	// remove_submenu_page( 'index.php', 'update-core.php' ); // WP Updates
 }
-// add_action( 'admin_menu', 'zen_remove_menus' );
+add_action( 'admin_menu', 'zen_remove_menus' );
 
 function zen_disable_default_dashboard_widgets() {
 	global $wp_meta_boxes;
