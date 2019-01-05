@@ -12,5 +12,5 @@
 
 // .bg-highlight sets color to #fff, and the input has a bg-color of #fff, so reset this specific combination....
 .bg-highlight .search-form input {
-	color: #3b3b3b;
+	color: $color-text;
 }
