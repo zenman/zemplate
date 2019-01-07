@@ -6,17 +6,28 @@ header.main {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		align-items: center;
 	}
 }
 
 #logo {
 	display: block;
 	min-width: 9rem;
-	max-width: 15rem;
+	max-width: calc(100% - 4.5rem); // 3rem hamburger width + 1.5rem margin-right (below)
 	margin-right: 1.5rem;
 
 	svg {
 		width: 100%;
+	}
+}
+
+@media (min-width: $hamburger-time){
+	header.main {
+		> div {
+			align-items: center;
+		}
+	}
+
+	#logo {
+		max-width: 15rem;
 	}
 }
