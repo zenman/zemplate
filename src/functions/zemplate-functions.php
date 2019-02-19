@@ -177,8 +177,12 @@ if (isset($_GET['perf'])){add_action('wp_footer', 'show_perf_stats');}
 // Pretty-print objects and arrays
 //======================================================================
 // Glorified var_dump for easier debugging of objects and arrays
-function zen_debug($foo) {
-	echo '<pre class="debug">'; var_dump($foo); echo '</pre>';
+// Pass as many comma-separated variables into this as you'd like
+function zen_debug() {
+	$debuggables = func_get_args();
+	foreach ($debuggables as $foo){
+		echo '<pre class="debug">'; var_dump($foo); echo '</pre>';
+	}
 }
 
 //======================================================================
