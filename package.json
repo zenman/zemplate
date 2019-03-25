@@ -20,25 +20,22 @@
 		"build": "run-s -s build:*",
 		"watch:css": "onchange \"$npm_package_config_srcpath/css\" -- onerror \"run-s build:css\"",
 		"watch:js": "onchange \"$npm_package_config_srcpath/js\" -- onerror \"run-s build:js\"",
-		"watch:images": "onchange \"$npm_package_config_srcpath/assets\" -- onerror \"run-s build:images\"",
+		"watch:images": "onchange -j1 -k \"$npm_package_config_srcpath/assets\" -- onerror \"run-s build:images\"",
 		"watch": "run-p -s serve watch:*",
 		"postinstall": "run-s -s build watch"
 	},
 	"devDependencies": {
-		"autoprefixer": "^9.4.4",
+		"autoprefixer": "^9.5.0",
 		"browser-sync": "^2.26.3",
-		"cli-error-notifier": "^2.0.1",
+		"cli-error-notifier": "^2.1.0",
 		"css-mqpacker": "^7.0.0",
-		"cssnano": "^4.1.8",
-		"imagemin-cli": "^4.0.0",
+		"cssnano": "^4.1.10",
+		"imagemin-cli": "^4.0.1",
 		"node-sass": "^4.11.0",
 		"node-sass-globbing": "^0.0.23",
 		"npm-run-all": "^4.1.5",
 		"onchange": "^5.2.0",
-		"postcss-cli": "^6.1.1",
-		"uglify-js": "^3.4.9"
-	},
-	"dependencies": {
-		"npm": "^6.5.0"
+		"postcss-cli": "^6.1.2",
+		"uglify-js": "^3.5.2"
 	}
 }
