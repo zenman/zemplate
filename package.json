@@ -5,7 +5,8 @@
 	"license": "MIT",
 	"config": {
 		"libpath": "lib",
-		"srcpath": "src"
+		"srcpath": "src",
+		"url": "http://path.to.your/site"
 	},
 	"scripts": {
 		"clean": "rm -f $npm_package_config_libpath/assets/*",
@@ -13,7 +14,7 @@
 		"postcss": "postcss $npm_package_config_libpath/style.css -u autoprefixer css-mqpacker cssnano -r --no-map",
 		"uglify": "for d in $npm_package_config_srcpath/js/*; do uglifyjs $d/*.js -o $npm_package_config_libpath/js/${d##*/}.min.js -m -c --source-map \"url='${d##*/}.min.js.map'\"; done",
 		"imagemin": "imagemin $npm_package_config_srcpath/assets/* --out-dir $npm_package_config_libpath/assets",
-		"serve": "browser-sync start --server --files \"$npm_package_config_libpath/style.css, $npm_package_config_libpath/js/*.js, $npm_package_config_srcpath/../*.php, $npm_package_config_srcpath/../templates/*.php\"",
+		"serve": "browser-sync start --reload-debounce 1000 --proxy $npm_package_config_url --files \"$npm_package_config_libpath/style.css, $npm_package_config_libpath/js/*.js, $npm_package_config_srcpath/../*.php, $npm_package_config_srcpath/../templates/*.php\"",
 		"build:css": "run-s -s scss postcss",
 		"build:js": "run-s -s uglify",
 		"build:images": "run-s -s clean imagemin",

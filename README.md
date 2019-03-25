@@ -44,7 +44,7 @@ Everything works well for us on both OSX and Linux development machines. Windows
 
 #### BrowserSync
 
-This will almost certainly not immediately work for you. We don't know anything about your development environment, but it works really well for us when we substitute `--server` with `--proxy 'http://your-local-wp-site-url.whatever'` in the ["serve" script definition](./package.json#L16). Godspeed.
+This won't work out of the box for you, but it should be possible to get running pretty easily. We don't know anything about your development environment, but it works really well for us when we `--proxy 'http://your-local-wp-site-url.whatever'` in the "serve" script definition. Configure this URL [in the "config" block](./package.json#L9). Godspeed.
 
 #### CSS
 
