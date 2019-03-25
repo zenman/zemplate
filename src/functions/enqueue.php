@@ -27,8 +27,13 @@ function zen_enqueues(){
 	//======================================================================
 	// Conditional Includes
 	//======================================================================
-	// put this in template files as necessary (WP takes care of not adding it to the page more than once):
-	//     wp_enqueue_script( 'whatever' );
-	wp_register_script( 'sliders', get_template_directory_uri() . '/lib/js/sliders.min.js', array('zemplate'), $ver, true);
+	// add some slugs to the array below:
+	//     $conditionals = array('whatever');
+	// then put this in template files as necessary (WP takes care of not adding it to the page more than once):
+	//     wp_enqueue_script('whatever');
+	$conditionals = array();
+	foreach ($conditionals as $conditional){
+		wp_register_script( $conditional, get_template_directory_uri() . '/lib/js/'.$conditional.'.min.js', array('zemplate'), $ver, true);
+	}
 }
 add_action('wp_enqueue_scripts', 'zen_enqueues');
