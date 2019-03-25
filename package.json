@@ -10,9 +10,9 @@
 	},
 	"scripts": {
 		"clean": "rm -f $npm_package_config_libpath/assets/*",
-		"scss": "node-sass --importer node_modules/node-sass-globbing/index.js --output-style=compressed -o=$npm_package_config_libpath $npm_package_config_srcpath/css/style.scss",
-		"postcss": "postcss $npm_package_config_libpath/style.css -u autoprefixer css-mqpacker cssnano -r --no-map",
-		"uglify": "for d in $npm_package_config_srcpath/js/*; do uglifyjs $d/*.js -o $npm_package_config_libpath/js/${d##*/}.min.js -m -c --source-map \"url='${d##*/}.min.js.map'\"; done",
+		"scss": "node-sass --importer node_modules/node-sass-globbing/index.js --sourceMap $npm_package_config_libpath/style.css.map -o=$npm_package_config_libpath $npm_package_config_srcpath/css/style.scss",
+		"postcss": "postcss $npm_package_config_libpath/style.css -u autoprefixer css-mqpacker cssnano -r --map $npm_package_config_libpath/style.css.map",
+		"uglify": "for d in $npm_package_config_srcpath/js/*; do uglifyjs $d/*.js -o $npm_package_config_libpath/js/${d##*/}.min.js -m -c --source-map \"root='$npm_package_config_url',url='${d##*/}.min.js.map'\"; done",
 		"imagemin": "imagemin $npm_package_config_srcpath/assets/* --out-dir $npm_package_config_libpath/assets",
 		"serve": "browser-sync start --reload-debounce 1000 --proxy $npm_package_config_url --files \"$npm_package_config_libpath/style.css, $npm_package_config_libpath/js/*.js, $npm_package_config_srcpath/../*.php, $npm_package_config_srcpath/../templates/*.php\"",
 		"build:css": "run-s -s scss postcss",
