@@ -85,5 +85,7 @@ function throttle(callback, limit) {
 }
 
 function hoist(the_function, the_args){
-	window[the_function](the_args);
+	if (typeof window[the_function] === 'function'){
+		window[the_function](the_args);
+	}
 }
