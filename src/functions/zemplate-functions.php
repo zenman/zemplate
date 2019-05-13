@@ -172,7 +172,6 @@ function show_perf_stats() {
 }
 if (isset($_GET['perf'])){add_action('wp_footer', 'show_perf_stats');}
 
-
 //======================================================================
 // Pretty-print objects and arrays
 //======================================================================
@@ -490,7 +489,7 @@ class zen_nav_social_icons extends Walker_Nav_Menu {
 add_filter( 'wp_nav_menu_objects', 'zen_append_footer_legal', 10, 2 );
 function zen_append_footer_legal( $items, $args ) {
 	// only do this if it's the right nav
-	// NOTE: this slug needs to match what was set above in line 58
+	// NOTE: this slug needs to match what was set above in line 57
 	if ( $args->theme_location !== 'footer-legal' ) {return $items;}
 
 	// create copyright item
@@ -509,7 +508,7 @@ function zen_append_footer_legal( $items, $args ) {
 		'ID'               => '',
 		'db_id'            => '',
 		// 'target'         => '_blank',
-		// 'xfn'            => 'nofollow', // largely defeats the purpose, but use your judgment
+		'xfn'              => 'noopener',
 		'url'              => 'https://www.zenman.com/',
 		'classes'          => array( 'by-zenman' )
 	);
@@ -524,7 +523,7 @@ function zen_append_footer_legal( $items, $args ) {
 }
 
 function zen_custom_admin_footer() {
-	_e( '<span id="footer-thankyou">Made with <svg id="zenman" title=":: zen ::" style="width: 1em; height: 1em; margin: 0 .125em -.125em;" viewBox="0 0 24 24" fill="#ff6c2f"><path d="M0 20.6c0 4.5 5.9 2.3 11.9 0C6 18.3 0 16.1 0 20.6m24 0c0 4.5-5.9 2.3-11.9 0 5.9-2.3 11.9-4.5 11.9 0M12 8.1c-12.2 0-1 11.2 0 12.2 1-1 12.2-12.2 0-12.2m0-7.35a2.6 3.6 0 1 0 .001 0"/></svg> by <a href="https://www.zenman.com/" target="_blank">Zenman</a></span>.', 'zemplate' );
+	_e( '<span id="footer-thankyou">Made with <svg id="zenman" title=":: zen ::" style="width: 1em; height: 1em; margin: 0 .125em -.125em;" viewBox="0 0 24 24" fill="#ff6c2f"><path d="M0 20.6c0 4.5 5.9 2.3 11.9 0C6 18.3 0 16.1 0 20.6m24 0c0 4.5-5.9 2.3-11.9 0 5.9-2.3 11.9-4.5 11.9 0M12 8.1c-12.2 0-1 11.2 0 12.2 1-1 12.2-12.2 0-12.2m0-7.35a2.6 3.6 0 1 0 .001 0"/></svg> by <a href="https://www.zenman.com/" target="_blank" rel="noopener">Zenman</a></span>.', 'zemplate' );
 }
 add_filter( 'admin_footer_text', 'zen_custom_admin_footer' );
 
@@ -570,4 +569,4 @@ add_filter( 'login_headerurl', 'zen_login_url' );
 
 // change the alt text on the logo to show this site name
 function zen_login_title() { return get_option( 'blogname' ); }
-add_filter( 'login_headertitle', 'zen_login_title' );
+add_filter( 'login_headertext', 'zen_login_title' );
