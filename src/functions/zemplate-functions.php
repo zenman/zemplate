@@ -413,7 +413,7 @@ class zen_nav_submenu_maker extends Walker_Nav_Menu {
 		}
 
 		if ( $needs_toggle ){
-			$item_output .= '<input id="nt-'.$item->ID.'" type="checkbox" class="nav-toggler" /><label for="nt-'.$item->ID.'" class="nav-toggler"></label>';
+			$item_output .= '<input id="nt-'.$item->ID.'" type="checkbox" class="nav-toggler" /><label for="nt-'.$item->ID.'" class="nav-toggler" aria-label="Toggle submenu" tabindex="0"></label>';
 		}
 
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
