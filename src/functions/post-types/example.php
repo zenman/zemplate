@@ -12,7 +12,7 @@ $slug = sanitize_title_with_dashes($name);
 $icon = 'dashicons-palmtree';
 
 // 'title', 'editor', 'comments', 'revisions', 'trackbacks', 'author', 'excerpt', 'page-attributes', 'thumbnail', 'custom-fields', 'post-formats'
-$supports = array('title', 'editor', 'thumbnail');
+$supports = array( 'title', 'editor', 'thumbnail', 'zen-default-image' );
 
 //======================================================================
 // EXPERT MODE
@@ -51,7 +51,7 @@ $args = array(
 	'capability_type'      => 'post',
 	'supports'             => $supports,
 	'has_archive'          => true,
-	'rewrite'              => true,
+	'rewrite'              => array( 'with_front' => false ),
 	// 'query_var'            => false,
 	'can_export'           => true,
 );

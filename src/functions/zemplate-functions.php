@@ -26,6 +26,11 @@ function zemplate_setup() {
 	// Tell WP to use more semantic markup wherever it can
 	add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
+	// Default Images: add support to your custom post types as in the example
+	// but you can also add them for any core post types, or types registered elsewhere
+	// by pasting this line and updating the post-type first argument
+	add_post_type_support( 'post', 'zen-default-image' );
+
 	add_theme_support( 'post-thumbnails' );
 	set_post_thumbnail_size( 1280, 960 ); // reasonable height, reasonable crop
 
@@ -258,46 +263,70 @@ function zen_theme_options($wp_customize){
 		'type' => 'textarea',
 		'label'      => __('Before closing HEAD', 'zemplate'),
 		'section'    => 'zen_additional_scripts',
-		'description' => esc_html__( 'This will load on every page before the content has a chance to display, so performance will take a hit. If it can go before the closing &lt;body&gt; without critically breaking, it should.' ),
+		'description' => esc_html__('This will load on every page before the content has a chance to display, so performance will take a hit. If it can go before the closing &lt;body&gt; without critically breaking, it should.'),
 		'priority' => 10,
 		'input_attrs' => array(
 			'rows' => 12, // maybe this will be supported someday
-			'placeholder' => __( '<!-- Go really easy here -->' ),
+			'placeholder' => __('<!-- Go really easy here -->'),
 		),
 	));
 	$wp_customize->add_control('zen_additional_scripts_body', array(
 		'type' => 'textarea',
 		'label'      => __('Before closing BODY', 'zemplate'),
 		'section'    => 'zen_additional_scripts',
-		'description' => __( '<p>This will still impact performance, so you shouldn\'t go wild, but at least there will be some page loaded and available before the scripts start clogging things up.</p><p>You might be looking for:</p><p><ul><li><a href="https://developers.google.com/tag-manager/quickstart">Google Tag Manager</a></li><li><a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tracking_snippet">Analytics Only</a></li></ul></p>' ),
+		'description' => __('<p>This will still impact performance, so you shouldn\'t go wild, but at least there will be some page loaded and available before the scripts start clogging things up.</p><p>You might be looking for:</p><p><ul><li><a href="https://developers.google.com/tag-manager/quickstart">Google Tag Manager</a></li><li><a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/#alternative_async_tracking_snippet">Analytics Only</a></li></ul></p>'),
 		'priority' => 20,
 		'input_attrs' => array(
 			'rows' => 12, // wishful thinking
-			'placeholder' => __( '<!-- Go fairly easy here -->' ),
+			'placeholder' => __('<!-- Go fairly easy here -->'),
 		),
 	));
 
-	// Default Images
+	zen_default_images_register($wp_customize);
+}
+add_action('customize_register', 'zen_theme_options');
+
+// Default Images
+function zen_default_images_register(&$wp_customize){
+	$post_types = get_post_types_by_support('zen-default-image');
+	if (!$post_types){ return; }
+
 	$wp_customize->add_section('zen_default_images', array(
 		'title'       => __('Default Images', 'zemplate'),
 		'description' => __('<p>Here you can define some images to act as fallbacks.</p>', 'zemplate'),
 		'priority'    => 310, // default is 160, "Additional CSS" is last at 200
 	));
 
-	$wp_customize->add_setting('zen_default_images_blog', array(
-		'default'   => '',
-		'type'      => 'theme_mod',
-		'transport' => 'postMessage', // we're not using this, but the alternative is refreshing while typing and that's rough (especially when the change is unlikely to render)
-	));
-	$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'zen_default_images_blog', array(
-		'mime_type' => 'image',
-		'label'      => __('Blog :: Featured Image', 'zemplate'),
-		'section'    => 'zen_default_images',
-		'description' => esc_html__( 'This image will display as the featured image for any posts that don\'t have one of their own.' ),
-		'priority' => 10,
-	)));
+	foreach ((array)$post_types as $post_type){
+		$slug = zen_get_default_image_slug($post_type);
+
+		$obj = get_post_type_object($post_type);
+		if (!$obj || !isset($obj->labels)) { continue; }
+		$name = esc_html($obj->labels->singular_name);
+
+		$wp_customize->add_setting($slug, array(
+			'default'   => '',
+			'type'      => 'theme_mod',
+			'transport' => 'postMessage', // we're not using this, but the alternative is refreshing while typing and that's rough (especially when the change is unlikely to render)
+		));
+		$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, $slug, array(
+			'mime_type' => 'image',
+			'label'      => __($name . ' :: Featured Image', 'zemplate'),
+			'section'    => 'zen_default_images',
+			'description' => esc_html__('This image will display as the featured image for any posts that don\'t have one of their own.'),
+			'priority' => 10,
+		)));
+	}
 }
-add_action('customize_register', 'zen_theme_options');
+
+function zen_get_default_image_slug($post_type = 'post'){
+	return 'zen_default_images_'.str_replace('-', '_', $post_type);
+}
+
+// try this wherever you need it: zen_get_default_image_id(get_post_type())
+function zen_get_default_image_id($post_type = 'post'){
+	return get_theme_mod(zen_get_default_image_slug($post_type));
+}
 
 //======================================================================
 // Main Nav Walker
