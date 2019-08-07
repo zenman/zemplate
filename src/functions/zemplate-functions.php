@@ -149,6 +149,39 @@ function get_social_icon($url){
 }
 
 //======================================================================
+// oEmbed additional arguments
+//======================================================================
+function zen_oembed_args($provider, $url, $args){
+	if (strpos($url, 'vimeo.com') !== false){
+		// https://developer.vimeo.com/api/oembed/videos#table-2
+
+		// $provider = add_query_arg('portrait', 'false', $provider); // don't have one set and want to hide the little face?
+		// $provider = add_query_arg('color', 'ff6c2f', $provider); // get your branding on
+		$provider = add_query_arg('responsive', 'true', $provider); // do want
+	}
+	if (strpos($url, 'youtube.com') !== false){
+		// https://developers.google.com/youtube/player_parameters#Parameters
+
+		$provider = add_query_arg('rel', '0', $provider); // forces related videos to come from the same channel
+		$provider = add_query_arg('modestbranding', '1', $provider); // sure, why not?
+	}
+
+	// this is a little bit stupid because we're expecting someone to modify the raw embed URL with these params, buuuut...
+
+	if (strpos($url, 'autoplay=1') !== false){
+		$provider = add_query_arg('autoplay', '1', $provider);
+		$provider = add_query_arg('muted', '1', $provider); // not a thing on YouTube, but should be discarded safely
+	}
+
+	if (strpos($url, 'loop=1') !== false){
+		$provider = add_query_arg('loop', '1', $provider);
+	}
+
+	return $provider;
+}
+add_filter('oembed_fetch_url', zen_oembed_args, 10, 3);
+
+//======================================================================
 // Revision Control
 //======================================================================
 // Maybe we don't keep _everything_ yeah?
