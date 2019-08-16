@@ -1,6 +1,7 @@
 .post-content {
 	// WYSIWYG paragraphs are inconsistent, so make BRs act like Ps
 	br {
+		content: ""; // chrome won't honor margins without this
 		display: block;
 		margin-top: 1.5em;
 	}
