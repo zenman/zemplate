@@ -179,7 +179,7 @@ function zen_oembed_args($provider, $url, $args){
 
 	return $provider;
 }
-add_filter('oembed_fetch_url', zen_oembed_args, 10, 3);
+add_filter('oembed_fetch_url', 'zen_oembed_args', 10, 3);
 
 //======================================================================
 // Revision Control
